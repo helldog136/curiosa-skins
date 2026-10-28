@@ -1,0 +1,104 @@
+{
+  "skinContract": 1,
+  "id": "verre-doux",
+  "name": {
+    "fr": "Verre et dégradés doux",
+    "en": "Soft glass"
+  },
+  "description": {
+    "fr": "Une appli moderne : surfaces de verre floues, dégradés pastel, formes très arrondies. Deux modes, clair et sombre.",
+    "en": "A modern app look: frosted glass surfaces, pastel gradients, very round shapes. Light and dark modes."
+  },
+  "version": "1.0.0",
+  "minCore": "0.4.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "dark",
+    "sans",
+    "glass",
+    "playful"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/accueil-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode clair",
+        "en": "Home page, light mode"
+      }
+    },
+    {
+      "file": "previews/liste-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page de liste, mode clair",
+        "en": "List page, light mode"
+      }
+    },
+    {
+      "file": "previews/accueil-sombre.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode sombre",
+        "en": "Home page, dark mode"
+      }
+    },
+    {
+      "file": "previews/mobile-clair.webp",
+      "mode": "light",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone",
+        "en": "Home page on a phone"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "fonts/outfit.woff2",
+      "kind": "font",
+      "family": "Verre Sans",
+      "weight": "100 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/outfit-OFL.txt",
+      "author": "The Outfit Project Authors",
+      "source": "https://github.com/Outfitio/Outfit-Fonts"
+    },
+    {
+      "file": "images/points.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/points-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "twoRows",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    1024
+  ],
+  "supports": {
+    "reducedMotion": true
+  }
+}
