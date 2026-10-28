@@ -1,0 +1,66 @@
+{
+ "version": 1,
+ "skins": [
+  {
+   "id": "brutaliste-clair",
+   "name": {
+    "fr": "Brutaliste clair",
+    "en": "Light brutalist"
+   },
+   "description": {
+    "fr": "Fond crème, bordures noires épaisses, ombres dures décalées, couleurs vives plates, menu en onglets carrés et blocs encadrés.",
+    "en": "Cream background, thick black borders, hard offset shadows, flat bright colours, square menu tabs and boxed blocks."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/brutaliste-clair",
+   "ref": "93a5f4d5d1f020a3d4a4d8d0defba88b4bbd3262",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🟨",
+   "tags": [
+    "light",
+    "mono",
+    "bold"
+   ],
+   "modes": [
+    "light"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/brutaliste-clair/previews/home-1280.webp"
+  },
+  {
+   "id": "retro-neon",
+   "name": {
+    "fr": "Rétro néon",
+    "en": "Retro neon"
+   },
+   "description": {
+    "fr": "Noir profond, néons magenta et cyan, polices pixel, grille et lignes de balayage, menu en colonne à gauche.",
+    "en": "Deep black, magenta and cyan neon, pixel fonts, grid and scanlines, menu in a left column."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/retro-neon",
+   "ref": "78f1a34c425c2ac6c450de9e815f539e033332ed",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🕹️",
+   "tags": [
+    "dark",
+    "pixel",
+    "retro",
+    "mono"
+   ],
+   "modes": [
+    "dark"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/retro-neon/previews/home-1280.webp"
+  }
+ ]
+}
