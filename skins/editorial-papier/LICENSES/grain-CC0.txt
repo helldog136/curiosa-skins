@@ -1,0 +1,2 @@
+Texture de papier « grain.png » : image générée par programme (bruit aléatoire) pour ce skin, sans élément tiers.
+Elle est dédiée au domaine public (CC0 1.0 Universal) : https://creativecommons.org/publicdomain/zero/1.0/

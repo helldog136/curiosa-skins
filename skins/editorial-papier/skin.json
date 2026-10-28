@@ -1,0 +1,137 @@
+{
+  "skinContract": 1,
+  "id": "editorial-papier",
+  "name": {
+    "fr": "Éditorial papier",
+    "en": "Editorial paper"
+  },
+  "description": {
+    "fr": "Une page de magazine : papier et encre, serif élégant, filets fins, colonne de lecture étroite. Clair, avec un mode sombre « encre ».",
+    "en": "A magazine page: paper and ink, elegant serif, hairline rules, a narrow reading column. Light, with a dark \"ink\" mode."
+  },
+  "version": "1.0.0",
+  "minCore": "0.4.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "dark",
+    "serif",
+    "editorial",
+    "minimal"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/accueil-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode papier",
+        "en": "Home page, paper mode"
+      }
+    },
+    {
+      "file": "previews/liste-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page de liste, mode papier",
+        "en": "List page, paper mode"
+      }
+    },
+    {
+      "file": "previews/accueil-sombre.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode encre",
+        "en": "Home page, ink mode"
+      }
+    },
+    {
+      "file": "previews/mobile-clair.webp",
+      "mode": "light",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone",
+        "en": "Home page on a phone"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "fonts/titre-romain.woff2",
+      "kind": "font",
+      "family": "Papier Titre",
+      "weight": "300 700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/cormorant-garamond-OFL.txt",
+      "author": "The Cormorant Project Authors",
+      "source": "https://github.com/CatharsisFonts/Cormorant"
+    },
+    {
+      "file": "fonts/titre-italique.woff2",
+      "kind": "font",
+      "family": "Papier Titre",
+      "weight": "300 700",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/cormorant-garamond-OFL.txt",
+      "author": "The Cormorant Project Authors",
+      "source": "https://github.com/CatharsisFonts/Cormorant"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Papier Texte",
+      "weight": "200 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/source-serif-4-OFL.txt",
+      "author": "Adobe",
+      "source": "https://github.com/adobe-fonts/source-serif"
+    },
+    {
+      "file": "fonts/texte-italique.woff2",
+      "kind": "font",
+      "family": "Papier Texte",
+      "weight": "200 900",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/source-serif-4-OFL.txt",
+      "author": "Adobe",
+      "source": "https://github.com/adobe-fonts/source-serif"
+    },
+    {
+      "file": "images/grain.png",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/grain-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "centered",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    1024
+  ],
+  "supports": {
+    "reducedMotion": true
+  }
+}
