@@ -1,28 +1,123 @@
 {
   "skinContract": 1,
   "id": "brutaliste-clair",
-  "name": { "fr": "Brutaliste clair", "en": "Light brutalist" },
+  "name": {
+    "fr": "Brutaliste clair",
+    "en": "Light brutalist"
+  },
   "description": {
     "fr": "Fond crème, bordures noires épaisses, ombres dures décalées, couleurs vives plates, menu en onglets carrés et blocs encadrés.",
     "en": "Cream background, thick black borders, hard offset shadows, flat bright colours, square menu tabs and boxed blocks."
   },
   "version": "1.0.0",
   "minCore": "0.4.0",
-  "author": { "name": "Équipe Curiosa" },
+  "author": {
+    "name": "Équipe Curiosa"
+  },
   "license": "MIT",
-  "tags": ["light", "mono", "bold"],
-  "modes": ["light"],
+  "tags": [
+    "light",
+    "mono",
+    "bold"
+  ],
+  "modes": [
+    "light"
+  ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
-  "previews": [],
-  "assets": [
-    { "file": "fonts/archivo-black.woff2", "kind": "font", "family": "Archivo Black", "weight": "400", "style": "normal", "license": "OFL-1.1", "licenseFile": "LICENSES/archivo-black-OFL.txt", "author": "Omnibus-Type", "source": "https://github.com/Omnibus-Type/ArchivoBlack" },
-    { "file": "fonts/space-mono-400.woff2", "kind": "font", "family": "Space Mono", "weight": "400", "style": "normal", "license": "OFL-1.1", "licenseFile": "LICENSES/space-mono-OFL.txt", "author": "Colophon Foundry", "source": "https://github.com/googlefonts/spacemono" },
-    { "file": "fonts/space-mono-700.woff2", "kind": "font", "family": "Space Mono", "weight": "700", "style": "normal", "license": "OFL-1.1", "licenseFile": "LICENSES/space-mono-OFL.txt", "author": "Colophon Foundry", "source": "https://github.com/googlefonts/spacemono" },
-    { "file": "images/points.svg", "kind": "image", "license": "CC0-1.0", "licenseFile": "LICENSES/images-CC0.txt", "author": "Équipe Curiosa", "source": "https://github.com/helldog136/curiosa-skins" }
+  "previews": [
+    {
+      "file": "previews/home-1280.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, 1280 px",
+        "en": "Home page, 1280 px"
+      }
+    },
+    {
+      "file": "previews/home-390.webp",
+      "mode": "light",
+      "width": 390,
+      "alt": {
+        "fr": "Page d'accueil, 390 px",
+        "en": "Home page, 390 px"
+      }
+    },
+    {
+      "file": "previews/blog-1280.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page de liste (blog), 1280 px",
+        "en": "List page (blog), 1280 px"
+      }
+    },
+    {
+      "file": "previews/blog-390.webp",
+      "mode": "light",
+      "width": 390,
+      "alt": {
+        "fr": "Page de liste (blog), 390 px",
+        "en": "List page (blog), 390 px"
+      }
+    }
   ],
-  "defaults": { "headerLayout": "classic", "font": "skin", "glow": "none", "background": "none" },
+  "assets": [
+    {
+      "file": "fonts/archivo-black.woff2",
+      "kind": "font",
+      "family": "Archivo Black",
+      "weight": "400",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/archivo-black-OFL.txt",
+      "author": "Omnibus-Type",
+      "source": "https://github.com/Omnibus-Type/ArchivoBlack"
+    },
+    {
+      "file": "fonts/space-mono-400.woff2",
+      "kind": "font",
+      "family": "Space Mono",
+      "weight": "400",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/space-mono-OFL.txt",
+      "author": "Colophon Foundry",
+      "source": "https://github.com/googlefonts/spacemono"
+    },
+    {
+      "file": "fonts/space-mono-700.woff2",
+      "kind": "font",
+      "family": "Space Mono",
+      "weight": "700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/space-mono-OFL.txt",
+      "author": "Colophon Foundry",
+      "source": "https://github.com/googlefonts/spacemono"
+    },
+    {
+      "file": "images/points.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "classic",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
   "options": [],
-  "breakpoints": [640, 1024],
-  "supports": { "reducedMotion": true }
+  "breakpoints": [
+    640,
+    1024
+  ],
+  "supports": {
+    "reducedMotion": true
+  }
 }
