@@ -35,7 +35,7 @@
     border: 3px solid var(--v-fg); border-radius: 0; box-shadow: 4px 4px 0 var(--v-fg); font-family: var(--v-font); font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
   }
   [data-skin-part="menu-toggle"][aria-expanded="true"] { background-color: var(--v-fg); color: #ffffff; box-shadow: none; }
-  [data-skin-part="nav-list"] { background-color: #ffffff; border: 4px solid var(--v-fg); border-radius: 0; box-shadow: 8px 8px 0 var(--v-fg); inset-inline: 1rem; top: calc(100% - 2.75rem); padding: 0.75rem; row-gap: 0.5rem; }
+  [data-skin-part="nav-list"] { background-color: #ffffff; border: 4px solid var(--v-fg); border-radius: 0; box-shadow: 8px 8px 0 var(--v-fg); inset-inline: 1rem; top: calc(100% + 0.5rem); padding: 0.75rem; row-gap: 0.5rem; }
   [data-skin-part="nav-list"] [data-skin-part="nav-link"] { width: 100%; }
   [data-skin-part="submenu"] { box-shadow: none; margin-top: 0.5rem; }
 }
@@ -64,7 +64,7 @@
 /* ── Titres massifs ── */
 [data-skin-part="heading"] { font-family: var(--sk-font-heading); font-weight: 400; line-height: 1.08; letter-spacing: 0; color: var(--v-fg); overflow-wrap: anywhere; }
 [data-skin-part="heading"][data-level="1"] {
-  display: inline-block; max-width: 100%; font-size: clamp(2rem, 1rem + 5.5vw, 4.25rem); padding: 0.35rem 1rem 0.5rem; background-color: #ffd60a; border: 4px solid var(--v-fg); box-shadow: 8px 8px 0 var(--v-fg); margin-bottom: 0.75rem;
+  display: inline-block; max-width: 100%; font-size: clamp(1.5rem, 0.25rem + 5vw, 4.25rem); padding: 0.35rem 0.85rem 0.45rem; background-color: #ffd60a; border: 4px solid var(--v-fg); box-shadow: 8px 8px 0 var(--v-fg); margin-bottom: 0.75rem;
 }
 [data-skin-part="heading"][data-level="2"] { font-size: clamp(1.5rem, 1rem + 2vw, 2.25rem); padding-bottom: 0.35rem; border-bottom: 4px solid var(--v-fg); }
 [data-skin-part="heading"][data-level="3"] { font-size: 1.25rem; line-height: 1.2; }
