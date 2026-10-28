@@ -133,7 +133,7 @@
 }
 [data-skin-region="tools"] > [data-skin-part="link"] { letter-spacing: 0.14em; text-transform: uppercase; }
 [data-skin-part="socials"] { display: flex; flex-wrap: wrap; justify-content: center; gap: 0; }
-[data-skin-part="socials"] [data-skin-part="link"] { padding: 0.7rem; color: var(--v-muted); }
+[data-skin-part="socials"] [data-skin-part="link"] { padding: 0.8rem; color: var(--v-muted); }
 [data-skin-part="socials"] [data-skin-part="link"]:hover { color: var(--v-accent); }
 [data-skin-part="lang-switcher"] { display: flex; align-items: center; }
 [data-skin-part="lang-switcher"] a {
