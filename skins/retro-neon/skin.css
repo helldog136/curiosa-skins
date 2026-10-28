@@ -165,3 +165,11 @@
   [data-skin-region="shell"] { animation: drift 6s linear infinite; }
   [data-skin-part="button"], [data-skin-part="nav-link"], [data-skin-part="chip"] { transition: box-shadow 150ms ease, background-color 150ms ease, color 150ms ease; }
 }
+
+/* ── Panneaux « appel à l'action » (fond en dégradé clair) : texte sombre, bouton inversé ── */
+[data-skin-part="panel"][data-on="accent"] { border-color: var(--v-fg); color: var(--v-accent-fg); box-shadow: 0 0 30px rgb(255 61 240 / 0.45); }
+[data-skin-part="panel"][data-on="accent"] :is(h2, h3, p, li) { color: var(--v-accent-fg); text-shadow: none; }
+[data-skin-part="panel"][data-on="accent"] [data-skin-part="heading"]::before { background: var(--v-accent-fg); box-shadow: none; }
+[data-skin-part="panel"][data-on="accent"] [data-skin-part="button"] { background-color: var(--v-accent-fg); color: var(--v-fg); border-color: var(--v-accent-fg); box-shadow: none; }
+[data-skin-part="panel"][data-on="accent"] [data-skin-part="button"]:hover { background-color: var(--v-fg); color: var(--v-accent-fg); }
+[data-skin-part="panel"][data-on="veil"] :is(h2, h3, p, li) { color: #ffffff; }
