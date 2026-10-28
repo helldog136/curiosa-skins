@@ -86,7 +86,7 @@
 /* Outils : réseaux, langue, bascule de mode */
 [data-skin-part="socials"] { flex-wrap: wrap; justify-content: flex-end; gap: 0; max-width: 100%; }
 [data-skin-region="tools"] { min-width: 0; max-width: 100%; }
-[data-skin-part="socials"] [data-skin-part="link"] { padding: 0.65rem; border-radius: 9999px; color: var(--v-muted); transition: background-color var(--sk-duration) var(--sk-ease), color var(--sk-duration) var(--sk-ease); }
+[data-skin-part="socials"] [data-skin-part="link"] { padding: 0.8rem; border-radius: 9999px; color: var(--v-muted); transition: background-color var(--sk-duration) var(--sk-ease), color var(--sk-duration) var(--sk-ease); }
 [data-skin-part="socials"] [data-skin-part="link"]:hover { color: var(--v-accent); background-color: color-mix(in srgb, var(--v-accent) 14%, var(--v-surface)); }
 [data-skin-part="lang-switcher"] { display: flex; gap: 0.15rem; padding: 0.2rem; border-radius: 9999px; background-color: var(--v-bg); }
 [data-skin-part="lang-switcher"] a {
