@@ -151,3 +151,10 @@
 [data-skin-part="module-html"] :is(a, button, li, img, input, textarea, summary, details, figure, ul, table, p, time, strong) { border-radius: 0; }
 [data-skin-part="module-html"] h3 { font-family: var(--sk-font-heading); text-transform: uppercase; line-height: 1.15; }
 [data-skin-part="module-html"] button, [data-skin-part="module-html"] input, [data-skin-part="module-html"] textarea { font-family: var(--v-font); }
+
+/* ── Panneaux « appel à l'action » (fond de couleur) et panneaux sur image (voile sombre) : le texte reste lisible ── */
+[data-skin-part="panel"][data-on="accent"] { background-image: none; background-color: var(--v-accent2); color: var(--v-accent2-fg); }
+[data-skin-part="panel"][data-on="accent"] [data-skin-part="button"] { background-color: #ffffff; color: var(--v-fg); border-color: var(--v-fg); }
+[data-skin-part="panel"][data-on="accent"] [data-skin-part="button"]:hover { background-color: var(--v-fg); color: #ffffff; }
+[data-skin-part="panel"][data-on="veil"] :is(h2, h3, p, li) { color: #ffffff; border-color: #ffffff; }
+[data-skin-part="panel"][data-on="veil"] [data-skin-part="button"] { background-color: #ffffff; color: var(--v-fg); border-color: var(--v-fg); }
