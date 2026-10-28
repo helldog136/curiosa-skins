@@ -1,28 +1,124 @@
 {
   "skinContract": 1,
   "id": "retro-neon",
-  "name": { "fr": "Rétro néon", "en": "Retro neon" },
+  "name": {
+    "fr": "Rétro néon",
+    "en": "Retro neon"
+  },
   "description": {
     "fr": "Noir profond, néons magenta et cyan, polices pixel, grille et lignes de balayage, menu en colonne à gauche.",
     "en": "Deep black, magenta and cyan neon, pixel fonts, grid and scanlines, menu in a left column."
   },
   "version": "1.0.0",
   "minCore": "0.4.0",
-  "author": { "name": "Équipe Curiosa" },
+  "author": {
+    "name": "Équipe Curiosa"
+  },
   "license": "MIT",
-  "tags": ["dark", "pixel", "retro", "mono"],
-  "modes": ["dark"],
+  "tags": [
+    "dark",
+    "pixel",
+    "retro",
+    "mono"
+  ],
+  "modes": [
+    "dark"
+  ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
-  "previews": [],
-  "assets": [
-    { "file": "fonts/press-start-2p.woff2", "kind": "font", "family": "Press Start 2P", "weight": "400", "style": "normal", "license": "OFL-1.1", "licenseFile": "LICENSES/press-start-2p-OFL.txt", "author": "Cody Boisclair", "source": "https://fonts.google.com/specimen/Press+Start+2P" },
-    { "file": "fonts/jetbrains-mono-400.woff2", "kind": "font", "family": "JetBrains Mono", "weight": "400", "style": "normal", "license": "OFL-1.1", "licenseFile": "LICENSES/jetbrains-mono-OFL.txt", "author": "JetBrains", "source": "https://github.com/JetBrains/JetBrainsMono" },
-    { "file": "fonts/jetbrains-mono-700.woff2", "kind": "font", "family": "JetBrains Mono", "weight": "700", "style": "normal", "license": "OFL-1.1", "licenseFile": "LICENSES/jetbrains-mono-OFL.txt", "author": "JetBrains", "source": "https://github.com/JetBrains/JetBrainsMono" },
-    { "file": "images/grille.svg", "kind": "image", "license": "CC0-1.0", "licenseFile": "LICENSES/images-CC0.txt", "author": "Équipe Curiosa", "source": "https://github.com/helldog136/curiosa-skins" }
+  "previews": [
+    {
+      "file": "previews/home-1280.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, 1280 px",
+        "en": "Home page, 1280 px"
+      }
+    },
+    {
+      "file": "previews/home-390.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Page d'accueil, 390 px",
+        "en": "Home page, 390 px"
+      }
+    },
+    {
+      "file": "previews/blog-1280.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page de liste (blog), 1280 px",
+        "en": "List page (blog), 1280 px"
+      }
+    },
+    {
+      "file": "previews/blog-390.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Page de liste (blog), 390 px",
+        "en": "List page (blog), 390 px"
+      }
+    }
   ],
-  "defaults": { "headerLayout": "classic", "font": "skin", "glow": "soft", "background": "none" },
+  "assets": [
+    {
+      "file": "fonts/press-start-2p.woff2",
+      "kind": "font",
+      "family": "Press Start 2P",
+      "weight": "400",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/press-start-2p-OFL.txt",
+      "author": "Cody Boisclair",
+      "source": "https://fonts.google.com/specimen/Press+Start+2P"
+    },
+    {
+      "file": "fonts/jetbrains-mono-400.woff2",
+      "kind": "font",
+      "family": "JetBrains Mono",
+      "weight": "400",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/jetbrains-mono-OFL.txt",
+      "author": "JetBrains",
+      "source": "https://github.com/JetBrains/JetBrainsMono"
+    },
+    {
+      "file": "fonts/jetbrains-mono-700.woff2",
+      "kind": "font",
+      "family": "JetBrains Mono",
+      "weight": "700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/jetbrains-mono-OFL.txt",
+      "author": "JetBrains",
+      "source": "https://github.com/JetBrains/JetBrainsMono"
+    },
+    {
+      "file": "images/grille.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "classic",
+    "font": "skin",
+    "glow": "soft",
+    "background": "none"
+  },
   "options": [],
-  "breakpoints": [640, 1024],
-  "supports": { "reducedMotion": true }
+  "breakpoints": [
+    640,
+    1024
+  ],
+  "supports": {
+    "reducedMotion": true
+  }
 }
