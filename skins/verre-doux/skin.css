@@ -66,7 +66,8 @@
     background-color: var(--v-surface);
     box-shadow: var(--sk-shadow-raised);
   }
-  [data-skin-part="nav-list"] [data-skin-part="nav-link"] { display: flex; width: 100%; min-height: var(--sk-target); align-items: center; }
+  [data-skin-part="nav-list"] [data-skin-part="nav-link"] { display: flex; width: 100%; min-height: var(--sk-target); align-items: center; justify-content: flex-start; text-align: left; }
+  [data-skin-part="socials"] { justify-content: flex-start; }
   [data-skin-part="submenu"] { padding-left: 0.75rem; }
 }
 @media (min-width: 40rem) {
