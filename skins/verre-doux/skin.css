@@ -298,3 +298,8 @@
 [data-skin-part="panel"][data-kind="cta"] [data-skin-part="button"] { background-image: none; background-color: var(--v-surface); border-color: transparent; color: var(--v-accent); box-shadow: none; }
 [data-skin-part="copy-code"] { min-height: var(--sk-target); padding-inline: 1.1rem; border: 1px solid color-mix(in srgb, var(--v-accent) 40%, var(--v-surface)); border-radius: 9999px; background-color: var(--v-surface); color: var(--v-accent); font-weight: var(--sk-weight-semibold); }
 [data-skin-part="prose"] [data-skin-part="link"], [data-skin-part="prose"] a { padding-block: 0; }
+
+/* ───── Boîtes intérieures des modules : du verre et des ombres diffuses ───── */
+[data-skin-part="module-html"] :is(article, section) { border-radius: 1.5rem; box-shadow: var(--sk-shadow-card); border-color: color-mix(in srgb, var(--v-accent) 20%, var(--v-surface)); }
+[data-skin-part="module-html"] :is(div, ul) { border-radius: 1.25rem; }
+[data-skin-part="module-html"] time { border-radius: 0.9rem; }
