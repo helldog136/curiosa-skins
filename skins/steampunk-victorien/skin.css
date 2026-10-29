@@ -30,7 +30,7 @@
 [data-skin-region="content"] {
   position: relative;
   box-sizing: border-box;
-  padding: 2rem 1.25rem 2.5rem;
+  padding: 2rem 1rem 2.5rem;
   background-color: var(--v-surface);
   background-image: url(skin:images/damas.svg);
   background-size: 96px 96px;
@@ -143,12 +143,12 @@
   [data-skin-part="submenu"] [data-skin-part="nav-link"] { font-weight: var(--sk-weight-normal); font-style: italic; text-transform: none; letter-spacing: 0.02em; padding-left: 1rem; }
 }
 
-/* Grand écran : la marque à gauche, le menu au milieu, les outils à droite, sur une seule barre. */
+/* Grand écran : la marque à gauche, les outils à droite, le menu centré sur une deuxième rangée. */
 @media (min-width: 40rem) {
-  [data-skin-region="header"] { grid-template-columns: auto minmax(0, 1fr) auto; column-gap: 1.5rem; padding-block: 0.4rem; }
+  [data-skin-region="header"] { grid-template-columns: auto minmax(0, 1fr); column-gap: 1.5rem; padding-block: 0.25rem 0; }
   [data-skin-part="brand"] { font-size: var(--sk-text-2xl); }
-  [data-skin-region="nav"] { grid-column: 2; }
-  [data-skin-region="nav"] [data-skin-part="nav-list"] { justify-content: center; align-items: center; column-gap: 0; row-gap: 0; flex-wrap: wrap; }
+  [data-skin-region="nav"] { grid-column: 2; grid-row: 1; }
+  [data-skin-region="nav"] [data-skin-part="nav-list"] { justify-content: flex-end; align-items: center; column-gap: 0; row-gap: 0; flex-wrap: wrap; }
   [data-skin-part="nav-list"] > li { display: flex; align-items: center; }
   [data-skin-part="nav-list"] [data-skin-part="nav-link"] { padding-inline: 0.7rem; min-height: var(--sk-target); display: inline-flex; align-items: center; }
   [data-skin-region="nav"] [data-skin-part="submenu"] {
@@ -178,7 +178,7 @@
   font-size: var(--sk-text-xs);
 }
 @media (min-width: 40rem) {
-  [data-skin-region="tools"] { grid-column: 3; grid-row: 1; justify-content: flex-end; border-top: 0; }
+  [data-skin-region="tools"] { justify-content: flex-end; }
 }
 [data-skin-region="tools"] > [data-skin-part="link"] { font-family: var(--sk-font-heading); letter-spacing: 0.1em; text-transform: uppercase; }
 [data-skin-part="socials"] { display: flex; flex-wrap: wrap; gap: 0; }
@@ -202,7 +202,8 @@
 [data-skin-part="mode-switch"] { gap: 0; border: 1px solid var(--v-line); border-radius: 0; padding: 0; }
 [data-skin-part="mode-option"] { color: var(--v-muted); border-radius: 0; background-color: transparent; }
 [data-skin-part="mode-option"]:hover { color: var(--v-fg); background-color: transparent; }
-[data-skin-part="mode-option"][aria-pressed="true"] { color: var(--v-accent-fg); background-color: var(--v-accent); }
+[data-skin-part="mode-option"][aria-pressed="true"] { color: var(--v-accent); background-color: transparent; border-bottom: 3px double var(--v-accent); }
+[data-skin-part="mode-option"]:focus-visible { outline: 3px solid var(--v-fg); outline-offset: -4px; }
 [data-skin-part="mode-option"] svg { width: 1.1rem; height: 1.1rem; }
 
 /* ───── Titres : lettres de réclame d'autrefois ───── */
@@ -327,13 +328,13 @@
 [data-skin-part="table-head"] [data-skin-part="table-cell"] {
   font-family: var(--sk-font-heading);
   font-size: var(--sk-text-xs);
-  letter-spacing: 0.14em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: left;
   color: var(--v-accent);
   border-bottom: 1px solid var(--v-accent);
 }
-[data-skin-part="table-cell"] { padding: 0.65rem 0.75rem; border-bottom: 1px solid var(--v-line); }
+[data-skin-part="table-cell"] { padding: 0.6rem 0.5rem; border-bottom: 1px solid var(--v-line); }
 [data-skin-part="table-row"]:last-child [data-skin-part="table-cell"] { border-bottom: 0; }
 [data-skin-part="image"], [data-skin-part="media"] { border-radius: 0; border: 1px solid var(--v-accent); padding: 3px; background-color: var(--v-surface); filter: sepia(0.18) saturate(0.95); }
 [data-skin-region="content"] figcaption { font-style: italic; font-size: var(--sk-text-sm); color: var(--v-muted); text-align: center; padding-top: 0.5rem; }
