@@ -1,6 +1,6 @@
 # Steampunk victorien
 
-Un salon d'inventeur d'autrefois : du bois sombre, du cuir, du laiton et du cuivre, du papier vieilli, de petits rouages.
+Un salon d'inventions d'autrefois : du bois sombre, du cuir, du laiton et du cuivre, du papier vieilli, de petits rouages.
 
 **Pour qui ?** Pour un site de jeux, d'histoires, de maquettes ou de bricolage, qui aime l'ambiance des vieux ateliers.
 
@@ -17,12 +17,12 @@ Aucun texte, aucun lien, aucun bouton n'est ajouté, retiré ou déplacé dans l
 
 ## Clair et sombre
 
-Le visiteur voit le mode de son appareil, et peut choisir « Clair », « Sombre » ou « Automatique » avec la petite bascule de l'en-tête. Aucun mouvement n'est nécessaire : le skin n'anime rien.
+Le skin suit le mode de l'appareil, et le public peut choisir « Clair », « Sombre » ou « Automatique » avec la petite bascule de l'en-tête. Aucun mouvement n'est nécessaire : le skin n'anime rien.
 
 ## Polices et images
 
 Elles sont dans le skin (rien n'est chargé depuis un autre site). Polices : Playfair Display et Libre Baskerville, licence SIL Open Font License 1.1. Images (rouages, coins, motif) : dessinées pour ce skin, domaine public. Licences : dossier `LICENSES/`. Aucune marque, aucun logo.
 
-## Pour les développeurs
+## Côté technique
 
 Skin au format du contrat 1 de Curiosa (`skin.json`, `tokens.json`, `skin.css`). Contrôle : `npm run skin:check -- skins/steampunk-victorien --visual --strict` depuis le cœur de Curiosa. Licence du skin : MIT (fichier `LICENSE`).

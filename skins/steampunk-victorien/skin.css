@@ -1,4 +1,4 @@
-/* Steampunk victorien : un salon d'inventeur. Bois sombre, cuir, laiton, papier vieilli, petits rouages.
+/* Steampunk victorien : un salon d'inventions. Bois sombre, cuir, laiton, papier vieilli, petits rouages.
    Un skin ne change que l'APPARENCE : les mêmes éléments, aux mêmes endroits dans le code, seulement dessinés autrement. */
 
 @font-face { font-family: "Vapeur Texte"; src: url(skin:fonts/texte-romain.woff2) format("woff2"); font-weight: 400 700; font-style: normal; }
@@ -545,7 +545,7 @@
 [data-skin-part="cookie-tray"] { border: 2px solid var(--v-accent); border-radius: 0; background-color: var(--v-surface); box-shadow: 0 -6px 20px rgb(0 0 0 / .45), inset 0 0 0 3px var(--v-surface), inset 0 0 0 4px var(--v-line); }
 [data-skin-part="skip-link"]:focus { outline: 3px solid var(--v-accent); outline-offset: 2px; }
 
-/* ───── Mouvement : seulement quand le visiteur ne l'a pas réduit ───── */
+/* ───── Mouvement : seulement quand la personne ne l'a pas réduit ───── */
 @media (prefers-reduced-motion: no-preference) {
   [data-skin-part="nav-link"], [data-skin-part="link"], [data-skin-part="chip"], [data-skin-part="pagination-link"], [data-skin-part="card"] {
     transition: color var(--sk-duration) var(--sk-ease), background-color var(--sk-duration) var(--sk-ease), border-color var(--sk-duration) var(--sk-ease);
