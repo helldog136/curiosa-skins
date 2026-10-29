@@ -2,7 +2,7 @@
 
 Un look d'application moderne : du verre dépoli, des couleurs pastel qui se fondent, des formes toutes rondes.
 
-**Pour qui ?** Pour un site vivant et accueillant : créateurs, ateliers, communautés. Le menu et les cartes semblent flotter.
+**Pour qui ?** Pour un site vivant et accueillant : ateliers, collectifs de création, communautés. Le menu et les cartes semblent flotter.
 
 ## Ce que ce skin change
 
@@ -17,7 +17,7 @@ Le texte repose toujours sur un fond opaque. Le verre flou n'est ajouté que par
 
 ## Clair et sombre : la vitrine
 
-Ce skin a deux modes. Le visiteur voit celui de son appareil et peut choisir « Clair », « Sombre » ou « Automatique » avec la bascule de l'en-tête (son choix reste dans son navigateur, rien n'est envoyé).
+Ce skin a deux modes. Il suit celui de l'appareil, et le public peut choisir « Clair », « Sombre » ou « Automatique » avec la bascule de l'en-tête (son choix reste dans son navigateur, rien n'est envoyé).
 
 ## Ce que ce skin ne change pas
 
@@ -27,6 +27,6 @@ Aucun texte, aucun lien, aucun bouton n'est ajouté, retiré ou déplacé : seul
 
 Elles sont dans le skin (rien n'est chargé depuis un autre site). Licences : voir `LICENSES/` (police : SIL Open Font License 1.1 ; motif : domaine public).
 
-## Pour les développeurs
+## Côté technique
 
 Skin au format du contrat 1 de Curiosa. Contrôle : `npm run skin:check -- skins/verre-doux` depuis le cœur. Licence du skin : MIT (fichier `LICENSE`). Les fichiers `README.md` et `LICENSE` sont permis à la racine du dossier du skin.
