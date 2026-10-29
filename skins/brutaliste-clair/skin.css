@@ -70,7 +70,7 @@
 [data-skin-part="heading"][data-level="3"] { font-size: 1.25rem; line-height: 1.2; }
 [data-skin-part="heading"][data-level="4"], [data-skin-part="heading"][data-level="5"], [data-skin-part="heading"][data-level="6"] { font-size: 1.0625rem; }
 [data-skin-part="eyebrow"] {
-  display: inline-block; padding: 0.15rem 0.55rem; background-color: var(--v-fg); color: #ffffff; font-family: var(--v-font); font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+  display: inline-block; padding: 0.15rem 0.55rem; background-color: var(--v-fg); color: #ffffff; font-family: var(--v-font); font-size: 0.875rem; font-weight: 700; letter-spacing: 0.12em;
 }
 [data-skin-part="lead"] { font-size: 1.125rem; line-height: 1.7; color: var(--v-fg); }
 
@@ -148,7 +148,14 @@
 [data-skin-part="heading"][data-level="2"]::before { width: 3rem; height: 8px; margin-bottom: 0.6rem; border-radius: 0; background: var(--v-fg); }
 
 /* ── Contenu des modules : on ne peut viser que les éléments simples (pas leurs classes) ; angles droits partout où c'est possible ── */
-[data-skin-part="module-html"] :is(a, button, li, img, input, textarea, summary, details, figure, ul, table, p, time, strong) { border-radius: 0; }
+[data-skin-part="module-html"] :is(a, button, li, img, input, textarea, select, summary, details, figure) { border-radius: 0; }
+[data-skin-part="module-html"] :is(ul, table, p, time, strong, div, span, section, article, label) { border-radius: 0; }
+[data-skin-part="module-html"] :is(div, span, li, label, details) { border-color: var(--v-fg); }
+[data-skin-part="module-html"] :is(a, time, button, summary) { border-color: var(--v-fg); }
+[data-skin-part="module-html"] :is(article, section) { border-width: 3px; border-color: var(--v-fg); }
+[data-skin-part="module-html"] :is(article) { box-shadow: 5px 5px 0 var(--v-fg); }
+[data-skin-part="module-html"] :is(input, textarea, select) { border-width: 3px; background-color: #ffffff; color: var(--v-fg); }
+[data-skin-part="module-html"] button:hover { background-color: var(--v-accent2); color: var(--v-accent2-fg); }
 [data-skin-part="module-html"] h3 { font-family: var(--sk-font-heading); text-transform: uppercase; line-height: 1.15; }
 [data-skin-part="module-html"] button, [data-skin-part="module-html"] input, [data-skin-part="module-html"] textarea { font-family: var(--v-font); }
 
@@ -158,3 +165,10 @@
 [data-skin-part="panel"][data-on="accent"] [data-skin-part="button"]:hover { background-color: var(--v-fg); color: #ffffff; }
 [data-skin-part="panel"][data-on="veil"] :is(h2, h3, p, li) { color: #ffffff; border-color: #ffffff; }
 [data-skin-part="panel"][data-on="veil"] [data-skin-part="button"] { background-color: #ffffff; color: var(--v-fg); border-color: var(--v-fg); }
+
+/* ── Cibles tactiles : liens seuls sur leur ligne et bouton « Copier » ── */
+[data-skin-part="link"]:only-child { display: inline-flex; align-items: center; min-height: var(--sk-target); }
+[data-skin-part="copy-code"] { min-height: var(--sk-target); min-width: var(--sk-target); padding: 0.4rem 0.9rem; background-color: #ffffff; color: var(--v-fg); border: 3px solid var(--v-fg); border-radius: 0; font-weight: 700; text-transform: uppercase; font-size: 0.8125rem; }
+[data-skin-part="copy-code"]:hover { background-color: var(--v-accent2); }
+[data-skin-part="lead"] + [data-skin-part="link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }
+[data-skin-part="footer-link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }
