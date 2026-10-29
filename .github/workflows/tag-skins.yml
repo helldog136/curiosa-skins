@@ -1,0 +1,47 @@
+name: Étiquettes des skins / Skin tags
+
+# Crée l'étiquette `ref` (<id>/v<version>) de chaque entrée de catalogue/index.json qui n'existe pas encore.
+# Ne déplace, ne supprime et n'écrase jamais une étiquette existante (une version ne change jamais de contenu).
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ["catalogue/index.json"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tag-skins
+  cancel-in-progress: false
+
+jobs:
+  tag:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - name: Créer les étiquettes manquantes
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          status=0
+          while IFS=$'\t' read -r id version ref subdir; do
+            if [ "$ref" != "$id/v$version" ]; then
+              echo "::error::$id : ref '$ref' devrait être '$id/v$version'"; status=1; continue
+            fi
+            if git ls-remote --exit-code --tags origin "refs/tags/$ref" >/dev/null 2>&1; then
+              echo "$ref existe déjà : conservée telle quelle."; continue
+            fi
+            found=$(jq -r '.version' "$subdir/skin.json" 2>/dev/null || true)
+            if [ "$found" != "$version" ]; then
+              echo "::error::$id : le commit ${GITHUB_SHA} contient la version '$found' dans $subdir/skin.json, pas '$version' ; étiquette non créée."; status=1; continue
+            fi
+            gh release create "$ref" --target "$GITHUB_SHA" --title "$id $version" \
+              --notes "Skin $id, version $version / Skin $id, version $version. Installation : https://github.com/$GH_REPO#$ref:$subdir"
+            echo "$ref créée sur $GITHUB_SHA."
+          done < <(jq -r '.skins[] | [.id, .version, .ref, .subdir] | @tsv' catalogue/index.json)
+          exit $status
