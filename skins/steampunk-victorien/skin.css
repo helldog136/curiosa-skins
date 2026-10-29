@@ -275,8 +275,9 @@
   line-height: 0.8;
   font-weight: var(--sk-weight-bold);
   color: var(--v-accent);
-  padding-right: 0.06em;
+  padding-right: 0.02em;
 }
+[data-skin-part="panel"][data-kind="cta"] [data-skin-part="prose"] > p:nth-of-type(1)::first-letter { color: var(--v-accent-fg); }
 [data-skin-part="prose"] a, [data-skin-part="link"] { padding-block: 0.8rem; color: var(--sk-color-link); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 0.2em; }
 [data-skin-part="prose"] a:hover, [data-skin-part="link"]:hover { color: var(--v-fg); }
 [data-skin-part="prose"] ul, [data-skin-part="prose"] ol { padding-left: 1.4em; margin-block: 0 1.1em; }

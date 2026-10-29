@@ -27,7 +27,44 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
-  "previews": [],
+  "previews": [
+    {
+      "file": "previews/accueil-sombre.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode sombre (bois et laiton)",
+        "en": "Home page, dark mode (wood and brass)"
+      }
+    },
+    {
+      "file": "previews/accueil-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode parchemin",
+        "en": "Home page, parchment mode"
+      }
+    },
+    {
+      "file": "previews/liste-sombre.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page de liste, mode sombre",
+        "en": "List page, dark mode"
+      }
+    },
+    {
+      "file": "previews/mobile-sombre.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone, mode sombre",
+        "en": "Home page on a phone, dark mode"
+      }
+    }
+  ],
   "assets": [
     {
       "file": "fonts/titre-romain.woff2",
