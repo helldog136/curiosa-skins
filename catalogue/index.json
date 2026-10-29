@@ -1,0 +1,164 @@
+{
+ "version": 1,
+ "skins": [
+  {
+   "id": "brutaliste-clair",
+   "name": {
+    "fr": "Brutaliste clair",
+    "en": "Light brutalist"
+   },
+   "description": {
+    "fr": "Fond crème, bordures noires épaisses, ombres dures décalées, couleurs vives plates, menu en onglets carrés et blocs encadrés.",
+    "en": "Cream background, thick black borders, hard offset shadows, flat bright colours, square menu tabs and boxed blocks."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/brutaliste-clair",
+   "ref": "brutaliste-clair/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🟨",
+   "tags": [
+    "light",
+    "mono",
+    "bold"
+   ],
+   "modes": [
+    "light"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/brutaliste-clair/previews/home-1280.webp"
+  },
+  {
+   "id": "editorial-papier",
+   "name": {
+    "fr": "Éditorial papier",
+    "en": "Editorial paper"
+   },
+   "description": {
+    "fr": "Une page de magazine : papier et encre, serif élégant, filets fins, colonne de lecture étroite. Clair, avec un mode sombre « encre ».",
+    "en": "A magazine page: paper and ink, elegant serif, hairline rules, a narrow reading column. Light, with a dark \"ink\" mode."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/editorial-papier",
+   "ref": "editorial-papier/v1.0.1",
+   "version": "1.0.1",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "📰",
+   "tags": [
+    "light",
+    "dark",
+    "serif",
+    "editorial",
+    "minimal"
+   ],
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/editorial-papier/previews/accueil-clair.webp"
+  },
+  {
+   "id": "retro-neon",
+   "name": {
+    "fr": "Rétro néon",
+    "en": "Retro neon"
+   },
+   "description": {
+    "fr": "Noir profond, néons magenta et cyan, polices pixel, grille et lignes de balayage, menu en colonne à gauche.",
+    "en": "Deep black, magenta and cyan neon, pixel fonts, grid and scanlines, menu in a left column."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/retro-neon",
+   "ref": "retro-neon/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🕹️",
+   "tags": [
+    "dark",
+    "pixel",
+    "retro",
+    "mono"
+   ],
+   "modes": [
+    "dark"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/retro-neon/previews/home-1280.webp"
+  },
+  {
+   "id": "steampunk-victorien",
+   "name": {
+    "fr": "Steampunk victorien",
+    "en": "Victorian steampunk"
+   },
+   "description": {
+    "fr": "Un salon d'inventions d'autrefois : bois sombre, cuir, laiton et cuivre, papier vieilli, petits rouages. Sombre, avec un mode « parchemin » clair.",
+    "en": "An old-time inventor's parlour: dark wood, leather, brass and copper, aged paper, little gears. Dark, with a light \"parchment\" mode."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/steampunk-victorien",
+   "ref": "steampunk-victorien/v1.0.1",
+   "version": "1.0.1",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "⚙️",
+   "tags": [
+    "dark",
+    "light",
+    "serif",
+    "retro"
+   ],
+   "modes": [
+    "dark",
+    "light"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/steampunk-victorien/previews/accueil-sombre.webp"
+  },
+  {
+   "id": "verre-doux",
+   "name": {
+    "fr": "Verre et dégradés doux",
+    "en": "Soft glass"
+   },
+   "description": {
+    "fr": "Une appli moderne : surfaces de verre floues, dégradés pastel, formes très arrondies. Deux modes, clair et sombre.",
+    "en": "A modern app look: frosted glass surfaces, pastel gradients, very round shapes. Light and dark modes."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/verre-doux",
+   "ref": "verre-doux/v1.0.1",
+   "version": "1.0.1",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🫧",
+   "tags": [
+    "light",
+    "dark",
+    "sans",
+    "glass",
+    "playful"
+   ],
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/verre-doux/previews/accueil-clair.webp"
+  }
+ ]
+}
