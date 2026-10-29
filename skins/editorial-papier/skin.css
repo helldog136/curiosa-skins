@@ -479,7 +479,7 @@
 [data-skin-part="cookie-tray"] { border: 1px solid var(--v-fg); border-radius: 0; background-color: var(--v-bg); }
 [data-skin-part="skip-link"]:focus { outline: 2px solid var(--v-accent); outline-offset: 2px; }
 
-/* ───── Mouvement : seulement quand le visiteur ne l'a pas réduit ───── */
+/* ───── Mouvement : seulement quand la personne ne l'a pas réduit ───── */
 @media (prefers-reduced-motion: no-preference) {
   [data-skin-part="nav-link"], [data-skin-part="link"], [data-skin-part="chip"], [data-skin-part="pagination-link"] {
     transition: color var(--sk-duration) var(--sk-ease), background-color var(--sk-duration) var(--sk-ease);

@@ -18,12 +18,12 @@ Aucun texte, aucun lien, aucun bouton n'est ajouté, retiré ou déplacé dans l
 
 ## Clair et sombre
 
-Le visiteur voit le mode de son appareil, et peut choisir « Clair », « Sombre » ou « Automatique » avec la petite bascule du menu.
+Le skin suit le mode de l'appareil, et le public peut choisir « Clair », « Sombre » ou « Automatique » avec la petite bascule du menu.
 
 ## Polices et images
 
 Elles sont dans le skin (rien n'est chargé depuis un autre site). Licences : voir `LICENSES/` (polices : SIL Open Font License 1.1 ; texture de papier : domaine public).
 
-## Pour les développeurs
+## Côté technique
 
 Skin au format du contrat 1 de Curiosa (`skin.json`, `tokens.json`, `skin.css`). Contrôle : `npm run skin:check -- skins/editorial-papier` depuis le cœur de Curiosa. Licence du skin : MIT (fichier `LICENSE`).

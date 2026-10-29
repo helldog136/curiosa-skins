@@ -9,7 +9,7 @@
     "fr": "Une page de magazine : papier et encre, serif élégant, filets fins, colonne de lecture étroite. Clair, avec un mode sombre « encre ».",
     "en": "A magazine page: paper and ink, elegant serif, hairline rules, a narrow reading column. Light, with a dark \"ink\" mode."
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minCore": "0.4.0",
   "author": {
     "name": "Équipe Curiosa"
