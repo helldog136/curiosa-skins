@@ -1,0 +1,147 @@
+{
+  "skinContract": 1,
+  "id": "steampunk-victorien",
+  "name": {
+    "fr": "Steampunk victorien",
+    "en": "Victorian steampunk"
+  },
+  "description": {
+    "fr": "Un salon d'inventeur d'autrefois : bois sombre, cuir, laiton et cuivre, papier vieilli, petits rouages. Sombre, avec un mode « parchemin » clair.",
+    "en": "An old-time inventor's parlour: dark wood, leather, brass and copper, aged paper, little gears. Dark, with a light \"parchment\" mode."
+  },
+  "version": "1.0.0",
+  "minCore": "0.4.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "dark",
+    "light",
+    "serif",
+    "retro"
+  ],
+  "modes": [
+    "dark",
+    "light"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [],
+  "assets": [
+    {
+      "file": "fonts/titre-romain.woff2",
+      "kind": "font",
+      "family": "Vapeur Titre",
+      "weight": "300 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/playfair-display-OFL.txt",
+      "author": "The Playfair Display Project Authors",
+      "source": "https://github.com/clauseggers/Playfair-Display"
+    },
+    {
+      "file": "fonts/titre-italique.woff2",
+      "kind": "font",
+      "family": "Vapeur Titre",
+      "weight": "300 900",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/playfair-display-OFL.txt",
+      "author": "The Playfair Display Project Authors",
+      "source": "https://github.com/clauseggers/Playfair-Display"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Vapeur Texte",
+      "weight": "400 700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/libre-baskerville-OFL.txt",
+      "author": "The Libre Baskerville Project Authors",
+      "source": "https://github.com/impallari/Libre-Baskerville"
+    },
+    {
+      "file": "fonts/texte-italique.woff2",
+      "kind": "font",
+      "family": "Vapeur Texte",
+      "weight": "400 700",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/libre-baskerville-OFL.txt",
+      "author": "The Libre Baskerville Project Authors",
+      "source": "https://github.com/impallari/Libre-Baskerville"
+    },
+    {
+      "file": "images/rouages.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/rouage.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/coin-hg.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/coin-hd.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/coin-bg.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/coin-bd.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/damas.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "classic",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    1024
+  ],
+  "supports": {
+    "reducedMotion": true
+  }
+}
