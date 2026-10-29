@@ -1,25 +1,25 @@
-# PROGRESS : avancement du skin brutaliste-clair
+# PROGRESS : skin brutaliste-clair (1.0.0)
 
 ## Fait
-- Manifeste, jetons, feuille (skin.css), polices WOFF2 embarquées (OFL, voir LICENSES/), image décorative CC0, README, LICENSE, aperçus webp (accueil et blog, 1280 et 390).
-- `skin:check --strict` valide (cœur 0.4.0). Installation RÉELLE par le service du cœur depuis un dépôt git local jetable : OK (catalogue, install). Vérifié dans Chromium (site de démonstration, 70 modules) : pas de défilement horizontal (12 pages × 4 largeurs), menu mobile au toucher et au clavier, focus visible, aucune requête externe, polices servies en 200/immutable/nosniff.
-- `skin-proof` (20 pages × 4 largeurs, avec et sans le skin) : contenu identique, ordre de tabulation identique.
+- Skin complet : skin.json, tokens.json, skin.css, polices WOFF2 embarquées (OFL, voir LICENSES/), image SVG décorative (CC0), README, LICENSE, previews/ (accueil et blog, 1280×800 et 390×844).
+- `npm run skin:check -- skins/brutaliste-clair --visual --strict --core-version 0.4.0` (cœur `feat/skins-int2`) : valide, aucun avertissement, seulement des conseils sans conséquence.
+- Boîtes intérieures des modules restylées par les sélecteurs `[data-skin-part="module-html"] …` (article, section, div, span : angles droits et cadres).
+- `--sk-gradient: flat` (brutaliste), cibles d'au moins 44 px, tailles de texte ≥ 12 px (14 px pour le texte courant), couleurs de base au niveau AAA conseillé (≥ 7:1 pour les paires de boutons et d'états).
+- Vérifié : installation réelle par le service du cœur, skin-proof (contenu identique avec/sans le skin), captures 12 pages × 4 largeurs.
 
 ## Reste à faire
-- Dernière passe de captures (12 pages × 4 largeurs) après les derniers correctifs, régénération des aperçus webp, vérification de l'installation depuis le dépôt final.
-- `catalogue/index.json` (branche `catalogue-index`) avec `ref` = hash du dernier commit du skin.
+- Rien d'obligatoire. Publier : étiqueter `brutaliste-clair/v1.0.0` après relecture, puis mettre l'étiquette dans `ref` du catalogue (§25.5 de docs/SKINS.md).
 
-## Commandes (cœur : clone de `feat/skins-int`, `package.json` passé à 0.4.0 localement, non commité ; `npm ci`, `npm run build`, `npm run visual:prepare`)
-- Contrôle : `node scripts/skin-check.mjs <dossier-du-skin> --core-version 0.4.0 --strict`
-- Captures : `VISUAL_SKIN_DIR=<dossier> VISUAL_SKIN_ID=brutaliste-clair VISUAL_SKIN_FP=<empreinte> node scripts/visual/capture.mjs <sortie> --profiles skin-test` (l'empreinte : `validateSkinFolder(...).fingerprint`).
-- Preuve de contenu : `scripts/visual/skin-proof.mjs` avec les mêmes variables.
+## Commandes (cœur : clone de `feat/skins-int2`, `npm ci`, `npx prisma generate`, `npm run build`, `npm run visual:prepare`)
+- Contrôle complet : `npm run skin:check -- <dossier du skin> --visual --strict --core-version 0.4.0`
+- Captures et preuve de contenu : `VISUAL_SKIN_DIR=<dossier> VISUAL_SKIN_ID=brutaliste-clair VISUAL_SKIN_IGNORE_MINCORE=1 node scripts/visual/capture.mjs <sortie> --profiles skin-test` puis `node scripts/visual/skin-proof.mjs`.
 
 ## Pièges
-- Le profil `skin-test` du harnais n'écrit pas l'empreinte (`fingerprint`) du skin dans `skin.installed` : sans elle, le cœur considère le skin « modifié » et applique basic. Il faut passer `VISUAL_SKIN_FP` (correctif local de `scripts/visual/profiles.mjs`).
-- `minCore` 0.4.0 : le cœur de test doit annoncer 0.4.0.
-- Les sélecteurs de liste de plus de 300 caractères sont refusés : utiliser `:is(...)`.
-- Les éléments `div`, `article`, `section`, `span` ne sont pas ciblables : les cartes de modules gardent leurs coins arrondis.
+- Dans un `:is()` les sélecteurs se multiplient : une règle ne doit pas dépasser 20 sélecteurs (la découper).
+- `aside`, `form`, `a[href]` ne sont pas ciblables, même sous `module-html`.
+- Sous `module-html`, ne pas poser `border-width` sur `div` ou `span` : le cœur et les modules mettent `border-style: solid` partout, ce qui ferait apparaître des bordures de 2 px sur tous les éléments.
+- Un lien seul sur sa ligne a besoin de `min-height: var(--sk-target)` (liens de cartes, « Retour à l'accueil »).
 
 ## Défauts connus
-- Le contenu HTML des modules (planning, événements, galerie, sondages…) garde ses propres rayons et bordures fines : aucun module ne déclare encore de pièces de skin.
-- Sur les captures pleine page, la colonne latérale (retro-neon) s'arrête à la hauteur de la fenêtre (elle est collante dans un vrai navigateur).
+- La boîte `form` d'un module (par exemple le formulaire de commandes) garde ses coins arrondis (`form` n'est pas ciblable).
+- Les rangées internes des modules (`div` à bordure de 1 px) gardent leur épaisseur d'origine.
