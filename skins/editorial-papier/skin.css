@@ -499,3 +499,8 @@
   text-transform: uppercase;
 }
 [data-skin-part="copy-code"]:hover { background-color: var(--v-fg); color: var(--v-bg); }
+
+/* ───── Boîtes intérieures des modules : filets fins, ton papier, ni arrondi ni ombre ───── */
+[data-skin-part="module-html"] :is(div, section, article, span, li, a, ul, ol, button, input, label, img, figure, summary, details, time, p) { border-radius: 0; box-shadow: none; }
+[data-skin-part="module-html"] :is(article, section) { border-color: var(--v-line); }
+[data-skin-part="module-html"] :is(article, section) > :is(div, ul):first-child { border-radius: 0; }
