@@ -7,15 +7,15 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 
 | Skin | Version | Modes | Dossier / Folder |
 |---|---|---|---|
-| Brutaliste clair / Light brutalist | 1.0.1 | clair / light | `skins/brutaliste-clair` |
-| Éditorial papier / Editorial paper | 1.0.2 | clair, sombre / light, dark | `skins/editorial-papier` |
-| Féodal / Feudal | 1.0.0 | clair, sombre / light, dark | `skins/feodal` |
-| Pirates / Pirates | 1.0.0 | clair, sombre / light, dark | `skins/pirates` |
+| Brutaliste clair / Light brutalist | 1.0.2 | clair / light | `skins/brutaliste-clair` |
+| Éditorial papier / Editorial paper | 1.0.3 | clair, sombre / light, dark | `skins/editorial-papier` |
+| Féodal / Feudal | 1.0.1 | clair, sombre / light, dark | `skins/feodal` |
+| Pirates / Pirates | 1.0.1 | clair, sombre / light, dark | `skins/pirates` |
 | Nef de braise / Ember nave | 1.0.0 | sombre, clair / dark, light | `skins/nef-de-braise` |
-| Rétro néon / Retro neon | 1.0.1 | sombre / dark | `skins/retro-neon` |
-| Steampunk victorien / Victorian steampunk | 1.0.2 | sombre, clair / dark, light | `skins/steampunk-victorien` |
-| Tissu / Fabric | 1.0.0 | clair, sombre / light, dark | `skins/tissu` |
-| Verre et dégradés doux / Soft glass | 1.0.2 | clair, sombre / light, dark | `skins/verre-doux` |
+| Rétro néon / Retro neon | 1.0.2 | sombre / dark | `skins/retro-neon` |
+| Steampunk victorien / Victorian steampunk | 1.0.3 | sombre, clair / dark, light | `skins/steampunk-victorien` |
+| Tissu / Fabric | 1.0.1 | clair, sombre / light, dark | `skins/tissu` |
+| Verre et dégradés doux / Soft glass | 1.0.3 | clair, sombre / light, dark | `skins/verre-doux` |
 
 Chaque skin est un dossier de données (`skin.json`, `tokens.json`, `skin.css`, polices et images avec leurs licences) : aucun programme ne s'exécute, seule l'apparence change.
 *Each skin is a folder of data: no code runs, only the appearance changes.*

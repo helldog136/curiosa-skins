@@ -656,7 +656,7 @@
 [data-skin-part="footer-link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); color: var(--v-accent2-fg); text-decoration: underline; text-decoration-style: dashed; text-decoration-thickness: 2px; text-underline-offset: 0.25em; }
 [data-skin-part="footer-link"]:hover { text-decoration-style: solid; }
 /* Le nom « Curiosa » garde TOUJOURS sa police, sa graisse, sa casse et son espacement de marque : le skin habille « Propulsé par », jamais le mot. */
-[data-skin-part="credit"] { font-family: var(--sk-font-heading); color: var(--v-accent2-fg); }
+[data-skin-part="credit"] { color: var(--v-accent2-fg); }
 [data-skin-part="credit"] a { color: var(--v-accent2-fg); }
 
 /* ───── Pièces que le skin de base habillait seul : elles reçoivent ici leur part de fil ───── */

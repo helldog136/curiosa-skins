@@ -147,7 +147,7 @@
 [data-skin-region="footer"] { background-color: #0d0719; border-top: 2px solid var(--v-accent2); box-shadow: 0 -6px 24px rgb(38 232 255 / 0.2); padding-block: 1.5rem; }
 [data-skin-part="footer-text"], [data-skin-part="credit"] { color: var(--v-muted); }
 [data-skin-part="footer-link"] { color: var(--sk-color-link); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 4px; }
-[data-skin-part="credit"] a { color: var(--sk-color-link); text-transform: none; letter-spacing: normal; }
+[data-skin-part="credit"] a { color: var(--sk-color-link); }
 
 /* ── Bandeau de cookies ── */
 [data-skin-part="cookie-tray"] { background-color: #0d0719; color: var(--v-fg); border: 2px solid var(--v-accent); border-radius: 0; box-shadow: 0 0 28px rgb(255 61 240 / 0.5); }

@@ -25,6 +25,15 @@ jobs:
       - name: Préparer le cœur (sans lancer le site)
         working-directory: curiosa-core
         run: npm ci --ignore-scripts && npx prisma generate
+      - name: Le kit du cœur refuse bien un skin qui restyle le nom Curiosa (témoin négatif)
+        working-directory: curiosa-core
+        run: |
+          grep -rq "kit-brand-restyled" src testsupport scripts || { echo "Ce cœur ne contient pas la garde de marque (kit-brand-restyled) : le test de ce dépôt ne le représente plus."; exit 1; }
+          bad="$RUNNER_TEMP/skin-fautif/verre-doux"
+          rm -rf "$RUNNER_TEMP/skin-fautif" && mkdir -p "$RUNNER_TEMP/skin-fautif" && cp -r "$GITHUB_WORKSPACE/skins/verre-doux" "$bad"
+          printf '\n[data-skin-part="credit"] a { text-transform: none; letter-spacing: normal; }\n' >> "$bad/skin.css"
+          if npm run -s skin:check -- "$bad" > "$RUNNER_TEMP/fautif.txt" 2>&1; then echo "Le kit aurait dû refuser ce skin."; cat "$RUNNER_TEMP/fautif.txt"; exit 1; fi
+          grep -q "kit-brand-restyled" "$RUNNER_TEMP/fautif.txt" || { echo "Refus pour une autre raison que la garde de marque :"; cat "$RUNNER_TEMP/fautif.txt"; exit 1; }
       - name: Installer le navigateur du contrôle
         run: |
           npm install --global playwright
