@@ -288,9 +288,9 @@
   margin: 0.9rem auto 0;
   background:
     url(skin:images/ecu.svg) center / 2.1rem 2.7rem no-repeat,
-    url(skin:images/chaine.svg) left center / 24px 12px repeat-x,
-    linear-gradient(transparent, transparent);
-  background-size: 2.1rem 2.7rem, calc(50% - 1.6rem) 12px, auto;
+    url(skin:images/chaine-longue.svg) left center / 240px 12px no-repeat,
+    url(skin:images/chaine-longue.svg) right center / 240px 12px no-repeat;
+  background-size: 2.1rem 2.7rem, calc(50% - 1.6rem) 12px, calc(50% - 1.6rem) 12px;
 }
 [data-skin-part="heading"][data-level="2"] {
   font-size: var(--sk-text-xl);
@@ -365,8 +365,8 @@
   margin-block: 2rem;
   background:
     url(skin:images/epees.svg) center / 2.6rem 2.6rem no-repeat,
-    url(skin:images/chaine.svg) left center / 24px 12px repeat-x,
-    url(skin:images/chaine.svg) right center / 24px 12px repeat-x;
+    url(skin:images/chaine-longue.svg) left center / 240px 12px no-repeat,
+    url(skin:images/chaine-longue.svg) right center / 240px 12px no-repeat;
   background-size: 2.6rem 2.6rem, calc(50% - 2rem) 12px, calc(50% - 2rem) 12px;
 }
 [data-skin-part="code"] {
@@ -673,7 +673,7 @@
 [data-skin-part="footer-link"] { color: #f8efd6; text-decoration: underline; text-underline-offset: 0.25em; text-decoration-thickness: 1px; display: inline-flex; align-items: center; min-height: var(--sk-target); }
 [data-skin-part="footer-link"]:hover, [data-skin-part="credit"] a:hover { color: #f0cf7a; }
 /* Le nom « Curiosa » garde TOUJOURS sa police, sa graisse, sa casse et son espacement de marque : le skin habille « Propulsé par », jamais le mot. */
-[data-skin-part="credit"] { font-family: var(--sk-font-heading); font-size: var(--sk-text-xs); letter-spacing: 0.08em; text-transform: uppercase; color: #eadfc0; }
+[data-skin-part="credit"] { letter-spacing: 0.08em; text-transform: uppercase; color: #eadfc0; }
 [data-skin-part="credit"] a { text-transform: none; letter-spacing: normal; word-spacing: normal; color: #f8efd6; }
 
 /* ───── Pièces que le skin de base habillait seul ───── */
