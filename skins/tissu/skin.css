@@ -651,7 +651,6 @@
   background: url(skin:images/mailles.svg) 0 0 / 1.8rem 1.35rem repeat-x;
 }
 [data-skin-region="footer"] :focus-visible { outline: 3px solid var(--v-accent2-fg); outline-offset: 3px; }
-[data-skin-region="footer"] > * { position: relative; z-index: 2; }
 [data-skin-region="footer"] p { margin: 0; }
 [data-skin-part="footer-text"] { font-family: var(--sk-font-heading); font-weight: var(--sk-weight-medium); color: var(--v-accent2-fg); }
 [data-skin-part="footer-link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); color: var(--v-accent2-fg); text-decoration: underline; text-decoration-style: dashed; text-decoration-thickness: 2px; text-underline-offset: 0.25em; }
@@ -688,7 +687,6 @@
   outline: 2px dashed var(--sk-fil);
   outline-offset: -4px;
 }
-[data-skin-part="copy-code"] span { color: inherit; }
 [data-skin-part="copy-code"]:hover { background-color: var(--v-accent); color: var(--v-accent-fg); }
 
 /* ───── Mouvement : seulement quand la personne ne l'a pas réduit. Un doux rebond, rien d'autre ne bouge. ───── */
