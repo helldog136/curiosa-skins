@@ -1,0 +1,226 @@
+{
+  "skinContract": 1,
+  "id": "feodal",
+  "name": {
+    "fr": "Féodal",
+    "en": "Feudal"
+  },
+  "description": {
+    "fr": "Un château de pierre claire sous la bannière : parchemin enluminé, fer forgé, écus et fanions, or et bleu royal. Clair, avec un mode sombre « veillée à la torche ».",
+    "en": "A pale-stone castle under its banner: illuminated parchment, wrought iron, shields and pennants, gold and royal blue. Light, with a dark \"torchlit evening\" mode."
+  },
+  "version": "1.0.0",
+  "minCore": "0.4.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "dark",
+    "serif",
+    "bold",
+    "retro",
+    "playful"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/accueil-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode clair (jour au château)",
+        "en": "Home page, light mode (day at the castle)"
+      }
+    },
+    {
+      "file": "previews/accueil-sombre.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode sombre (veillée à la torche)",
+        "en": "Home page, dark mode (torchlit evening)"
+      }
+    },
+    {
+      "file": "previews/liste-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page de liste, mode clair",
+        "en": "List page, light mode"
+      }
+    },
+    {
+      "file": "previews/mobile-sombre.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone, mode sombre",
+        "en": "Home page on a phone, dark mode"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "fonts/titre-grave.woff2",
+      "kind": "font",
+      "family": "Feodal Titre",
+      "weight": "400 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/cinzel-OFL.txt",
+      "author": "The Cinzel Project Authors",
+      "source": "https://github.com/NDISCOVER/Cinzel"
+    },
+    {
+      "file": "fonts/lettrine.woff2",
+      "kind": "font",
+      "family": "Feodal Lettrine",
+      "weight": "700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/cinzel-OFL.txt",
+      "author": "The Cinzel Project Authors",
+      "source": "https://github.com/NDISCOVER/Cinzel"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Feodal Texte",
+      "weight": "400 800",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/eb-garamond-OFL.txt",
+      "author": "The EB Garamond Project Authors",
+      "source": "https://github.com/octaviopardo/EBGaramond12"
+    },
+    {
+      "file": "fonts/texte-italique.woff2",
+      "kind": "font",
+      "family": "Feodal Texte",
+      "weight": "400 800",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/eb-garamond-OFL.txt",
+      "author": "The EB Garamond Project Authors",
+      "source": "https://github.com/octaviopardo/EBGaramond12"
+    },
+    {
+      "file": "images/aigle.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/chaine.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/creneaux.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/ecu.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/epees.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/fanions.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/frise.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/heaume.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/pierre.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/sceau.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/torche.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/chaine-longue.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "classic",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    1024
+  ],
+  "supports": {
+    "reducedMotion": true
+  }
+}
