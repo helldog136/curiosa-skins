@@ -32,7 +32,7 @@
   background-color: var(--v-surface);
   background-image:
     radial-gradient(ellipse at 50% 0, color-mix(in srgb, var(--v-line) 22%, transparent), transparent 70%),
-    repeating-linear-gradient(0deg, transparent 0, transparent 7.9rem, color-mix(in srgb, var(--v-line) 38%, transparent) 7.9rem, color-mix(in srgb, var(--v-line) 38%, transparent) calc(7.9rem + 1px));
+    repeating-linear-gradient(0deg, transparent 0, transparent 7.9rem, color-mix(in srgb, var(--v-line) 20%, transparent) 7.9rem, color-mix(in srgb, var(--v-line) 20%, transparent) calc(7.9rem + 1px));
   border: 3px solid #2b1a0c;
   border-radius: 0.25rem;
   box-shadow:
@@ -248,10 +248,8 @@
   margin: 1rem auto 0;
   background:
     url(skin:images/boussole.svg) center / 2rem 2rem no-repeat,
-    url(skin:images/corde.svg) left center / 24px 8px repeat-x,
-    url(skin:images/corde.svg) right center / 24px 8px repeat-x;
-  background-size: 2rem 2rem, calc(50% - 1.5rem) 8px, calc(50% - 1.5rem) 8px;
-  background-repeat: no-repeat;
+    repeating-linear-gradient(115deg, #6b4a22 0 2px, #c9a56a 2px 5px) left center / calc(50% - 1.5rem) 8px no-repeat,
+    repeating-linear-gradient(115deg, #6b4a22 0 2px, #c9a56a 2px 5px) right center / calc(50% - 1.5rem) 8px no-repeat;
 }
 [data-skin-part="heading"][data-level="2"] {
   font-size: var(--sk-text-xl);
@@ -331,8 +329,8 @@
   margin-block: 2rem;
   background:
     url(skin:images/crane.svg) center / 2rem 2rem no-repeat,
-    url(skin:images/corde.svg) left center / calc(50% - 1.5rem) 8px no-repeat,
-    url(skin:images/corde.svg) right center / calc(50% - 1.5rem) 8px no-repeat;
+    repeating-linear-gradient(115deg, #6b4a22 0 2px, #c9a56a 2px 5px) left center / calc(50% - 1.5rem) 8px no-repeat,
+    repeating-linear-gradient(115deg, #6b4a22 0 2px, #c9a56a 2px 5px) right center / calc(50% - 1.5rem) 8px no-repeat;
 }
 [data-skin-part="code"] {
   font-family: var(--sk-font-mono);
@@ -582,10 +580,12 @@
 [data-skin-region="footer"]::before { content: ""; width: 2.25rem; height: 2.25rem; margin-bottom: 0.25rem; background: url(skin:images/crane.svg) center / contain no-repeat; }
 [data-skin-region="footer"] p { margin: 0; }
 [data-skin-part="footer-text"] { font-style: italic; color: #e8d6a8; }
-[data-skin-part="footer-link"], [data-skin-part="credit"] a { color: #f6e9c8; text-decoration: underline; text-underline-offset: 0.25em; text-decoration-thickness: 1px; }
+[data-skin-part="footer-link"] { color: #f6e9c8; text-decoration: underline; text-underline-offset: 0.25em; text-decoration-thickness: 1px; }
 [data-skin-part="footer-link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }
 [data-skin-part="footer-link"]:hover, [data-skin-part="credit"] a:hover { color: #f0c46a; }
+/* Le nom « Curiosa » garde TOUJOURS sa police, sa graisse, sa casse et son espacement de marque : le skin habille « Propulsé par », jamais le mot. */
 [data-skin-part="credit"] { font-family: var(--sk-font-heading); font-size: var(--sk-text-xs); letter-spacing: 0.08em; text-transform: uppercase; color: #e8d6a8; }
+[data-skin-part="credit"] a { text-transform: none; letter-spacing: normal; color: #f6e9c8; }
 
 /* ───── Pièces que le skin de base habillait seul : elles reçoivent ici leur part du décor ───── */
 [data-skin-part="card-body"] { background: none; }
