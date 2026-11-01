@@ -65,6 +65,38 @@
    "preview": "skins/editorial-papier/previews/accueil-clair.webp"
   },
   {
+   "id": "nef-de-braise",
+   "name": {
+    "fr": "Nef de braise",
+    "en": "Ember nave"
+   },
+   "description": {
+    "fr": "Nef de cathédrale gothique : obsidienne, braises, rouge sang, or terni, vitraux brisés. Sombre, avec un mode clair « parchemin brûlé ».",
+    "en": "Gothic cathedral nave: obsidian, embers, blood red, tarnished gold, broken stained glass. Dark, with a light \"scorched parchment\" mode."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/nef-de-braise",
+   "ref": "nef-de-braise/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🔥",
+   "tags": [
+    "dark",
+    "light",
+    "serif",
+    "bold"
+   ],
+   "modes": [
+    "dark",
+    "light"
+   ],
+   "requires": {
+    "core": "0.6.0"
+   },
+   "preview": "skins/nef-de-braise/previews/accueil-sombre.webp"
+  },
+  {
    "id": "retro-neon",
    "name": {
     "fr": "Rétro néon",
@@ -191,6 +223,40 @@
     "core": "0.4.0"
    },
    "preview": "skins/verre-doux/previews/accueil-clair.webp"
+  },
+  {
+   "id": "pirates",
+   "name": {
+    "fr": "Pirates",
+    "en": "Pirates"
+   },
+   "description": {
+    "fr": "Une carte au trésor sur une mer turquoise : bois goudronné, laiton, cordages, parchemin, rouge sang-de-bœuf et lettres d'affiche. Clair, avec un mode sombre « nuit en mer ».",
+    "en": "A treasure map on a turquoise sea: tarred wood, brass, ropes, parchment, oxblood red and poster lettering. Light, with a dark \"night at sea\" mode."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/pirates",
+   "ref": "pirates/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🏴‍☠️",
+   "tags": [
+    "light",
+    "dark",
+    "bold",
+    "serif",
+    "playful",
+    "retro"
+   ],
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/pirates/previews/accueil-clair.webp"
   }
  ]
 }
