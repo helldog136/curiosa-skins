@@ -288,7 +288,7 @@
 }
 [data-skin-region="footer"] p { margin: 0; }
 [data-skin-part="footer-link"] { color: var(--v-fg); text-decoration: underline; text-underline-offset: 0.2em; }
-[data-skin-part="credit"] a { color: var(--v-fg); text-transform: none; letter-spacing: normal; }
+[data-skin-part="credit"] a { color: var(--v-fg); }
 [data-skin-part="footer-link"] { display: inline-flex; min-height: var(--sk-target); align-items: center; }
 [data-skin-part="footer-link"]:hover, [data-skin-part="credit"] a:hover { color: var(--v-accent); }
 [data-skin-part="cookie-tray"] { border-radius: 1.75rem; }
