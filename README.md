@@ -10,6 +10,7 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 | Brutaliste clair / Light brutalist | 1.0.1 | clair / light | `skins/brutaliste-clair` |
 | Éditorial papier / Editorial paper | 1.0.2 | clair, sombre / light, dark | `skins/editorial-papier` |
 | Pirates / Pirates | 1.0.0 | clair, sombre / light, dark | `skins/pirates` |
+| Nef de braise / Ember nave | 1.0.0 | sombre, clair / dark, light | `skins/nef-de-braise` |
 | Rétro néon / Retro neon | 1.0.1 | sombre / dark | `skins/retro-neon` |
 | Steampunk victorien / Victorian steampunk | 1.0.2 | sombre, clair / dark, light | `skins/steampunk-victorien` |
 | Verre et dégradés doux / Soft glass | 1.0.2 | clair, sombre / light, dark | `skins/verre-doux` |
