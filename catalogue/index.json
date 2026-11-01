@@ -65,6 +65,40 @@
    "preview": "skins/editorial-papier/previews/accueil-clair.webp"
   },
   {
+   "id": "feodal",
+   "name": {
+    "fr": "Féodal",
+    "en": "Feudal"
+   },
+   "description": {
+    "fr": "Un château de pierre claire sous la bannière : parchemin enluminé, fer forgé, écus et fanions, or et bleu royal. Clair, avec un mode sombre « veillée à la torche ».",
+    "en": "A pale-stone castle under its banner: illuminated parchment, wrought iron, shields and pennants, gold and royal blue. Light, with a dark \"torchlit evening\" mode."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/feodal",
+   "ref": "feodal/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🏰",
+   "tags": [
+    "light",
+    "dark",
+    "serif",
+    "bold",
+    "retro",
+    "playful"
+   ],
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/feodal/previews/accueil-clair.webp"
+  },
+  {
    "id": "retro-neon",
    "name": {
     "fr": "Rétro néon",
