@@ -11,6 +11,7 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 | Éditorial papier / Editorial paper | 1.0.1 | clair, sombre / light, dark | `skins/editorial-papier` |
 | Rétro néon / Retro neon | 1.0.0 | sombre / dark | `skins/retro-neon` |
 | Steampunk victorien / Victorian steampunk | 1.0.1 | sombre, clair / dark, light | `skins/steampunk-victorien` |
+| Tissu / Fabric | 1.0.0 | clair, sombre / light, dark | `skins/tissu` |
 | Verre et dégradés doux / Soft glass | 1.0.1 | clair, sombre / light, dark | `skins/verre-doux` |
 
 Chaque skin est un dossier de données (`skin.json`, `tokens.json`, `skin.css`, polices et images avec leurs licences) : aucun programme ne s'exécute, seule l'apparence change.

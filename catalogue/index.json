@@ -128,6 +128,38 @@
    "preview": "skins/steampunk-victorien/previews/accueil-sombre.webp"
   },
   {
+   "id": "tissu",
+   "name": {
+    "fr": "Tissu",
+    "en": "Fabric"
+   },
+   "description": {
+    "fr": "L'atelier de couture : vichy, lin et feutrine, étiquettes cousues, points de croix, boutons et tricot. Clair, avec un mode sombre « feutrine nocturne ».",
+    "en": "The sewing studio: gingham, linen and felt, sewn labels, cross-stitch, buttons and knitting. Light, with a dark \"night felt\" mode."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/tissu",
+   "ref": "tissu/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🧶",
+   "tags": [
+    "light",
+    "dark",
+    "sans",
+    "playful"
+   ],
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/tissu/previews/accueil-clair.webp"
+  },
+  {
    "id": "verre-doux",
    "name": {
     "fr": "Verre et dégradés doux",
