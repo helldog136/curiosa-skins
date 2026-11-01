@@ -345,14 +345,15 @@
   border: 1px solid var(--v-line);
   border-left: 4px solid var(--v-accent);
   padding: 1rem 1.25rem;
-  overflow-x: auto;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
 }
 [data-skin-part="code-block"] [data-skin-part="code"] { border: 0; padding: 0; background-color: transparent; color: inherit; font-size: 1em; }
-[data-skin-part="table"] { width: 100%; border-collapse: collapse; border-top: 2px solid var(--v-line); border-bottom: 2px solid var(--v-line); font-size: var(--sk-text-sm); }
+[data-skin-part="table"] { width: 100%; table-layout: fixed; overflow-wrap: anywhere; border-collapse: collapse; border-top: 2px solid var(--v-line); border-bottom: 2px solid var(--v-line); font-size: var(--sk-text-sm); }
 [data-skin-part="table-head"] [data-skin-part="table-cell"] {
   font-family: var(--sk-font-heading);
   font-size: var(--sk-text-xs);
-  letter-spacing: 0.16em;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
   text-align: left;
   color: var(--v-accent);
