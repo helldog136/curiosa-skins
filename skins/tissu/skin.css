@@ -216,6 +216,7 @@
 [data-skin-part="socials"] { display: flex; flex-wrap: wrap; gap: 0; }
 [data-skin-part="socials"] { gap: 0; }
 [data-skin-part="socials"] [data-skin-part="link"] { display: inline-flex; align-items: center; justify-content: center; min-width: var(--sk-target); min-height: var(--sk-target); padding: 0; color: var(--sk-color-link); text-decoration: none; }
+[data-skin-region="tools"] > [data-skin-part="link"] { padding-block: 0.8rem; }
 [data-skin-part="socials"] [data-skin-part="link"]:hover { color: var(--v-accent); }
 [data-skin-part="lang-switcher"] { display: flex; align-items: center; }
 [data-skin-part="lang-switcher"] a {
@@ -305,13 +306,13 @@
 [data-skin-part="prose"] { max-width: var(--sk-prose-width); margin-inline: auto; }
 [data-skin-part="prose"] p { margin-block: 0 1.1em; text-wrap: pretty; }
 [data-skin-part="prose"] a, [data-skin-part="link"] {
+  padding-block: 0.8rem;
   color: var(--sk-color-link);
   text-decoration: underline;
   text-decoration-style: dashed;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.22em;
 }
-[data-skin-part="prose"] a { padding-block: 0.2rem; }
 [data-skin-part="prose"] a:hover, [data-skin-part="link"]:hover { color: var(--v-accent); }
 [data-skin-part="prose"] ul, [data-skin-part="prose"] ol { padding-left: 1.5em; margin-block: 0 1.1em; }
 [data-skin-part="prose"] li { margin-block: 0.35em; padding-left: 0.25em; }
@@ -406,7 +407,7 @@
 [data-skin-part="list"][data-kind="list"], [data-skin-part="list"][data-kind="cards"] { padding: 0; margin: 0; list-style: none; }
 [data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"] { padding: 0.9rem 0.25rem; border-bottom: 2px dashed var(--sk-fil); }
 [data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"]:last-child { border-bottom: 0; }
-[data-skin-part="list-item"] > a { font-family: var(--sk-font-heading); font-size: var(--sk-text-lg); font-weight: var(--sk-weight-semibold); line-height: 1.3; text-decoration: none; color: var(--v-fg); }
+[data-skin-part="list-item"] > a { padding-block: 0.8rem; font-family: var(--sk-font-heading); font-size: var(--sk-text-lg); font-weight: var(--sk-weight-semibold); line-height: 1.3; text-decoration: none; color: var(--v-fg); }
 [data-skin-part="list-item"] > a:hover { color: var(--v-accent); text-decoration: underline; text-decoration-style: dashed; text-decoration-thickness: 2px; text-underline-offset: 0.2em; }
 [data-skin-part="list-item"] > [data-skin-part="lead"] { font-size: var(--sk-text-base); margin-block: 0.25rem 0; }
 [data-skin-part="card"] {
@@ -687,7 +688,7 @@
   outline: 2px dashed var(--sk-fil);
   outline-offset: -4px;
 }
-[data-skin-part="copy-code"] * { color: inherit; }
+[data-skin-part="copy-code"] span { color: inherit; }
 [data-skin-part="copy-code"]:hover { background-color: var(--v-accent); color: var(--v-accent-fg); }
 
 /* ───── Mouvement : seulement quand la personne ne l'a pas réduit. Un doux rebond, rien d'autre ne bouge. ───── */
