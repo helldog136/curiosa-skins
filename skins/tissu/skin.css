@@ -67,7 +67,7 @@
   align-items: center;
   column-gap: 0.5rem;
   row-gap: 0;
-  padding-block: 0.5rem 1.6rem;
+  padding-block: 0.5rem 0.4rem;
   padding-inline: max(0.75rem, calc((100% - 62rem) / 2));
   color: var(--v-fg);
   background-color: var(--v-surface);
@@ -84,8 +84,9 @@
   position: absolute;
   left: 0;
   right: 0;
-  bottom: 0;
+  top: 100%;
   height: 1.1rem;
+  z-index: 1;
   pointer-events: none;
   background-color: #e9b949;
   background-image:
@@ -99,8 +100,7 @@
 [data-skin-region="header"] :focus-visible { outline: 3px solid var(--sk-color-focus); outline-offset: 3px; }
 [data-skin-part="header-group"] { display: contents; }
 [data-skin-part="brand"] {
-  grid-column: 1;
-  grid-row: 1;
+  grid-column: 1 / -1;
   justify-self: start;
   display: inline-flex;
   align-items: center;
@@ -127,7 +127,7 @@
   background: url(skin:images/pelote.svg) center / contain no-repeat;
 }
 [data-skin-part="brand"] img { max-height: 2.5rem; width: auto; }
-[data-skin-region="nav"] { grid-column: 2; grid-row: 1; }
+[data-skin-region="nav"] { grid-column: 1; }
 [data-skin-part="menu-toggle"] {
   min-height: var(--sk-target);
   padding-inline: 1rem;
@@ -178,9 +178,10 @@
 
 /* Grand écran : l'étiquette à gauche, le menu à droite. */
 @media (min-width: 40rem) {
-  [data-skin-region="header"] { grid-template-columns: auto minmax(0, 1fr); column-gap: 1.5rem; }
-  [data-skin-part="brand"] { font-size: var(--sk-text-2xl); }
-  [data-skin-region="nav"] [data-skin-part="nav-list"] { justify-content: flex-end; align-items: center; column-gap: 0.15rem; row-gap: 0; flex-wrap: wrap; }
+  [data-skin-region="header"] { column-gap: 1.5rem; }
+  [data-skin-part="brand"] { grid-column: 1; font-size: var(--sk-text-2xl); }
+  [data-skin-part="header-group"]:first-child [data-skin-region="tools"] { grid-column: 2; }
+  [data-skin-region="nav"] [data-skin-part="nav-list"] { justify-content: flex-start; align-items: center; column-gap: 0.15rem; row-gap: 0; flex-wrap: wrap; }
   [data-skin-part="nav-list"] > li { display: flex; align-items: center; }
   [data-skin-part="nav-list"] [data-skin-part="nav-link"] { padding-inline: 0.95rem; min-height: var(--sk-target); display: inline-flex; align-items: center; }
   [data-skin-region="nav"] [data-skin-part="submenu"] {
@@ -199,23 +200,22 @@
 /* Outils : une rangée sous l'étiquette (réseaux, langue, bascule de mode). */
 [data-skin-region="tools"] {
   grid-column: 1 / -1;
-  grid-row: 2;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
-  gap: 0 0.5rem;
-  margin-top: 0.35rem;
-  border-top: 2px dotted var(--sk-fil);
+  justify-content: flex-start;
+  gap: 0 0.75rem;
   font-size: var(--sk-text-sm);
   color: var(--v-fg);
 }
+[data-skin-part="header-group"]:last-child [data-skin-region="tools"] { grid-column: 2; justify-content: flex-end; }
 @media (min-width: 40rem) {
   [data-skin-region="tools"] { justify-content: flex-end; }
 }
 [data-skin-region="tools"] > [data-skin-part="link"] { font-family: var(--sk-font-heading); font-weight: var(--sk-weight-semibold); color: var(--sk-color-link); }
 [data-skin-part="socials"] { display: flex; flex-wrap: wrap; gap: 0; }
-[data-skin-part="socials"] [data-skin-part="link"] { padding: 0.9rem; color: var(--sk-color-link); }
+[data-skin-part="socials"] { gap: 0; }
+[data-skin-part="socials"] [data-skin-part="link"] { display: inline-flex; align-items: center; justify-content: center; min-width: var(--sk-target); min-height: var(--sk-target); padding: 0; color: var(--sk-color-link); text-decoration: none; }
 [data-skin-part="socials"] [data-skin-part="link"]:hover { color: var(--v-accent); }
 [data-skin-part="lang-switcher"] { display: flex; align-items: center; }
 [data-skin-part="lang-switcher"] a {
@@ -291,7 +291,7 @@
   font-family: var(--sk-font-heading);
   font-size: var(--sk-text-sm);
   font-weight: var(--sk-weight-semibold);
-  color: var(--v-accent2);
+  color: var(--sk-color-link);
   text-align: center;
   text-transform: var(--sk-eyebrow-transform);
 }
@@ -305,13 +305,13 @@
 [data-skin-part="prose"] { max-width: var(--sk-prose-width); margin-inline: auto; }
 [data-skin-part="prose"] p { margin-block: 0 1.1em; text-wrap: pretty; }
 [data-skin-part="prose"] a, [data-skin-part="link"] {
-  padding-block: 0.8rem;
   color: var(--sk-color-link);
   text-decoration: underline;
   text-decoration-style: dashed;
   text-decoration-thickness: 2px;
   text-underline-offset: 0.22em;
 }
+[data-skin-part="prose"] a { padding-block: 0.2rem; }
 [data-skin-part="prose"] a:hover, [data-skin-part="link"]:hover { color: var(--v-accent); }
 [data-skin-part="prose"] ul, [data-skin-part="prose"] ol { padding-left: 1.5em; margin-block: 0 1.1em; }
 [data-skin-part="prose"] li { margin-block: 0.35em; padding-left: 0.25em; }
@@ -325,7 +325,7 @@
   margin: 1.75rem 0.25rem 1.5rem;
   padding: 1.1rem 1.25rem 1.1rem 1.6rem;
   font-style: italic;
-  background-color: color-mix(in srgb, var(--v-warning) 15%, var(--v-surface));
+  background-color: color-mix(in srgb, var(--v-warning) 18%, var(--v-surface));
   border-radius: 0.9rem;
   outline: 2px dashed var(--sk-fil);
   outline-offset: -6px;
@@ -650,6 +650,7 @@
   background: url(skin:images/mailles.svg) 0 0 / 1.8rem 1.35rem repeat-x;
 }
 [data-skin-region="footer"] :focus-visible { outline: 3px solid var(--v-accent2-fg); outline-offset: 3px; }
+[data-skin-region="footer"] > * { position: relative; z-index: 2; }
 [data-skin-region="footer"] p { margin: 0; }
 [data-skin-part="footer-text"] { font-family: var(--sk-font-heading); font-weight: var(--sk-weight-medium); color: var(--v-accent2-fg); }
 [data-skin-part="footer-link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); color: var(--v-accent2-fg); text-decoration: underline; text-decoration-style: dashed; text-decoration-thickness: 2px; text-underline-offset: 0.25em; }
@@ -679,11 +680,14 @@
   padding-inline: 0.9rem;
   font-family: var(--sk-font-heading);
   font-weight: var(--sk-weight-semibold);
-  color: var(--v-accent2-fg);
-  background-color: var(--v-accent2);
+  color: var(--v-fg);
+  background-color: color-mix(in srgb, var(--v-accent2) 18%, var(--v-surface));
   border: 0;
   border-radius: 9999px;
+  outline: 2px dashed var(--sk-fil);
+  outline-offset: -4px;
 }
+[data-skin-part="copy-code"] * { color: inherit; }
 [data-skin-part="copy-code"]:hover { background-color: var(--v-accent); color: var(--v-accent-fg); }
 
 /* ───── Mouvement : seulement quand la personne ne l'a pas réduit. Un doux rebond, rien d'autre ne bouge. ───── */
