@@ -1,0 +1,200 @@
+{
+  "skinContract": 1,
+  "id": "tissu",
+  "name": {
+    "fr": "Tissu",
+    "en": "Fabric"
+  },
+  "description": {
+    "fr": "L'atelier de couture : vichy, lin et feutrine, étiquettes cousues, points de croix, boutons et tricot. Clair, avec un mode sombre « feutrine nocturne ».",
+    "en": "The sewing studio: gingham, linen and felt, sewn labels, cross-stitch, buttons and knitting. Light, with a dark \"night felt\" mode."
+  },
+  "version": "1.0.0",
+  "minCore": "0.4.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "dark",
+    "sans",
+    "playful"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/accueil-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode clair",
+        "en": "Home page, light mode"
+      }
+    },
+    {
+      "file": "previews/liste-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page de liste, mode clair",
+        "en": "List page, light mode"
+      }
+    },
+    {
+      "file": "previews/accueil-sombre.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode sombre",
+        "en": "Home page, dark mode"
+      }
+    },
+    {
+      "file": "previews/mobile-sombre.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone, mode sombre",
+        "en": "Home page on a phone, dark mode"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Tissu Texte",
+      "weight": "200 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/nunito-OFL.txt",
+      "author": "The Nunito Project Authors",
+      "source": "https://github.com/googlefonts/nunito"
+    },
+    {
+      "file": "fonts/texte-italique.woff2",
+      "kind": "font",
+      "family": "Tissu Texte",
+      "weight": "200 900",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/nunito-OFL.txt",
+      "author": "The Nunito Project Authors",
+      "source": "https://github.com/googlefonts/nunito"
+    },
+    {
+      "file": "fonts/titre-doux.woff2",
+      "kind": "font",
+      "family": "Tissu Titre",
+      "weight": "300 700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/fredoka-OFL.txt",
+      "author": "The Fredoka Project Authors",
+      "source": "https://github.com/hafontia/Fredoka-One"
+    },
+    {
+      "file": "fonts/titre-broderie.woff2",
+      "kind": "font",
+      "family": "Tissu Broderie",
+      "weight": "400 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/sniglet-OFL.txt",
+      "author": "Haley Fiege, Brenda Gallo, Pablo Impallari",
+      "source": "https://github.com/google/fonts/tree/main/ofl/sniglet"
+    },
+    {
+      "file": "images/aiguille-fil.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/bouton.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/ciseaux.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/croix.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/epingle.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/feutre.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/mailles.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/pelote.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/repere.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "twoRows",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    1024
+  ],
+  "supports": {
+    "reducedMotion": true
+  }
+}
