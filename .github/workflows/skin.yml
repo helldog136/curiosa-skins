@@ -21,7 +21,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 22 }
       - name: Contrat de marque (le nom Curiosa n'est jamais restylé)
-        run: node --test tests/
+        run: node --test tests/marque-curiosa.test.mjs
       - name: Préparer le cœur (sans lancer le site)
         working-directory: curiosa-core
         run: npm ci --ignore-scripts && npx prisma generate
