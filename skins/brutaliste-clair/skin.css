@@ -137,7 +137,8 @@
 /* ── Pied de page ── */
 [data-skin-region="footer"] { background-color: #ffd60a; border-top: 4px solid var(--v-fg); padding-block: 1.5rem; }
 [data-skin-part="footer-text"], [data-skin-part="credit"] { color: var(--v-fg); }
-[data-skin-part="footer-link"], [data-skin-part="credit"] a { color: var(--v-fg); font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+[data-skin-part="footer-link"] { color: var(--v-fg); font-weight: 700; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 3px; }
+[data-skin-part="credit"] a { color: var(--v-fg); text-transform: none; letter-spacing: normal; }
 [data-skin-part="footer-link"]:hover, [data-skin-part="credit"] a:hover { background-color: var(--v-fg); color: #ffffff; }
 
 /* ── Bandeau de cookies et lien d'évitement ── */
