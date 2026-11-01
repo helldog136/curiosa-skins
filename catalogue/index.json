@@ -97,6 +97,40 @@
    "preview": "skins/nef-de-braise/previews/accueil-sombre.webp"
   },
   {
+   "id": "pirates",
+   "name": {
+    "fr": "Pirates",
+    "en": "Pirates"
+   },
+   "description": {
+    "fr": "Une carte au trésor sur une mer turquoise : bois goudronné, laiton, cordages, parchemin, rouge sang-de-bœuf et lettres d'affiche. Clair, avec un mode sombre « nuit en mer ».",
+    "en": "A treasure map on a turquoise sea: tarred wood, brass, ropes, parchment, oxblood red and poster lettering. Light, with a dark \"night at sea\" mode."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/pirates",
+   "ref": "pirates/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🏴‍☠️",
+   "tags": [
+    "light",
+    "dark",
+    "bold",
+    "serif",
+    "playful",
+    "retro"
+   ],
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "requires": {
+    "core": "0.4.0"
+   },
+   "preview": "skins/pirates/previews/accueil-clair.webp"
+  },
+  {
    "id": "retro-neon",
    "name": {
     "fr": "Rétro néon",
@@ -223,40 +257,6 @@
     "core": "0.4.0"
    },
    "preview": "skins/verre-doux/previews/accueil-clair.webp"
-  },
-  {
-   "id": "pirates",
-   "name": {
-    "fr": "Pirates",
-    "en": "Pirates"
-   },
-   "description": {
-    "fr": "Une carte au trésor sur une mer turquoise : bois goudronné, laiton, cordages, parchemin, rouge sang-de-bœuf et lettres d'affiche. Clair, avec un mode sombre « nuit en mer ».",
-    "en": "A treasure map on a turquoise sea: tarred wood, brass, ropes, parchment, oxblood red and poster lettering. Light, with a dark \"night at sea\" mode."
-   },
-   "repo": "https://github.com/helldog136/curiosa-skins",
-   "subdir": "skins/pirates",
-   "ref": "pirates/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 1,
-   "author": "Équipe Curiosa",
-   "icon": "🏴‍☠️",
-   "tags": [
-    "light",
-    "dark",
-    "bold",
-    "serif",
-    "playful",
-    "retro"
-   ],
-   "modes": [
-    "light",
-    "dark"
-   ],
-   "requires": {
-    "core": "0.4.0"
-   },
-   "preview": "skins/pirates/previews/accueil-clair.webp"
   }
  ]
 }
