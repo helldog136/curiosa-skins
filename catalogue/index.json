@@ -65,6 +65,38 @@
    "preview": "skins/editorial-papier/previews/accueil-clair.webp"
   },
   {
+   "id": "nef-de-braise",
+   "name": {
+    "fr": "Nef de braise",
+    "en": "Ember nave"
+   },
+   "description": {
+    "fr": "Nef de cathédrale gothique : obsidienne, braises, rouge sang, or terni, vitraux brisés. Sombre, avec un mode clair « parchemin brûlé ».",
+    "en": "Gothic cathedral nave: obsidian, embers, blood red, tarnished gold, broken stained glass. Dark, with a light \"scorched parchment\" mode."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/nef-de-braise",
+   "ref": "nef-de-braise/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🔥",
+   "tags": [
+    "dark",
+    "light",
+    "serif",
+    "bold"
+   ],
+   "modes": [
+    "dark",
+    "light"
+   ],
+   "requires": {
+    "core": "0.6.0"
+   },
+   "preview": "skins/nef-de-braise/previews/accueil-sombre.webp"
+  },
+  {
    "id": "retro-neon",
    "name": {
     "fr": "Rétro néon",

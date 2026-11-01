@@ -29,14 +29,14 @@
 [data-skin-region="content"] {
   position: relative;
   box-sizing: border-box;
-  padding: 2.5rem 1.1rem 3rem;
+  padding: 6.75rem 2rem 3.25rem;
   background-color: var(--v-surface);
   background-image:
-    url(skin:images/rosace-fond.svg),
-    linear-gradient(0deg, color-mix(in srgb, var(--v-accent) 15%, transparent), transparent 11rem),
+    url(skin:images/rosace.svg),
+    linear-gradient(0deg, color-mix(in srgb, var(--v-accent) 9%, transparent), transparent 8rem),
     url(skin:images/grain.svg);
-  background-position: center -3.5rem, center bottom, 0 0;
-  background-size: 21rem 21rem, 100% 100%, 128px 128px;
+  background-position: center 1.5rem, center bottom, 0 0;
+  background-size: 4.75rem 4.75rem, 100% 100%, 128px 128px;
   background-repeat: no-repeat, no-repeat, repeat;
   border: 1px solid var(--v-line);
   box-shadow:
@@ -50,18 +50,18 @@
 [data-skin-region="content"]::before {
   content: "";
   position: absolute;
-  inset: 8px;
+  inset: 6px;
   z-index: 0;
   pointer-events: none;
   background:
-    url(skin:images/coin-hg.svg) left top / 2.5rem 2.5rem no-repeat,
-    url(skin:images/coin-hd.svg) right top / 2.5rem 2.5rem no-repeat,
-    url(skin:images/coin-bg.svg) left bottom / 2.5rem 2.5rem no-repeat,
-    url(skin:images/coin-bd.svg) right bottom / 2.5rem 2.5rem no-repeat;
+    url(skin:images/coin-hg.svg) left top / 1.5rem 1.5rem no-repeat,
+    url(skin:images/coin-hd.svg) right top / 1.5rem 1.5rem no-repeat,
+    url(skin:images/coin-bg.svg) left bottom / 1.5rem 1.5rem no-repeat,
+    url(skin:images/coin-bd.svg) right bottom / 1.5rem 1.5rem no-repeat;
 }
 @media (min-width: 40rem) {
   [data-skin-region="main"] { padding-block: 2rem 3.5rem; }
-  [data-skin-region="content"] { padding: 3.5rem 3.25rem 3.75rem; background-position: center -4.5rem, center bottom, 0 0; background-size: 26rem 26rem, 100% 100%, 128px 128px; }
+  [data-skin-region="content"] { padding: 8.75rem 3.75rem 4.25rem; background-position: center 2rem, center bottom, 0 0; background-size: 6.25rem 6.25rem, 100% 100%, 128px 128px; }
   [data-skin-region="content"]::before { inset: 10px; background-size: 3.25rem 3.25rem, 3.25rem 3.25rem, 3.25rem 3.25rem, 3.25rem 3.25rem; }
 }
 [data-skin-region="content"] time {
@@ -211,16 +211,21 @@
 /* Outils : réseaux, langue, bascule de mode. */
 [data-skin-region="tools"] { font-size: var(--sk-text-xs); }
 [data-skin-region="tools"] > [data-skin-part="link"] { font-family: var(--sk-font-heading); letter-spacing: 0.14em; text-transform: uppercase; }
-[data-skin-part="socials"] [data-skin-part="link"] { color: var(--v-muted); }
+[data-skin-part="socials"] [data-skin-part="link"] { display: inline-flex; align-items: center; justify-content: center; min-width: var(--sk-target); min-height: var(--sk-target); padding-block: 0; color: var(--v-muted); }
 [data-skin-part="socials"] [data-skin-part="link"]:hover { color: var(--v-accent); }
 [data-skin-part="lang-switcher"] a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: var(--sk-target);
+  min-height: var(--sk-target);
   font-family: var(--sk-font-heading);
   letter-spacing: 0.16em;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--v-muted);
 }
-[data-skin-part="lang-switcher"] a[aria-current] { color: var(--v-accent); text-decoration: underline; text-underline-offset: 0.45em; text-decoration-thickness: 2px; }
+[data-skin-part="lang-switcher"] a[aria-current] { background-color: transparent; color: var(--v-accent); text-decoration: underline; text-underline-offset: 0.45em; text-decoration-thickness: 2px; }
 [data-skin-part="lang-switcher"] a:hover { color: var(--v-accent); }
 [data-skin-part="mode-switch"] { border: 1px solid var(--v-line); border-radius: 0; padding: 0; gap: 0; }
 [data-skin-part="mode-option"] { color: var(--v-muted); border-radius: 0; background-color: transparent; }
@@ -335,7 +340,7 @@
   font-family: var(--sk-font-mono);
   font-size: var(--sk-text-sm);
   line-height: 1.6;
-  background-color: color-mix(in srgb, #000 55%, var(--v-surface));
+  background-color: #140c0d;
   color: #efe3d2;
   border: 1px solid var(--v-line);
   border-left: 4px solid var(--v-accent);
