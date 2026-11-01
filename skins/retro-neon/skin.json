@@ -9,7 +9,7 @@
     "fr": "Noir profond, néons magenta et cyan, polices pixel, grille et lignes de balayage, menu en colonne à gauche.",
     "en": "Deep black, magenta and cyan neon, pixel fonts, grid and scanlines, menu in a left column."
   },
-  "version": "1.0.0",
+  "version": "1.0.1",
   "minCore": "0.4.0",
   "author": {
     "name": "Équipe Curiosa"

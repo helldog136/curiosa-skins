@@ -536,7 +536,8 @@
 [data-skin-region="footer"]::before { content: ""; width: 2rem; height: 2rem; margin-bottom: 0.25rem; background: url(skin:images/rouages.svg) center / contain no-repeat; }
 [data-skin-region="footer"] p { margin: 0; }
 [data-skin-part="footer-text"] { font-style: italic; }
-[data-skin-part="footer-link"], [data-skin-part="credit"] a { color: var(--v-fg); text-decoration: underline; text-underline-offset: 0.25em; text-decoration-thickness: 1px; }
+[data-skin-part="footer-link"] { color: var(--v-fg); text-decoration: underline; text-underline-offset: 0.25em; text-decoration-thickness: 1px; }
+[data-skin-part="credit"] a { color: var(--v-fg); text-transform: none; letter-spacing: normal; }
 [data-skin-part="footer-link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }
 [data-skin-part="footer-link"]:hover, [data-skin-part="credit"] a:hover { color: var(--v-accent); }
 [data-skin-part="credit"] { font-family: var(--sk-font-heading); font-size: var(--sk-text-xs); letter-spacing: 0.12em; text-transform: uppercase; }

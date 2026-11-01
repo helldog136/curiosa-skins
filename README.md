@@ -7,11 +7,11 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 
 | Skin | Version | Modes | Dossier / Folder |
 |---|---|---|---|
-| Brutaliste clair / Light brutalist | 1.0.0 | clair / light | `skins/brutaliste-clair` |
-| Éditorial papier / Editorial paper | 1.0.1 | clair, sombre / light, dark | `skins/editorial-papier` |
-| Rétro néon / Retro neon | 1.0.0 | sombre / dark | `skins/retro-neon` |
-| Steampunk victorien / Victorian steampunk | 1.0.1 | sombre, clair / dark, light | `skins/steampunk-victorien` |
-| Verre et dégradés doux / Soft glass | 1.0.1 | clair, sombre / light, dark | `skins/verre-doux` |
+| Brutaliste clair / Light brutalist | 1.0.1 | clair / light | `skins/brutaliste-clair` |
+| Éditorial papier / Editorial paper | 1.0.2 | clair, sombre / light, dark | `skins/editorial-papier` |
+| Rétro néon / Retro neon | 1.0.1 | sombre / dark | `skins/retro-neon` |
+| Steampunk victorien / Victorian steampunk | 1.0.2 | sombre, clair / dark, light | `skins/steampunk-victorien` |
+| Verre et dégradés doux / Soft glass | 1.0.2 | clair, sombre / light, dark | `skins/verre-doux` |
 
 Chaque skin est un dossier de données (`skin.json`, `tokens.json`, `skin.css`, polices et images avec leurs licences) : aucun programme ne s'exécute, seule l'apparence change.
 *Each skin is a folder of data: no code runs, only the appearance changes.*
