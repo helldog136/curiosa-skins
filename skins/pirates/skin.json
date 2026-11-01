@@ -1,0 +1,183 @@
+{
+  "skinContract": 1,
+  "id": "pirates",
+  "name": {
+    "fr": "Pirates",
+    "en": "Pirates"
+  },
+  "description": {
+    "fr": "Une carte au trésor sur une mer turquoise : bois goudronné, laiton, cordages, parchemin, rouge sang-de-bœuf et lettres d'affiche. Clair, avec un mode sombre « nuit en mer ».",
+    "en": "A treasure map on a turquoise sea: tarred wood, brass, ropes, parchment, oxblood red and poster lettering. Light, with a dark \"night at sea\" mode."
+  },
+  "version": "1.0.0",
+  "minCore": "0.4.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "dark",
+    "bold",
+    "serif",
+    "playful",
+    "retro"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/accueil-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode clair (mer turquoise et parchemin)",
+        "en": "Home page, light mode (turquoise sea and parchment)"
+      }
+    },
+    {
+      "file": "previews/accueil-sombre.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode sombre (nuit en mer)",
+        "en": "Home page, dark mode (night at sea)"
+      }
+    },
+    {
+      "file": "previews/liste-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page de liste, mode clair",
+        "en": "List page, light mode"
+      }
+    },
+    {
+      "file": "previews/mobile-sombre.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone, mode sombre",
+        "en": "Home page on a phone, dark mode"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "fonts/titre-affiche.woff2",
+      "kind": "font",
+      "family": "Affiche Titre",
+      "weight": "400 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/archivo-black-OFL.txt",
+      "author": "The Archivo Black Project Authors",
+      "source": "https://github.com/Omnibus-Type/ArchivoBlack"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Affiche Texte",
+      "weight": "400 700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/libre-baskerville-OFL.txt",
+      "author": "The Libre Baskerville Project Authors",
+      "source": "https://github.com/impallari/Libre-Baskerville"
+    },
+    {
+      "file": "fonts/texte-italique.woff2",
+      "kind": "font",
+      "family": "Affiche Texte",
+      "weight": "400 700",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/libre-baskerville-OFL.txt",
+      "author": "The Libre Baskerville Project Authors",
+      "source": "https://github.com/impallari/Libre-Baskerville"
+    },
+    {
+      "file": "images/boussole.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/crane.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/vagues.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/corde.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/coin-hg.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/coin-hd.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/coin-bg.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/coin-bd.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "classic",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    1024
+  ],
+  "supports": {
+    "reducedMotion": true
+  }
+}
