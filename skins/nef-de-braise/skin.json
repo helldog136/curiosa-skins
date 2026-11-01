@@ -27,7 +27,44 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
-  "previews": [],
+  "previews": [
+    {
+      "file": "previews/accueil-sombre.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode sombre (nef de braise)",
+        "en": "Home page, dark mode (ember nave)"
+      }
+    },
+    {
+      "file": "previews/accueil-clair.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode parchemin brûlé",
+        "en": "Home page, scorched parchment mode"
+      }
+    },
+    {
+      "file": "previews/article-sombre.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'article, mode sombre",
+        "en": "Article page, dark mode"
+      }
+    },
+    {
+      "file": "previews/mobile-sombre.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone, mode sombre",
+        "en": "Home page on a phone, dark mode"
+      }
+    }
+  ],
   "assets": [
     {
       "file": "images/arcature.svg",
