@@ -15,7 +15,7 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 | Rétro néon / Retro neon | 1.0.2 | sombre / dark | `skins/retro-neon` |
 | Steampunk victorien / Victorian steampunk | 1.0.3 | sombre, clair / dark, light | `skins/steampunk-victorien` |
 | Tissu / Fabric | 1.0.1 | clair, sombre / light, dark | `skins/tissu` |
-| Verre et dégradés doux / Soft glass | 1.0.3 | clair, sombre / light, dark | `skins/verre-doux` |
+| Verre et dégradés doux / Soft glass | 1.0.4 | clair, sombre / light, dark | `skins/verre-doux` |
 
 Chaque skin est un dossier de données (`skin.json`, `tokens.json`, `skin.css`, polices et images avec leurs licences) : aucun programme ne s'exécute, seule l'apparence change.
 *Each skin is a folder of data: no code runs, only the appearance changes.*
