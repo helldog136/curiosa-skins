@@ -18,6 +18,8 @@
 }
 [data-skin-region="main"] { padding-block: 2rem 4rem; }
 [data-skin-region="content"] a { text-underline-offset: 0.2em; }
+/* Le contenu a EXACTEMENT la largeur des îlots de l'en-tête et du pied (même jeton) : un bloc d'accueil « Pleine largeur » épouse leurs bords. */
+[data-skin-region="content"] { width: var(--sk-header-width); max-width: none; padding-inline: 0; }
 
 /* ───── En-tête : un îlot de verre qui flotte ───── */
 [data-skin-region="header"] {
