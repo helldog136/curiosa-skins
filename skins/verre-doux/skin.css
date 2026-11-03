@@ -329,3 +329,12 @@
 [data-skin-part="search"][data-variant="page"] { margin-inline: auto; }
 [data-skin-part="prose"][role="status"], [data-skin-part="list"][data-kind="results"] [data-skin-part="prose"] { max-width: none; margin-inline: 0; }
 [data-skin-part="mark"] { padding: 0.05em 0.35em; border-radius: 0.6em; background-image: linear-gradient(120deg, color-mix(in srgb, var(--v-accent) 28%, var(--v-surface)), color-mix(in srgb, var(--v-accent2) 26%, var(--v-surface))); color: var(--v-fg); font-weight: inherit; text-decoration: none; }
+
+/* ───── Téléphone et petites largeurs : mise en page des en-têtes, cibles de 44 px (1.1.1) ───── */
+[data-skin-part="menu-toggle"] { min-height: var(--sk-target); }
+[data-skin-part="footer-link"] { min-width: var(--sk-target); justify-content: center; }
+@media (max-width: 39.99rem) {
+  [data-skin-region="header"][data-header-layout="minimal"] { flex-wrap: wrap; }
+  [data-skin-region="header"][data-header-layout="minimal"] [data-skin-part="header-group"] { flex-wrap: wrap; justify-content: flex-end; margin-inline-start: auto; min-width: 0; }
+  [data-skin-region="header"][data-header-layout="minimal"] [data-skin-part="header-group"] > :not([data-skin-region="tools"]) { position: static; }
+}
