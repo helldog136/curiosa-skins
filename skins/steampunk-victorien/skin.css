@@ -567,3 +567,20 @@
   text-transform: uppercase;
 }
 [data-skin-part="copy-code"]:hover { background-color: var(--v-accent); color: var(--v-accent-fg); }
+
+/* ───── Recherche dans le site : pièces `search` et `mark` (cœur 0.6.3) ───── */
+/* Un cadran : champ encaissé (ombre intérieure) cerclé de laiton, bouton à double filet. Le mot cherché est une plaque de laiton : fond cuivré et liseré. */
+[data-skin-part="search"] { min-width: 0; align-items: center; }
+[data-skin-part="search"] [data-skin-part="input"] { width: auto; min-width: 0; flex: 1 1 7rem; }
+[data-skin-part="search"][data-variant="tool"] { flex: 0 1 12rem; min-width: min(12rem, 100%); max-width: 100%; }
+[data-skin-part="search"][data-variant="tool"] [data-skin-part="button"] { flex: none; width: var(--sk-target); padding: 0; }
+@media (max-width: 39.99rem) {
+  [data-skin-part="search"][data-variant="tool"] { flex: 1 1 100%; max-width: 100%; }
+}
+[data-skin-region="footer"] [data-skin-part="search"][data-variant="tool"] { margin-inline: auto; width: min(100%, 20rem); flex: none; }
+[data-skin-part="search"] { gap: 0.4rem; }
+[data-skin-part="search"] [data-skin-part="input"]::placeholder { color: var(--v-muted); opacity: 1; }
+[data-skin-part="search"] [data-skin-part="input"]:focus-visible { outline: 2px solid var(--sk-color-focus); outline-offset: 2px; }
+[data-skin-part="search"] [data-skin-part="button"]:focus-visible { outline: 2px solid var(--sk-color-focus); outline-offset: 2px; }
+[data-skin-part="search"][data-variant="page"] [data-skin-part="button"] { padding-inline: 1.4rem; }
+[data-skin-part="mark"] { padding: 0 0.25em; background-color: color-mix(in srgb, var(--v-accent) 30%, var(--v-surface)); box-shadow: inset 0 0 0 1px var(--v-accent); color: var(--v-fg); font-weight: inherit; text-decoration: none; }

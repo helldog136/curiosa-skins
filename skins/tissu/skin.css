@@ -694,3 +694,24 @@
   [data-skin-part="button"], [data-skin-part="card"], [data-skin-part="chip"], [data-skin-part="nav-link"] { transition: transform var(--sk-duration) var(--sk-ease), box-shadow var(--sk-duration) var(--sk-ease), background-color var(--sk-duration) var(--sk-ease); }
   [data-skin-part="card"]:hover { transform: translateY(-3px); }
 }
+
+/* ───── Recherche dans le site : pièces `search` et `mark` (cœur 0.6.3) ───── */
+/* Un champ moelleux aux coins ronds et un bouton rond surpiqué. Le mot cherché est un petit écusson de feutre cousu au fil pointillé. */
+[data-skin-part="search"] { min-width: 0; align-items: center; }
+[data-skin-part="search"] [data-skin-part="input"] { width: auto; min-width: 0; flex: 1 1 7rem; }
+[data-skin-part="search"][data-variant="tool"] { flex: 0 1 12rem; min-width: min(12rem, 100%); max-width: 100%; }
+[data-skin-part="search"][data-variant="tool"] [data-skin-part="button"] { flex: none; width: var(--sk-target); padding: 0; }
+@media (max-width: 39.99rem) {
+  [data-skin-part="search"][data-variant="tool"] { flex: 1 1 100%; max-width: 100%; }
+}
+[data-skin-region="footer"] [data-skin-part="search"][data-variant="tool"] { margin-inline: auto; width: min(100%, 20rem); flex: none; }
+[data-skin-part="search"] { gap: 0.5rem; }
+[data-skin-part="search"] [data-skin-part="input"] { padding-inline: 1rem; }
+[data-skin-part="search"] [data-skin-part="input"]::placeholder { color: var(--v-muted); opacity: 1; }
+[data-skin-part="search"][data-variant="tool"] [data-skin-part="button"] { border-radius: 9999px; }
+[data-skin-part="search"][data-variant="page"] [data-skin-part="button"] { padding-inline: 1.5rem; }
+/* Entre 40 et 64 rem, la colonne des outils est partagée par les deux rangées de l'en-tête : avec le champ, elle serait trop large et écraserait la marque et le menu. Les outils passent sur deux lignes. */
+@media (min-width: 40rem) and (max-width: 63.99rem) {
+  [data-skin-part="header-group"]:first-child [data-skin-region="tools"] { max-width: 20rem; row-gap: 0.25rem; }
+}
+[data-skin-part="mark"] { padding: 0.05em 0.4em; border-radius: 0.5rem; background-color: color-mix(in srgb, var(--v-accent) 30%, var(--v-surface)); outline: 1px dashed var(--sk-fil); outline-offset: -3px; color: var(--v-fg); font-weight: inherit; text-decoration: none; }
