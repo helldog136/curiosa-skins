@@ -625,3 +625,22 @@
   [data-skin-region="header"]::after, [data-skin-region="footer"]::after { animation: pirates-houle 20s linear infinite; }
   @keyframes pirates-houle { from { background-position: 0 0; } to { background-position: 160px 0; } }
 }
+
+/* ───── Recherche dans le site : pièces `search` et `mark` (cœur 0.6.3) ───── */
+/* Un champ de capitaine : cadre d'encre épais, ombre intérieure, et une plaque à rebord pour la loupe. Le mot cherché est repassé au pinceau doré. */
+[data-skin-part="search"] { min-width: 0; align-items: center; }
+[data-skin-part="search"] [data-skin-part="input"] { width: auto; min-width: 0; flex: 1 1 7rem; }
+[data-skin-part="search"][data-variant="tool"] { flex: 0 1 12rem; min-width: min(12rem, 100%); max-width: 100%; }
+[data-skin-part="search"][data-variant="tool"] [data-skin-part="button"] { flex: none; width: var(--sk-target); padding: 0; }
+@media (max-width: 39.99rem) {
+  [data-skin-part="search"][data-variant="tool"] { flex: 1 1 100%; max-width: 100%; }
+}
+[data-skin-region="footer"] [data-skin-part="search"][data-variant="tool"] { margin-inline: auto; width: min(100%, 20rem); flex: none; }
+[data-skin-part="search"] { gap: 0.5rem; padding-bottom: 4px; }
+[data-skin-part="search"] [data-skin-part="input"] { box-shadow: inset 0 3px 0 rgb(0 0 0 / .14), 0 4px 0 var(--v-fg); }
+[data-skin-part="search"] [data-skin-part="input"]::placeholder { color: var(--v-muted); opacity: 1; }
+[data-skin-region="header"] [data-skin-part="search"] [data-skin-part="input"] { border-color: #e0b04a; box-shadow: inset 0 3px 0 rgb(0 0 0 / .14), 0 4px 0 #20130a; }
+[data-skin-region="header"] [data-skin-part="search"] [data-skin-part="button"] { border-color: #20130a; background-color: #e0b04a; background-image: none; color: #20130a; box-shadow: 0 4px 0 #20130a; }
+[data-skin-region="header"] [data-skin-part="search"] [data-skin-part="button"]:hover { background-color: #f6e9c8; color: #20130a; }
+[data-skin-part="search"][data-variant="page"] [data-skin-part="button"] { padding-inline: 1.4rem; }
+[data-skin-part="mark"] { padding: 0 0.22em; border-bottom: 2px solid var(--v-line); border-radius: 0.15em; background-color: color-mix(in srgb, #e0b04a 40%, var(--v-surface)); color: var(--v-fg); font-weight: inherit; text-decoration: none; }

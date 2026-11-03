@@ -713,3 +713,21 @@
     @keyframes feodal-torche { 0%, 100% { opacity: 0.92; } 22% { opacity: 0.7; } 41% { opacity: 1; } 63% { opacity: 0.78; } 82% { opacity: 0.96; } }
   }
 }
+
+/* ───── Recherche dans le site : pièces `search` et `mark` (cœur 0.6.3) ───── */
+/* Un parchemin encadré d'or sur la bannière bleu nuit, avec une plaque de fer forgé pour la loupe. Le mot cherché est enluminé : fond or pâle et filet d'or dessous. */
+[data-skin-part="search"] { min-width: 0; align-items: center; }
+[data-skin-part="search"] [data-skin-part="input"] { width: auto; min-width: 0; flex: 1 1 7rem; }
+[data-skin-part="search"][data-variant="tool"] { flex: 0 1 12rem; min-width: min(12rem, 100%); max-width: 100%; }
+[data-skin-part="search"][data-variant="tool"] [data-skin-part="button"] { flex: none; width: var(--sk-target); padding: 0; }
+@media (max-width: 39.99rem) {
+  [data-skin-part="search"][data-variant="tool"] { flex: 1 1 100%; max-width: 100%; }
+}
+[data-skin-region="footer"] [data-skin-part="search"][data-variant="tool"] { margin-inline: auto; width: min(100%, 20rem); flex: none; }
+[data-skin-part="search"] { gap: 0.4rem; padding-block: 0.2rem; }
+[data-skin-part="search"] [data-skin-part="input"] { border-color: #c9962f; padding-inline: 0.65rem; }
+[data-skin-part="search"] [data-skin-part="input"]::placeholder { color: var(--v-muted); opacity: 1; }
+[data-skin-region="header"] [data-skin-part="search"] [data-skin-part="input"]:focus { border-color: #ffd983; }
+[data-skin-region="main"] [data-skin-part="search"] [data-skin-part="input"] { border-color: var(--v-fg); }
+[data-skin-region="main"] [data-skin-part="search"] [data-skin-part="input"]:focus { border-color: var(--v-accent); }
+[data-skin-part="mark"] { padding: 0 0.22em; border-bottom: 2px solid #c9962f; border-radius: 0.1em; background-color: color-mix(in srgb, #c9962f 42%, var(--v-surface)); color: var(--v-fg); font-weight: inherit; text-decoration: none; }

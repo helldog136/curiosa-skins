@@ -173,3 +173,23 @@
 [data-skin-part="copy-code"]:hover { background-color: var(--v-accent2); }
 [data-skin-part="lead"] + [data-skin-part="link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }
 [data-skin-part="footer-link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }
+
+/* ───── Recherche dans le site : pièces `search` et `mark` (cœur 0.6.3) ───── */
+/* Un champ et un bouton « tampon » séparés par de l'air pour leurs ombres dures ; le mot cherché est surligné au feutre jaune, cadré de noir. */
+[data-skin-part="search"] { min-width: 0; align-items: center; }
+[data-skin-part="search"] [data-skin-part="input"] { width: auto; min-width: 0; flex: 1 1 7rem; }
+[data-skin-part="search"][data-variant="tool"] { flex: 0 1 12rem; min-width: min(12rem, 100%); max-width: 100%; }
+[data-skin-part="search"][data-variant="tool"] [data-skin-part="button"] { flex: none; width: var(--sk-target); padding: 0; }
+@media (max-width: 39.99rem) {
+  [data-skin-part="search"][data-variant="tool"] { flex: 1 1 100%; max-width: 100%; }
+}
+[data-skin-region="footer"] [data-skin-part="search"][data-variant="tool"] { margin-inline: auto; width: min(100%, 20rem); flex: none; }
+[data-skin-part="search"] { gap: 1rem; padding-right: 5px; padding-bottom: 5px; }
+[data-skin-part="search"] [data-skin-part="input"] { box-shadow: 4px 4px 0 var(--v-fg); }
+[data-skin-part="search"] [data-skin-part="input"]::placeholder { color: var(--v-muted); opacity: 1; text-transform: uppercase; letter-spacing: 0.04em; font-size: 0.875rem; }
+[data-skin-part="search"] [data-skin-part="button"] { box-shadow: 4px 4px 0 var(--v-fg); }
+[data-skin-part="search"] [data-skin-part="button"]:focus-visible { outline: 4px solid var(--v-accent); outline-offset: 3px; }
+[data-skin-part="search"][data-variant="page"] [data-skin-part="input"] { font-size: 1.125rem; }
+/* Le titre d'un résultat reste du texte courant : un lien seul sur sa ligne n'est plus une boîte flexible, qui avalerait les espaces autour du mot mis en valeur. */
+[data-skin-part="heading"] [data-skin-part="link"]:only-child { display: inline-block; }
+[data-skin-part="mark"] { padding: 0 0.2em; border: 2px solid var(--v-fg); background-color: #ffd60a; color: var(--v-fg); box-shadow: 2px 2px 0 var(--v-fg); font-weight: 700; text-decoration: none; }

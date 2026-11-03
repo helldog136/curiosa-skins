@@ -187,3 +187,26 @@
 [data-skin-part="copy-code"]:hover { background-color: var(--v-accent2); color: var(--v-accent2-fg); }
 [data-skin-part="lead"] + [data-skin-part="link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }
 [data-skin-part="footer-link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }
+
+/* ───── Recherche dans le site : pièces `search` et `mark` (cœur 0.6.3) ───── */
+/* Un terminal : champ noir cerné de cyan qui s'allume en jaune à l'écriture, bouton néon rose. Le mot cherché est un surlignage plein (fond cyan, texte sombre) sans la lueur des titres. */
+[data-skin-part="search"] { min-width: 0; align-items: center; }
+[data-skin-part="search"] [data-skin-part="input"] { width: auto; min-width: 0; flex: 1 1 7rem; }
+[data-skin-part="search"][data-variant="tool"] { flex: 0 1 12rem; min-width: min(12rem, 100%); max-width: 100%; }
+[data-skin-part="search"][data-variant="tool"] [data-skin-part="button"] { flex: none; width: var(--sk-target); padding: 0; }
+@media (max-width: 39.99rem) {
+  [data-skin-part="search"][data-variant="tool"] { flex: 1 1 100%; max-width: 100%; }
+}
+[data-skin-region="footer"] [data-skin-part="search"][data-variant="tool"] { margin-inline: auto; width: min(100%, 20rem); flex: none; }
+[data-skin-part="search"] { gap: 0.5rem; }
+[data-skin-part="search"] [data-skin-part="input"] { font-size: 0.9375rem; }
+[data-skin-part="search"] [data-skin-part="input"]::placeholder { color: var(--v-muted); opacity: 1; }
+[data-skin-part="search"] [data-skin-part="input"]:focus-visible { outline: 3px solid var(--sk-color-focus); outline-offset: 2px; }
+[data-skin-part="search"] [data-skin-part="button"] { border-color: var(--v-accent); color: var(--v-accent); box-shadow: 0 0 12px rgb(255 61 240 / 0.5), inset 0 0 10px rgb(255 61 240 / 0.15); }
+[data-skin-part="search"] [data-skin-part="button"]:hover { background-color: var(--v-accent); border-color: var(--v-accent); color: var(--v-accent-fg); box-shadow: 0 0 22px rgb(255 61 240 / 0.8); }
+@media (width >= 40rem) {
+  [data-skin-region="tools"] [data-skin-part="search"][data-variant="tool"] { align-self: stretch; flex: none; width: 100%; }
+}
+/* Le titre d'un résultat reste du texte courant : un lien seul sur sa ligne n'est plus une boîte flexible, qui avalerait les espaces autour du mot mis en valeur. */
+[data-skin-part="heading"] [data-skin-part="link"]:only-child { display: inline-block; }
+[data-skin-part="mark"] { padding: 0.1em 0.3em; background-color: var(--v-accent2); color: var(--v-accent2-fg); box-shadow: 0 0 10px rgb(38 232 255 / 0.55); text-shadow: none; text-decoration: none; font-weight: inherit; }
