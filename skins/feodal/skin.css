@@ -731,3 +731,11 @@
 [data-skin-region="main"] [data-skin-part="search"] [data-skin-part="input"] { border-color: var(--v-fg); }
 [data-skin-region="main"] [data-skin-part="search"] [data-skin-part="input"]:focus { border-color: var(--v-accent); }
 [data-skin-part="mark"] { padding: 0 0.22em; border-bottom: 2px solid #c9962f; border-radius: 0.1em; background-color: color-mix(in srgb, #c9962f 42%, var(--v-surface)); color: var(--v-fg); font-weight: inherit; text-decoration: none; }
+
+/* ───── Téléphone et petites largeurs : mise en page des en-têtes, cibles de 44 px (1.1.1) ───── */
+[data-skin-part="footer-link"] { min-width: var(--sk-target); justify-content: center; }
+[data-skin-region="header"][data-header-layout="twoRows"] [data-skin-part="header-group"] + [data-skin-part="header-group"] [data-skin-region="tools"] { grid-row: 3; }
+[data-skin-region="header"][data-header-layout="minimal"] [data-skin-region="nav"] [data-skin-part="submenu"] { min-width: 0; }
+@media (min-width: 40rem) and (max-width: 47.99rem) {
+  [data-skin-region="nav"] [data-skin-part="submenu"] { left: auto; right: 0; }
+}

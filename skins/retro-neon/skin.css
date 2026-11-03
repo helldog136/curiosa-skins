@@ -210,3 +210,7 @@
 /* Le titre d'un résultat reste du texte courant : un lien seul sur sa ligne n'est plus une boîte flexible, qui avalerait les espaces autour du mot mis en valeur. */
 [data-skin-part="heading"] [data-skin-part="link"]:only-child { display: inline-block; }
 [data-skin-part="mark"] { padding: 0.1em 0.3em; background-color: var(--v-accent2); color: var(--v-accent2-fg); box-shadow: 0 0 10px rgb(38 232 255 / 0.55); text-shadow: none; text-decoration: none; font-weight: inherit; }
+
+/* ───── Téléphone et petites largeurs : mise en page des en-têtes, cibles de 44 px (1.1.1) ───── */
+[data-skin-part="footer-link"] { min-width: var(--sk-target); justify-content: center; margin-block: 0.25rem; }
+[data-skin-region="tools"] > [data-skin-part="link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }

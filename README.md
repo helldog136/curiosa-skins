@@ -7,18 +7,18 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 
 | Skin | Version | Modes | Dossier / Folder |
 |---|---|---|---|
-| Brutaliste clair / Light brutalist | 1.1.0 | clair / light | `skins/brutaliste-clair` |
-| Éditorial papier / Editorial paper | 1.1.0 | clair, sombre / light, dark | `skins/editorial-papier` |
-| Féodal / Feudal | 1.1.0 | clair, sombre / light, dark | `skins/feodal` |
-| Pirates / Pirates | 1.1.0 | clair, sombre / light, dark | `skins/pirates` |
-| Nef de braise / Ember nave | 1.1.0 | sombre, clair / dark, light | `skins/nef-de-braise` |
-| Rétro néon / Retro neon | 1.1.0 | sombre / dark | `skins/retro-neon` |
-| Steampunk victorien / Victorian steampunk | 1.1.0 | sombre, clair / dark, light | `skins/steampunk-victorien` |
-| Tissu / Fabric | 1.1.0 | clair, sombre / light, dark | `skins/tissu` |
-| Verre et dégradés doux / Soft glass | 1.1.0 | clair, sombre / light, dark | `skins/verre-doux` |
+| Brutaliste clair / Light brutalist | 1.1.1 | clair / light | `skins/brutaliste-clair` |
+| Éditorial papier / Editorial paper | 1.1.1 | clair, sombre / light, dark | `skins/editorial-papier` |
+| Féodal / Feudal | 1.1.1 | clair, sombre / light, dark | `skins/feodal` |
+| Pirates / Pirates | 1.1.1 | clair, sombre / light, dark | `skins/pirates` |
+| Nef de braise / Ember nave | 1.1.1 | sombre, clair / dark, light | `skins/nef-de-braise` |
+| Rétro néon / Retro neon | 1.1.1 | sombre / dark | `skins/retro-neon` |
+| Steampunk victorien / Victorian steampunk | 1.1.1 | sombre, clair / dark, light | `skins/steampunk-victorien` |
+| Tissu / Fabric | 1.1.1 | clair, sombre / light, dark | `skins/tissu` |
+| Verre et dégradés doux / Soft glass | 1.1.1 | clair, sombre / light, dark | `skins/verre-doux` |
 
-Les versions 1.1.0 habillent la recherche dans le site (pièces `search` et `mark`, champ et mot mis en valeur) et demandent le cœur 0.6.3 ou plus.
-*Version 1.1.0 of each skin styles the site search (`search` and `mark` parts: the field and the highlighted word) and needs core 0.6.3 or later.*
+Les versions 1.1.x habillent la recherche dans le site (pièces `search` et `mark`, champ et mot mis en valeur) et demandent le cœur 0.6.3 ou plus. La 1.1.1 corrige la mise en page des en-têtes à petite largeur (en-têtes sobre, à deux rangées et classique) et les cibles tactiles de 44 px.
+*Version 1.1.x of each skin styles the site search (`search` and `mark` parts: the field and the highlighted word) and needs core 0.6.3 or later. Version 1.1.1 fixes the header layouts on narrow screens (minimal, two-row and classic headers) and the 44 px touch targets.*
 
 Chaque skin est un dossier de données (`skin.json`, `tokens.json`, `skin.css`, polices et images avec leurs licences) : aucun programme ne s'exécute, seule l'apparence change.
 *Each skin is a folder of data: no code runs, only the appearance changes.*
