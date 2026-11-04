@@ -8,6 +8,7 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 | Skin | Version | Modes | Dossier / Folder |
 |---|---|---|---|
 | Brutaliste clair / Light brutalist | 1.1.1 | clair / light | `skins/brutaliste-clair` |
+| Curiosa / Curiosa | 1.0.0 | clair, sombre / light, dark | `skins/curiosa` |
 | Éditorial papier / Editorial paper | 1.1.1 | clair, sombre / light, dark | `skins/editorial-papier` |
 | Féodal / Feudal | 1.1.1 | clair, sombre / light, dark | `skins/feodal` |
 | Pirates / Pirates | 1.1.1 | clair, sombre / light, dark | `skins/pirates` |
