@@ -32,6 +32,38 @@
    "preview": "skins/brutaliste-clair/previews/home-1280.webp"
   },
   {
+   "id": "curiosa",
+   "name": {
+    "fr": "Curiosa",
+    "en": "Curiosa"
+   },
+   "description": {
+    "fr": "L'habillage officiel de Curiosa : un cabinet de curiosités chaleureux, crème et nuit d'encre, laiton, terre cuite et sauge, briques arrondies et cartes en tiroirs. Votre site, votre collection.",
+    "en": "The official Curiosa look: a warm cabinet of curiosities in cream and ink night, brass, terracotta and sage, rounded bricks and drawer-style cards. Your site, your collection."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/curiosa",
+   "ref": "curiosa/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 1,
+   "author": "Équipe Curiosa",
+   "icon": "🧱",
+   "tags": [
+    "light",
+    "dark",
+    "serif",
+    "editorial"
+   ],
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "requires": {
+    "core": "0.6.3"
+   },
+   "preview": "skins/curiosa/previews/home-light.webp"
+  },
+  {
    "id": "editorial-papier",
    "name": {
     "fr": "Éditorial papier",

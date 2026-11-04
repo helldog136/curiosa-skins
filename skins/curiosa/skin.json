@@ -1,0 +1,118 @@
+{
+  "skinContract": 1,
+  "id": "curiosa",
+  "name": {
+    "fr": "Curiosa",
+    "en": "Curiosa"
+  },
+  "description": {
+    "fr": "L'habillage officiel de Curiosa : un cabinet de curiosités chaleureux, crème et nuit d'encre, laiton, terre cuite et sauge, briques arrondies et cartes en tiroirs. Votre site, votre collection.",
+    "en": "The official Curiosa look: a warm cabinet of curiosities in cream and ink night, brass, terracotta and sage, rounded bricks and drawer-style cards. Your site, your collection."
+  },
+  "version": "1.0.0",
+  "minCore": "0.6.3",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "dark",
+    "serif",
+    "editorial"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/home-light.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode clair crème",
+        "en": "Home page, cream light mode"
+      }
+    },
+    {
+      "file": "previews/home-dark.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode sombre nuit d'encre",
+        "en": "Home page, ink night dark mode"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "fonts/titre-romain.woff2",
+      "kind": "font",
+      "family": "Curiosa Titre",
+      "weight": "100 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/fraunces-OFL.txt",
+      "author": "The Fraunces Project Authors",
+      "source": "https://github.com/undercasetype/Fraunces"
+    },
+    {
+      "file": "fonts/titre-italique.woff2",
+      "kind": "font",
+      "family": "Curiosa Titre",
+      "weight": "100 900",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/fraunces-OFL.txt",
+      "author": "The Fraunces Project Authors",
+      "source": "https://github.com/undercasetype/Fraunces"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Curiosa Texte",
+      "weight": "400 700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/instrument-sans-OFL.txt",
+      "author": "The Instrument Sans Project Authors",
+      "source": "https://github.com/Instrument/instrument-sans"
+    },
+    {
+      "file": "fonts/etiquettes.woff2",
+      "kind": "font",
+      "family": "Curiosa Etiquettes",
+      "weight": "400",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/jetbrains-mono-OFL.txt",
+      "author": "The JetBrains Mono Project Authors",
+      "source": "https://github.com/JetBrains/JetBrainsMono"
+    },
+    {
+      "file": "images/briques.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/briques-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "classic",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    1024
+  ],
+  "supports": {
+    "reducedMotion": true
+  }
+}
