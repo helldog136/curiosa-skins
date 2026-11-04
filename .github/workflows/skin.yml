@@ -22,6 +22,8 @@ jobs:
         with: { node-version: 22 }
       - name: Contrat de marque (le nom Curiosa n'est jamais restylé)
         run: node --test tests/marque-curiosa.test.mjs
+      - name: Contrastes du skin curiosa (couples texte / fond, clair et sombre)
+        run: node --test tests/contrastes-curiosa.test.mjs
       - name: Préparer le cœur (sans lancer le site)
         working-directory: curiosa-core
         run: npm ci --ignore-scripts && npx prisma generate
