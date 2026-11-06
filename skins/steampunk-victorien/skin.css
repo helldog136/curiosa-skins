@@ -342,15 +342,9 @@
 
 /* ───── Listes et cartes : des cartouches à double filet ───── */
 [data-skin-part="list"][data-kind="list"], [data-skin-part="list"][data-kind="cards"] { padding: 0; margin: 0; list-style: none; }
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"] {
-  display: block;
-  padding-block: 1rem;
-  border-bottom: 1px solid var(--v-line);
-}
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"]:first-child { border-top: 3px double var(--v-line); }
+/* Link lists keep their look (these rules now only reach their chips). */
 [data-skin-part="list-item"] > a { font-family: var(--sk-font-heading); font-weight: var(--sk-weight-bold); font-size: var(--sk-text-lg); line-height: 1.25; text-decoration: none; color: var(--v-fg); }
 [data-skin-part="list-item"] > a:hover { color: var(--v-accent); text-decoration: underline; }
-[data-skin-part="list-item"] > [data-skin-part="lead"] { font-size: var(--sk-text-base); margin-block: 0.25rem 0; }
 [data-skin-part="card"] {
   background-color: var(--v-surface);
   border: 1px solid var(--v-accent);
@@ -589,3 +583,8 @@
 [data-skin-part="footer-link"] { min-width: var(--sk-target); justify-content: center; }
 [data-skin-region="header"][data-header-layout="twoRows"] [data-skin-part="header-group"] + [data-skin-part="header-group"] [data-skin-region="tools"] { grid-row: 3; }
 [data-skin-region="header"][data-header-layout="minimal"] [data-skin-region="nav"] [data-skin-part="submenu"] { min-width: 0; }
+
+/* List search field (core 0.6.18, `search` with data-variant="list"): when the clear button appears, the field keeps a usable width and the button wraps under it on narrow screens. */
+[data-skin-part="search"][data-variant="list"] { flex-wrap: wrap; }
+[data-skin-part="search"][data-variant="list"] [data-skin-part="input"] { flex: 1 1 12rem; min-width: min(12rem, 100%); }
+[data-skin-part="search"][data-variant="list"] [data-skin-part="button"] { flex: 0 1 auto; max-width: 100%; }

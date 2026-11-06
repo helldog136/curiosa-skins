@@ -106,6 +106,9 @@
 [data-skin-part="card"] [data-skin-part="cover"], [data-skin-part="card"] img { border-bottom: 2px solid currentColor; border-radius: 0; }
 [data-skin-part="card"] [data-skin-part="heading"] a { color: var(--v-fg); text-decoration: none; }
 [data-skin-part="card"] [data-skin-part="heading"] a:hover { color: var(--v-accent2); text-shadow: 0 0 10px rgb(38 232 255 / 0.8); }
+/* List display (core 0.6.18): in a row the title must outrank its summary (the pixel font is wide, the summary is smaller). */
+[data-skin-part="card"][data-kind="row"] [data-skin-part="heading"] { font-size: 1rem; }
+[data-skin-part="card"][data-kind="row"] [data-skin-part="lead"] { font-size: 0.875rem; line-height: 1.6; }
 [data-skin-part="panel"] { background-color: var(--v-surface); border: 2px solid var(--v-accent2); border-radius: 0; box-shadow: 0 0 24px rgb(38 232 255 / 0.3), inset 0 0 28px rgb(38 232 255 / 0.07); }
 [data-skin-part="hero"] { border: 2px solid var(--v-accent); background-color: var(--v-surface); box-shadow: 0 0 30px rgb(255 61 240 / 0.4), inset 0 0 40px rgb(255 61 240 / 0.1); padding: 1.5rem; }
 [data-skin-part="stat"] { font-family: var(--sk-font-heading); font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem); line-height: 1.3; }
@@ -214,3 +217,6 @@
 /* ───── Téléphone et petites largeurs : mise en page des en-têtes, cibles de 44 px (1.1.1) ───── */
 [data-skin-part="footer-link"] { min-width: var(--sk-target); justify-content: center; margin-block: 0.25rem; }
 [data-skin-region="tools"] > [data-skin-part="link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }
+
+/* List display (core 0.6.18): the row title is a block link so the core can cut it with an ellipsis (the rule above would make it inline-block and let it overflow its row). */
+[data-skin-part="card"][data-kind="row"] [data-skin-part="heading"] [data-skin-part="link"] { display: block; min-width: 0; max-width: 100%; text-align: left; }

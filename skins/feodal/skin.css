@@ -408,26 +408,9 @@
 
 /* ───── Listes et cartes : des plaques de parchemin rivetées ───── */
 [data-skin-part="list"][data-kind="list"], [data-skin-part="list"][data-kind="cards"] { padding: 0; margin: 0; list-style: none; }
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"] {
-  position: relative;
-  display: block;
-  padding-block: 1rem;
-  padding-left: 2rem;
-  border-bottom: 1px solid color-mix(in srgb, var(--v-line) 55%, transparent);
-}
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"]::before {
-  content: "";
-  position: absolute;
-  left: 0.1rem;
-  top: 1.2rem;
-  width: 1.1rem;
-  height: 1.4rem;
-  background: url(skin:images/ecu.svg) center / contain no-repeat;
-}
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"]:first-child { border-top: 4px double var(--v-line); }
+/* Link lists keep their look (these rules now only reach their chips). */
 [data-skin-part="list-item"] > a { font-family: var(--sk-font-heading); font-weight: var(--sk-weight-semibold); font-size: var(--sk-text-lg); line-height: 1.25; letter-spacing: 0.02em; text-decoration: none; color: var(--v-fg); }
 [data-skin-part="list-item"] > a:hover { color: var(--v-accent2); text-decoration: underline; }
-[data-skin-part="list-item"] > [data-skin-part="lead"] { font-size: var(--sk-text-base); margin-block: 0.25rem 0; }
 [data-skin-part="card"] {
   background-color: color-mix(in srgb, var(--v-line) 10%, var(--v-surface));
   background-image:
@@ -442,6 +425,11 @@
 [data-skin-part="card"]:hover { border-color: var(--v-accent); }
 [data-skin-part="card"] [data-skin-part="heading"] { font-size: var(--sk-text-lg); line-height: 1.2; margin: 0; letter-spacing: 0.03em; color: var(--v-fg); background: none; padding: 0; }
 [data-skin-part="card"] [data-skin-part="lead"] { font-size: var(--sk-text-sm); line-height: 1.55; }
+/* List display (core 0.6.18): rows are riveted plaques; the heading and arrow stay on one line, narrower on phones so the title is not cut early. */
+[data-skin-part="card"][data-kind="row"] > [aria-hidden="true"] { color: var(--v-accent); font-family: var(--sk-font-heading); }
+@media (max-width: 39.99rem) {
+  [data-skin-part="card"][data-kind="row"] [data-skin-part="heading"] { font-size: var(--sk-text-base); letter-spacing: 0.01em; }
+}
 [data-skin-part="cover"] { border-radius: 0.15rem; }
 
 /* Les chiffres clés : des écus alignés. */
@@ -739,3 +727,8 @@
 @media (min-width: 40rem) and (max-width: 47.99rem) {
   [data-skin-region="nav"] [data-skin-part="submenu"] { left: auto; right: 0; }
 }
+
+/* List search field (core 0.6.18, `search` with data-variant="list"): when the clear button appears, the field keeps a usable width and the button wraps under it on narrow screens. */
+[data-skin-part="search"][data-variant="list"] { flex-wrap: wrap; }
+[data-skin-part="search"][data-variant="list"] [data-skin-part="input"] { flex: 1 1 12rem; min-width: min(12rem, 100%); }
+[data-skin-part="search"][data-variant="list"] [data-skin-part="button"] { flex: 0 1 auto; max-width: 100%; }
