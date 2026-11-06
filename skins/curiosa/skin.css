@@ -284,15 +284,16 @@ hr[data-skin-part="divider"] {
 [data-skin-region="content"] figcaption { font-family: var(--sk-font-heading); font-style: italic; font-size: var(--sk-text-sm); color: var(--v-muted); padding-top: 0.5rem; }
 
 /* ───── Listes ───── */
-[data-skin-part="list"][data-kind="list"], [data-skin-part="list"][data-kind="results"] { display: block; padding: 0; margin: 0; list-style: none; border-top: 2px solid var(--v-fg); }
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"], [data-skin-part="list"][data-kind="results"] > [data-skin-part="list-item"] {
+[data-skin-part="list"][data-kind="results"] { display: block; padding: 0; margin: 0; list-style: none; border-top: 2px solid var(--v-fg); }
+[data-skin-part="list"][data-kind="list"] { padding: 0; margin: 0; list-style: none; }
+[data-skin-part="list"][data-kind="results"] > [data-skin-part="list-item"] {
   display: block;
   padding-block: 1.1rem;
   border-bottom: 1px solid var(--v-line);
 }
+/* Link lists keep their look (these rules now only reach their chips). */
 [data-skin-part="list-item"] > a { font-family: var(--sk-font-heading); font-weight: var(--sk-weight-semibold); font-size: var(--sk-text-xl); line-height: 1.25; text-decoration: none; color: var(--v-fg); }
 [data-skin-part="list-item"] > a:hover { color: var(--sk-color-link); text-decoration: underline; text-underline-offset: 0.2em; }
-[data-skin-part="list-item"] > [data-skin-part="lead"] { font-size: var(--sk-text-base); margin-block: 0.25rem 0; }
 
 /* Cartes en tiroirs : un fond papier, un filet fin, une poignée de laiton en bas */
 [data-skin-part="card"] {
@@ -318,6 +319,9 @@ hr[data-skin-part="divider"] {
 [data-skin-part="card"]:hover { border-color: var(--v-fg); }
 [data-skin-part="cover"] { border-radius: var(--sk-radius-media); }
 [data-skin-part="list"][data-kind="cards"] { gap: var(--sk-grid-gap); }
+/* List display (core 0.6.18): a row is a drawer; the brass handle becomes a short vertical bar at the right end, after the arrow. */
+[data-skin-part="card"][data-kind="row"]::after { flex: none; width: 0.3125rem; height: 2.25rem; margin: 0; }
+[data-skin-part="card"][data-kind="row"] [data-skin-part="link"] { display: block; min-height: 0; padding-block: 0.5rem; margin-block: -0.3rem; }
 
 /* Chiffres clés : trois tiroirs, chacun avec un trait de couleur */
 [data-skin-part="list"][data-kind="figures"] { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.75rem; padding: 0; list-style: none; text-align: center; }
@@ -578,4 +582,10 @@ hr[data-skin-part="divider"] {
   [data-skin-region="header"][data-header-layout="minimal"] { flex-wrap: wrap; }
   [data-skin-region="header"][data-header-layout="minimal"] [data-skin-part="header-group"] { flex-wrap: wrap; justify-content: flex-end; margin-inline-start: auto; min-width: 0; }
   [data-skin-region="header"][data-header-layout="minimal"] [data-skin-part="header-group"] > :not([data-skin-region="tools"]) { position: static; }
+}
+
+/* Classic header on narrow screens: the tools group (search, social links) may shrink and wrap instead of widening the page. */
+@media (max-width: 39.99rem) {
+  [data-skin-region="header"] [data-skin-part="header-group"] { min-width: 0; max-width: 100%; }
+  [data-skin-region="header"] [data-skin-part="socials"] { flex-wrap: wrap; min-width: 0; max-width: 100%; }
 }

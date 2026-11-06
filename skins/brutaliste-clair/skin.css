@@ -198,3 +198,8 @@
 [data-skin-part="footer-link"] { min-width: var(--sk-target); justify-content: center; margin-block: 0.25rem; }
 [data-skin-region="tools"] > [data-skin-part="link"] { display: inline-flex; align-items: center; min-height: var(--sk-target); }
 [data-skin-region="header"][data-header-layout="minimal"] [data-skin-part="header-group"] > :not([data-skin-region="tools"]) { position: static; grid-column: 1 / -1; justify-self: end; margin-bottom: 1rem; }
+
+/* List display (core 0.6.18): the row title is a block link so the core can cut it with an ellipsis (the rule above would make it inline-block and let it overflow its row). */
+[data-skin-part="card"][data-kind="row"] [data-skin-part="heading"] [data-skin-part="link"] { display: block; min-width: 0; max-width: 100%; text-align: left; }
+/* Row summary: shown in full (no line clamp), so no hidden line is left lying on the thick black border. */
+[data-skin-part="card"][data-kind="row"] [data-skin-part="lead"] { display: block; overflow: visible; font-size: 0.9375rem; line-height: 1.55; }

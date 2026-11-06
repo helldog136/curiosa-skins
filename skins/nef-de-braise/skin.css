@@ -368,11 +368,9 @@
 
 /* ───── Listes et cartes : des fenêtres à sommet arrondi ───── */
 [data-skin-part="list"][data-kind="list"], [data-skin-part="list"][data-kind="cards"] { padding: 0; margin: 0; list-style: none; }
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"] { display: block; padding-block: 1rem; border-bottom: 1px solid color-mix(in srgb, var(--v-line) 65%, transparent); }
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"]:first-child { border-top: 1px solid var(--v-line); }
+/* Link lists keep their look (these rules now only reach their chips). */
 [data-skin-part="list-item"] > a { font-family: var(--sk-font-heading); font-weight: var(--sk-weight-bold); font-size: var(--sk-text-lg); line-height: 1.25; text-decoration: none; color: var(--v-fg); }
 [data-skin-part="list-item"] > a:hover { color: var(--v-accent); text-decoration: underline; text-underline-offset: 0.2em; }
-[data-skin-part="list-item"] > [data-skin-part="lead"] { font-size: var(--sk-text-base); margin-block: 0.25rem 0; }
 [data-skin-part="card"] {
   position: relative;
   overflow: hidden;
@@ -683,4 +681,15 @@
   [data-skin-region="header"][data-header-layout="minimal"] { flex-wrap: wrap; }
   [data-skin-region="header"][data-header-layout="minimal"] [data-skin-part="header-group"] { flex-wrap: wrap; justify-content: flex-end; margin-inline-start: auto; min-width: 0; }
   [data-skin-region="header"][data-header-layout="minimal"] [data-skin-part="header-group"] > :not([data-skin-region="tools"]) { position: static; }
+}
+
+/* List search field (core 0.6.18, `search` with data-variant="list"): when the clear button appears, the field keeps a usable width and the button wraps under it on narrow screens. */
+[data-skin-part="search"][data-variant="list"] { flex-wrap: wrap; }
+[data-skin-part="search"][data-variant="list"] [data-skin-part="input"] { flex: 1 1 12rem; min-width: min(12rem, 100%); }
+[data-skin-part="search"][data-variant="list"] [data-skin-part="button"] { flex: 0 1 auto; max-width: 100%; }
+
+/* Classic header on narrow screens: the tools group (search, social links) may shrink and wrap instead of widening the page. */
+@media (max-width: 39.99rem) {
+  [data-skin-region="header"] [data-skin-part="header-group"] { min-width: 0; max-width: 100%; }
+  [data-skin-region="header"] [data-skin-part="socials"] { flex-wrap: wrap; min-width: 0; max-width: 100%; }
 }

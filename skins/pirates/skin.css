@@ -370,15 +370,9 @@
 
 /* ───── Listes et cartes : des étiquettes de caisse, bordées de laiton ───── */
 [data-skin-part="list"][data-kind="list"], [data-skin-part="list"][data-kind="cards"] { padding: 0; margin: 0; list-style: none; }
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"] {
-  display: block;
-  padding-block: 1rem;
-  border-bottom: 1px dashed var(--v-line);
-}
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"]:first-child { border-top: 4px double var(--v-line); }
+/* Link lists keep their look (these rules now only reach their chips). */
 [data-skin-part="list-item"] > a { font-family: var(--sk-font-heading); font-size: var(--sk-text-lg); line-height: 1.25; text-decoration: none; color: var(--v-fg); }
 [data-skin-part="list-item"] > a:hover { color: var(--v-accent); text-decoration: underline; }
-[data-skin-part="list-item"] > [data-skin-part="lead"] { font-size: var(--sk-text-base); margin-block: 0.25rem 0; }
 [data-skin-part="card"] {
   background-color: color-mix(in srgb, var(--v-line) 12%, var(--v-surface));
   border: 2px solid #2b1a0c;
@@ -652,3 +646,8 @@
 @media (min-width: 40rem) and (max-width: 47.99rem) {
   [data-skin-region="nav"] [data-skin-part="submenu"] { left: auto; right: 0; }
 }
+
+/* List search field (core 0.6.18, `search` with data-variant="list"): when the clear button appears, the field keeps a usable width and the button wraps under it on narrow screens. */
+[data-skin-part="search"][data-variant="list"] { flex-wrap: wrap; }
+[data-skin-part="search"][data-variant="list"] [data-skin-part="input"] { flex: 1 1 12rem; min-width: min(12rem, 100%); }
+[data-skin-part="search"][data-variant="list"] [data-skin-part="button"] { flex: 0 1 auto; max-width: 100%; }

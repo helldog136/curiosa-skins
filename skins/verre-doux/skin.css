@@ -175,13 +175,7 @@
 [data-skin-part="panel"] { border-radius: 2rem; padding: 1.25rem; }
 [data-skin-part="notice"] { border-radius: 1.25rem; padding: 0.9rem 1.2rem; }
 [data-skin-part="list"][data-kind="list"] { display: grid; gap: 0.75rem; padding: 0; list-style: none; }
-[data-skin-part="list"][data-kind="list"] > [data-skin-part="list-item"] {
-  padding: 0.4rem 1.4rem;
-  border-radius: 1.5rem;
-  background-color: var(--v-surface);
-  border: 1px solid color-mix(in srgb, var(--v-accent) 16%, var(--v-surface));
-  box-shadow: var(--sk-shadow-card);
-}
+/* Link lists keep their look (these rules now only reach their chips). */
 [data-skin-part="list-item"] > a { padding-block: 0.7rem; font-weight: var(--sk-weight-semibold); font-size: var(--sk-text-lg); color: var(--v-fg); text-decoration: none; }
 [data-skin-part="list-item"] > a:hover { color: var(--v-accent); }
 [data-skin-part="list"][data-kind="figures"] { gap: 1rem; }

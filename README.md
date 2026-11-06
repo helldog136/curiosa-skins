@@ -7,19 +7,22 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 
 | Skin | Version | Modes | Dossier / Folder |
 |---|---|---|---|
-| Brutaliste clair / Light brutalist | 1.1.1 | clair / light | `skins/brutaliste-clair` |
-| Curiosa / Curiosa | 1.0.0 | clair, sombre / light, dark | `skins/curiosa` |
-| Éditorial papier / Editorial paper | 1.1.1 | clair, sombre / light, dark | `skins/editorial-papier` |
-| Féodal / Feudal | 1.1.1 | clair, sombre / light, dark | `skins/feodal` |
-| Pirates / Pirates | 1.1.1 | clair, sombre / light, dark | `skins/pirates` |
-| Nef de braise / Ember nave | 1.1.1 | sombre, clair / dark, light | `skins/nef-de-braise` |
-| Rétro néon / Retro neon | 1.1.1 | sombre / dark | `skins/retro-neon` |
-| Steampunk victorien / Victorian steampunk | 1.1.1 | sombre, clair / dark, light | `skins/steampunk-victorien` |
-| Tissu / Fabric | 1.1.1 | clair, sombre / light, dark | `skins/tissu` |
-| Verre et dégradés doux / Soft glass | 1.1.1 | clair, sombre / light, dark | `skins/verre-doux` |
+| Brutaliste clair / Light brutalist | 1.1.2 | clair / light | `skins/brutaliste-clair` |
+| Curiosa / Curiosa | 1.0.1 | clair, sombre / light, dark | `skins/curiosa` |
+| Éditorial papier / Editorial paper | 1.1.2 | clair, sombre / light, dark | `skins/editorial-papier` |
+| Féodal / Feudal | 1.1.2 | clair, sombre / light, dark | `skins/feodal` |
+| Pirates / Pirates | 1.1.2 | clair, sombre / light, dark | `skins/pirates` |
+| Nef de braise / Ember nave | 1.1.2 | sombre, clair / dark, light | `skins/nef-de-braise` |
+| Rétro néon / Retro neon | 1.1.2 | sombre / dark | `skins/retro-neon` |
+| Steampunk victorien / Victorian steampunk | 1.1.2 | sombre, clair / dark, light | `skins/steampunk-victorien` |
+| Tissu / Fabric | 1.1.2 | clair, sombre / light, dark | `skins/tissu` |
+| Verre et dégradés doux / Soft glass | 1.1.2 | clair, sombre / light, dark | `skins/verre-doux` |
 
 Les versions 1.1.x habillent la recherche dans le site (pièces `search` et `mark`, champ et mot mis en valeur) et demandent le cœur 0.6.3 ou plus. La 1.1.1 corrige la mise en page des en-têtes à petite largeur (en-têtes sobre, à deux rangées et classique) et les cibles tactiles de 44 px.
 *Version 1.1.x of each skin styles the site search (`search` and `mark` parts: the field and the highlighted word) and needs core 0.6.3 or later. Version 1.1.1 fixes the header layouts on narrow screens (minimal, two-row and classic headers) and the 44 px touch targets.*
+
+La 1.1.2 (1.0.1 pour Curiosa) habille l'affichage en liste du cœur 0.6.18 (lignes `card` `data-kind="row"` et champ `search` `data-variant="list"`) ; les anciennes règles `list-item` du mode liste sont retirées.
+*Version 1.1.2 (1.0.1 for Curiosa) styles the core 0.6.18 list display (`card` `data-kind="row"` rows and the `search` `data-variant="list"` field); the old `list-item` rules of the list mode are removed.*
 
 Chaque skin est un dossier de données (`skin.json`, `tokens.json`, `skin.css`, polices et images avec leurs licences) : aucun programme ne s'exécute, seule l'apparence change.
 *Each skin is a folder of data: no code runs, only the appearance changes.*
