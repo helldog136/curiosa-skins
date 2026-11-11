@@ -1,0 +1,37 @@
+{
+  "skinContract": 2,
+  "kind": "overlay",
+  "id": "arcade-hall",
+  "name": {
+    "fr": "Salle d'arcade",
+    "en": "Arcade hall"
+  },
+  "description": {
+    "fr": "Fond bleu nuit, cadre jaune épais, ombre dure rose et lettres de console.",
+    "en": "Midnight blue ground, thick yellow frame, hard pink shadow and console lettering."
+  },
+  "version": "1.0.0",
+  "minCore": "0.8.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "dark",
+    "pixel",
+    "retro",
+    "bold"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Salle d'arcade sur des éléments d'exemple",
+        "en": "Preview of the Arcade hall skin on sample elements"
+      }
+    }
+  ]
+}

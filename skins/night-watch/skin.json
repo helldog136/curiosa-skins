@@ -1,0 +1,36 @@
+{
+  "skinContract": 2,
+  "kind": "overlay",
+  "id": "night-watch",
+  "name": {
+    "fr": "Veille nocturne",
+    "en": "Night watch"
+  },
+  "description": {
+    "fr": "Enquête de nuit : brume bleu-gris, jaune de lampe de poche, texte de machine à écrire.",
+    "en": "A night investigation: blue-grey fog, flashlight yellow, typewriter text."
+  },
+  "version": "1.0.0",
+  "minCore": "0.8.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "dark",
+    "spooky",
+    "mono"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Veille nocturne sur des éléments d'exemple",
+        "en": "Preview of the Night watch skin on sample elements"
+      }
+    }
+  ]
+}

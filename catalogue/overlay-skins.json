@@ -1,0 +1,398 @@
+{
+ "version": 1,
+ "skins": [
+  {
+   "id": "ember-throne",
+   "name": {
+    "fr": "Trône de braise",
+    "en": "Ember throne"
+   },
+   "description": {
+    "fr": "Parchemin sombre, or et braise, empattements et double filet doré : l'allure d'une épopée.",
+    "en": "Dark parchment, gold and ember, serif type and a double gold rule: the look of an epic."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/ember-throne",
+   "ref": "ember-throne/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "🔥",
+   "tags": [
+    "dark",
+    "epic",
+    "serif"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/ember-throne/previews/overlay-640.webp"
+  },
+  {
+   "id": "heroic-banner",
+   "name": {
+    "fr": "Bannière héroïque",
+    "en": "Heroic banner"
+   },
+   "description": {
+    "fr": "Bleu nuit, bordure d'or, rouge de bannière et titres en capitales massives.",
+    "en": "Midnight blue, gold border, banner red and massive capital headings."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/heroic-banner",
+   "ref": "heroic-banner/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "🛡️",
+   "tags": [
+    "dark",
+    "epic",
+    "bold"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/heroic-banner/previews/overlay-640.webp"
+  },
+  {
+   "id": "deep-signal",
+   "name": {
+    "fr": "Signal profond",
+    "en": "Deep signal"
+   },
+   "description": {
+    "fr": "Terminal de vaisseau à la dérive : noir, vert phosphore, lueur discrète et chasse fixe.",
+    "en": "A drifting ship's terminal: black, phosphor green, a soft glow and fixed-width type."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/deep-signal",
+   "ref": "deep-signal/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "📡",
+   "tags": [
+    "dark",
+    "scifi",
+    "mono"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/deep-signal/previews/overlay-640.webp"
+  },
+  {
+   "id": "night-watch",
+   "name": {
+    "fr": "Veille nocturne",
+    "en": "Night watch"
+   },
+   "description": {
+    "fr": "Enquête de nuit : brume bleu-gris, jaune de lampe de poche, texte de machine à écrire.",
+    "en": "A night investigation: blue-grey fog, flashlight yellow, typewriter text."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/night-watch",
+   "ref": "night-watch/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "🔦",
+   "tags": [
+    "dark",
+    "spooky",
+    "mono"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/night-watch/previews/overlay-640.webp"
+  },
+  {
+   "id": "night-neon",
+   "name": {
+    "fr": "Néon nocturne",
+    "en": "Night neon"
+   },
+   "description": {
+    "fr": "Violet profond, filet rose et cyan, lueur de néon sur les panneaux et le texte.",
+    "en": "Deep violet, pink and cyan rules, neon glow on panels and text."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/night-neon",
+   "ref": "night-neon/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "🌃",
+   "tags": [
+    "dark",
+    "neon",
+    "retro"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/night-neon/previews/overlay-640.webp"
+  },
+  {
+   "id": "arcade-hall",
+   "name": {
+    "fr": "Salle d'arcade",
+    "en": "Arcade hall"
+   },
+   "description": {
+    "fr": "Fond bleu nuit, cadre jaune épais, ombre dure rose et lettres de console.",
+    "en": "Midnight blue ground, thick yellow frame, hard pink shadow and console lettering."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/arcade-hall",
+   "ref": "arcade-hall/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "🕹️",
+   "tags": [
+    "dark",
+    "pixel",
+    "retro",
+    "bold"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/arcade-hall/previews/overlay-640.webp"
+  },
+  {
+   "id": "arena-pulse",
+   "name": {
+    "fr": "Pouls d'arène",
+    "en": "Arena pulse"
+   },
+   "description": {
+    "fr": "Panneaux sombres arrondis, dégradé orange et bleu, titres gras en capitales.",
+    "en": "Dark rounded panels, an orange and blue gradient, bold capital headings."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/arena-pulse",
+   "ref": "arena-pulse/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "🏟️",
+   "tags": [
+    "dark",
+    "bold",
+    "sans"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/arena-pulse/previews/overlay-640.webp"
+  },
+  {
+   "id": "paper-collage",
+   "name": {
+    "fr": "Collage de papier",
+    "en": "Paper collage"
+   },
+   "description": {
+    "fr": "Papier kraft clair, encre foncée, ombre décalée et titres façon écriture à la main.",
+    "en": "Light kraft paper, dark ink, an offset shadow and handwritten-style headings."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/paper-collage",
+   "ref": "paper-collage/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "✂️",
+   "tags": [
+    "playful",
+    "serif",
+    "light"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/paper-collage/previews/overlay-640.webp"
+  },
+  {
+   "id": "studio-desk",
+   "name": {
+    "fr": "Plateau télé",
+    "en": "Studio desk"
+   },
+   "description": {
+    "fr": "Bandeau bleu marine, liseré rouge de direct, titres en capitales serrées.",
+    "en": "Navy lower-third, red on-air rule, tight capital headings."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/studio-desk",
+   "ref": "studio-desk/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "📺",
+   "tags": [
+    "dark",
+    "sans",
+    "bold"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/studio-desk/previews/overlay-640.webp"
+  },
+  {
+   "id": "film-reel",
+   "name": {
+    "fr": "Bobine",
+    "en": "Film reel"
+   },
+   "description": {
+    "fr": "Noir de salle, blanc cassé, filet doré fin : la sobriété d'un générique de film.",
+    "en": "Cinema black, off-white, a thin gold rule: the restraint of film credits."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/film-reel",
+   "ref": "film-reel/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "🎞️",
+   "tags": [
+    "dark",
+    "serif",
+    "editorial"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/film-reel/previews/overlay-640.webp"
+  },
+  {
+   "id": "soft-glass",
+   "name": {
+    "fr": "Verre léger",
+    "en": "Soft glass"
+   },
+   "description": {
+    "fr": "Panneaux de verre fumé très arrondis, filet clair, flou doux derrière le texte.",
+    "en": "Smoked-glass panels with large corners, a light rule and a soft blur behind the text."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/soft-glass",
+   "ref": "soft-glass/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "🫧",
+   "tags": [
+    "dark",
+    "glass",
+    "minimal"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/soft-glass/previews/overlay-640.webp"
+  },
+  {
+   "id": "bold-poster",
+   "name": {
+    "fr": "Affiche audacieuse",
+    "en": "Bold poster"
+   },
+   "description": {
+    "fr": "Aplat jaune vif, texte noir, cadre épais et ombre dure : un contraste maximal.",
+    "en": "A bright yellow flat, black text, a thick frame and a hard shadow: maximum contrast."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/bold-poster",
+   "ref": "bold-poster/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "📢",
+   "tags": [
+    "light",
+    "bold",
+    "high-contrast"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/bold-poster/previews/overlay-640.webp"
+  },
+  {
+   "id": "sharp-shapes",
+   "name": {
+    "fr": "Formes nettes",
+    "en": "Sharp shapes"
+   },
+   "description": {
+    "fr": "Cartes blanches à angles droits, barre d'accent bleue à gauche, ombre légère.",
+    "en": "White square-cornered cards with a blue accent bar on the left and a light shadow."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/sharp-shapes",
+   "ref": "sharp-shapes/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "◼️",
+   "tags": [
+    "light",
+    "minimal",
+    "sans"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/sharp-shapes/previews/overlay-640.webp"
+  },
+  {
+   "id": "momentum",
+   "name": {
+    "fr": "Élan",
+    "en": "Momentum"
+   },
+   "description": {
+    "fr": "Dégradé violet et bleu en mouvement, texte blanc, titres massifs : de l'énergie.",
+    "en": "A purple and blue gradient, white text, massive headings: pure energy."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/momentum",
+   "ref": "momentum/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 2,
+   "author": "Équipe Curiosa",
+   "icon": "⚡",
+   "tags": [
+    "dark",
+    "bold",
+    "playful"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.8.0"
+   },
+   "preview": "skins/momentum/previews/overlay-640.webp"
+  }
+ ]
+}

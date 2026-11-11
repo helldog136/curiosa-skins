@@ -1,0 +1,36 @@
+{
+  "skinContract": 2,
+  "kind": "overlay",
+  "id": "sharp-shapes",
+  "name": {
+    "fr": "Formes nettes",
+    "en": "Sharp shapes"
+  },
+  "description": {
+    "fr": "Cartes blanches à angles droits, barre d'accent bleue à gauche, ombre légère.",
+    "en": "White square-cornered cards with a blue accent bar on the left and a light shadow."
+  },
+  "version": "1.0.0",
+  "minCore": "0.8.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "minimal",
+    "sans"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Formes nettes sur des éléments d'exemple",
+        "en": "Preview of the Sharp shapes skin on sample elements"
+      }
+    }
+  ]
+}

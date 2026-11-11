@@ -1,0 +1,36 @@
+{
+  "skinContract": 2,
+  "kind": "overlay",
+  "id": "soft-glass",
+  "name": {
+    "fr": "Verre léger",
+    "en": "Soft glass"
+  },
+  "description": {
+    "fr": "Panneaux de verre fumé très arrondis, filet clair, flou doux derrière le texte.",
+    "en": "Smoked-glass panels with large corners, a light rule and a soft blur behind the text."
+  },
+  "version": "1.0.0",
+  "minCore": "0.8.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "dark",
+    "glass",
+    "minimal"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Verre léger sur des éléments d'exemple",
+        "en": "Preview of the Soft glass skin on sample elements"
+      }
+    }
+  ]
+}

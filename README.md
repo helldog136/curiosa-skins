@@ -1,6 +1,6 @@
 # curiosa-skins
 
-Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa) (cœur 0.4.0 ou plus).
+Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa) (cœur 0.4.0 ou plus ; skins d'overlay : cœur 0.8.0 ou plus).
 *Official catalogue of [Curiosa](https://github.com/helldog136/Curiosa) skins (core 0.4.0 or later).*
 
 ## Les skins / The skins
@@ -26,6 +26,31 @@ La 1.1.2 (1.0.1 pour Curiosa) habille l'affichage en liste du cœur 0.6.18 (lign
 
 Chaque skin est un dossier de données (`skin.json`, `tokens.json`, `skin.css`, polices et images avec leurs licences) : aucun programme ne s'exécute, seule l'apparence change.
 *Each skin is a folder of data: no code runs, only the appearance changes.*
+
+## Skins d'overlay / Overlay skins
+
+Les skins d'overlay habillent les **pages d'overlay pour OBS** (jamais le site public) : couleurs, polices du système, bordures, ombres, petite animation. Ils demandent le cœur **0.8.0** ou plus, se choisissent dans l'onglet **Skin** d'une page d'overlay, et peuvent changer tout seuls selon le jeu en cours (ou toute autre situation fournie par une extension). Ils sont listés dans `catalogue/overlay-skins.json` (fichier à part : un cœur plus ancien ne les voit pas). Aucun programme, aucune police, aucune image : `skin.json` avec `"kind": "overlay"`, `tokens.json` (jetons `--ov-*`) et `skin.css` (règles `[data-ov-part]`).
+*Overlay skins restyle the **OBS overlay pages** (never the public site): colours, system fonts, borders, shadows, a small animation. They need core **0.8.0** or later, are picked in the **Skin** tab of an overlay page, and can change by themselves with the current game (or any other situation an extension provides). They are listed in `catalogue/overlay-skins.json` (a separate file: an older core does not see them). No program, no font, no image: `skin.json` with `"kind": "overlay"`, `tokens.json` (`--ov-*` tokens) and `skin.css` (`[data-ov-part]` rules).*
+
+| Skin | Version | Dossier / Folder |
+|---|---|---|
+| Trône de braise / Ember throne | 1.0.0 | `skins/ember-throne` |
+| Bannière héroïque / Heroic banner | 1.0.0 | `skins/heroic-banner` |
+| Signal profond / Deep signal | 1.0.0 | `skins/deep-signal` |
+| Veille nocturne / Night watch | 1.0.0 | `skins/night-watch` |
+| Néon nocturne / Night neon | 1.0.0 | `skins/night-neon` |
+| Salle d'arcade / Arcade hall | 1.0.0 | `skins/arcade-hall` |
+| Pouls d'arène / Arena pulse | 1.0.0 | `skins/arena-pulse` |
+| Collage de papier / Paper collage | 1.0.0 | `skins/paper-collage` |
+| Plateau télé / Studio desk | 1.0.0 | `skins/studio-desk` |
+| Bobine / Film reel | 1.0.0 | `skins/film-reel` |
+| Verre léger / Soft glass | 1.0.0 | `skins/soft-glass` |
+| Affiche audacieuse / Bold poster | 1.0.0 | `skins/bold-poster` |
+| Formes nettes / Sharp shapes | 1.0.0 | `skins/sharp-shapes` |
+| Élan / Momentum | 1.0.0 | `skins/momentum` |
+
+Écrire un skin d'overlay : `docs/OVERLAY-SKINS.md` du cœur ; le vérifier : `npm run skin:check -- <dossier>`.
+*Writing an overlay skin: the core's `docs/OVERLAY-SKINS.md`; checking it: `npm run skin:check -- <folder>`.*
 
 ## Installer un skin / Installing a skin
 

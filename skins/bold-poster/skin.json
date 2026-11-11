@@ -1,0 +1,36 @@
+{
+  "skinContract": 2,
+  "kind": "overlay",
+  "id": "bold-poster",
+  "name": {
+    "fr": "Affiche audacieuse",
+    "en": "Bold poster"
+  },
+  "description": {
+    "fr": "Aplat jaune vif, texte noir, cadre épais et ombre dure : un contraste maximal.",
+    "en": "A bright yellow flat, black text, a thick frame and a hard shadow: maximum contrast."
+  },
+  "version": "1.0.0",
+  "minCore": "0.8.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "bold",
+    "high-contrast"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Affiche audacieuse sur des éléments d'exemple",
+        "en": "Preview of the Bold poster skin on sample elements"
+      }
+    }
+  ]
+}

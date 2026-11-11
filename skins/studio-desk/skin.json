@@ -1,0 +1,36 @@
+{
+  "skinContract": 2,
+  "kind": "overlay",
+  "id": "studio-desk",
+  "name": {
+    "fr": "Plateau télé",
+    "en": "Studio desk"
+  },
+  "description": {
+    "fr": "Bandeau bleu marine, liseré rouge de direct, titres en capitales serrées.",
+    "en": "Navy lower-third, red on-air rule, tight capital headings."
+  },
+  "version": "1.0.0",
+  "minCore": "0.8.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "dark",
+    "sans",
+    "bold"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Plateau télé sur des éléments d'exemple",
+        "en": "Preview of the Studio desk skin on sample elements"
+      }
+    }
+  ]
+}
