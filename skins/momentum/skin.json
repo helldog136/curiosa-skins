@@ -1,0 +1,36 @@
+{
+  "skinContract": 2,
+  "kind": "overlay",
+  "id": "momentum",
+  "name": {
+    "fr": "Élan",
+    "en": "Momentum"
+  },
+  "description": {
+    "fr": "Dégradé violet et bleu en mouvement, texte blanc, titres massifs : de l'énergie.",
+    "en": "A purple and blue gradient, white text, massive headings: pure energy."
+  },
+  "version": "1.0.0",
+  "minCore": "0.8.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "dark",
+    "bold",
+    "playful"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Élan sur des éléments d'exemple",
+        "en": "Preview of the Momentum skin on sample elements"
+      }
+    }
+  ]
+}

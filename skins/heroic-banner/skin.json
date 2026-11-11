@@ -1,0 +1,36 @@
+{
+  "skinContract": 2,
+  "kind": "overlay",
+  "id": "heroic-banner",
+  "name": {
+    "fr": "Bannière héroïque",
+    "en": "Heroic banner"
+  },
+  "description": {
+    "fr": "Bleu nuit, bordure d'or, rouge de bannière et titres en capitales massives.",
+    "en": "Midnight blue, gold border, banner red and massive capital headings."
+  },
+  "version": "1.0.0",
+  "minCore": "0.8.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "dark",
+    "epic",
+    "bold"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Bannière héroïque sur des éléments d'exemple",
+        "en": "Preview of the Heroic banner skin on sample elements"
+      }
+    }
+  ]
+}

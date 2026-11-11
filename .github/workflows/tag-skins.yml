@@ -1,12 +1,12 @@
 name: Étiquettes des skins / Skin tags
 
-# Crée l'étiquette `ref` (<id>/v<version>) de chaque entrée de catalogue/index.json qui n'existe pas encore.
+# Crée l'étiquette `ref` (<id>/v<version>) de chaque entrée de catalogue/index.json et de catalogue/overlay-skins.json (skins d'overlay) qui n'existe pas encore.
 # Ne déplace, ne supprime et n'écrase jamais une étiquette existante (une version ne change jamais de contenu).
 on:
   workflow_dispatch:
   push:
     branches: [main]
-    paths: ["catalogue/index.json"]
+    paths: ["catalogue/index.json", "catalogue/overlay-skins.json"]
 
 permissions:
   contents: write
@@ -43,5 +43,5 @@ jobs:
             gh release create "$ref" --target "$GITHUB_SHA" --title "$id $version" \
               --notes "Skin $id, version $version / Skin $id, version $version. Installation : https://github.com/$GH_REPO#$ref:$subdir"
             echo "$ref créée sur $GITHUB_SHA."
-          done < <(jq -r '.skins[] | [.id, .version, .ref, .subdir] | @tsv' catalogue/index.json)
+          done < <(jq -r '.skins[] | [.id, .version, .ref, .subdir] | @tsv' catalogue/index.json $( [ -f catalogue/overlay-skins.json ] && echo catalogue/overlay-skins.json ))
           exit $status
