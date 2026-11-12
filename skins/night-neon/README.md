@@ -1,7 +1,7 @@
 # Néon nocturne / Night neon
 
-Skin d'overlay pour Curiosa (cœur 0.8.0 ou plus) : il habille les pages d'overlay pour OBS, jamais le site public. Aucun programme, ni police, ni image : des couleurs, des formes et les polices du système.
-*Overlay skin for Curiosa (core 0.8.0 or later): it restyles the OBS overlay pages, never the public site. No program, no font, no image: colours, shapes and system fonts.*
+Skin d'overlay pour Curiosa (cœur 0.9.0 ou plus) : il habille les pages d'overlay pour OBS, jamais le site public. Aucun programme, ni police, ni image : des couleurs, des formes, des décorations et les polices du système.
+*Overlay skin for Curiosa (core 0.9.0 or later): it restyles the OBS overlay pages, never the public site. No program, no font, no image: colours, shapes, decorations and system fonts.*
 
 Violet profond, filet rose et cyan, lueur de néon sur les panneaux et le texte.
 *Deep violet, pink and cyan rules, neon glow on panels and text.*

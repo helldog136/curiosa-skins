@@ -1,5 +1,5 @@
 {
-  "skinContract": 2,
+  "skinContract": 3,
   "kind": "overlay",
   "id": "soft-glass",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Panneaux de verre fumé très arrondis, filet clair, flou doux derrière le texte.",
     "en": "Smoked-glass panels with large corners, a light rule and a soft blur behind the text."
   },
-  "version": "1.0.0",
-  "minCore": "0.8.0",
+  "version": "1.1.0",
+  "minCore": "0.9.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -30,6 +30,14 @@
       "alt": {
         "fr": "Aperçu du skin Verre léger sur des éléments d'exemple",
         "en": "Preview of the Soft glass skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Verre léger : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Soft glass skin: alert, counter, list, featured card and banner"
       }
     }
   ]

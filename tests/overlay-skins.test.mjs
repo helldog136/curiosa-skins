@@ -21,15 +21,19 @@ test("every overlay skin is listed in catalogue/overlay-skins.json, and only tho
 for (const id of overlay) {
   test(`${id}: manifest, catalogue entry, tag, preview`, () => {
     const m = JSON.parse(read("skins", id, "skin.json")), e = catalogue.skins.find((s) => s.id === id);
-    assert.deepEqual([m.kind, m.skinContract, m.minCore, m.license], ["overlay", 2, "0.8.0", "MIT"]);
+    assert.deepEqual([m.kind, m.skinContract, m.minCore, m.license, m.version], ["overlay", 3, "0.9.0", "MIT", "1.1.0"]);
     assert.equal(m.assets, undefined, "overlay skins ship no font or image");
     assert.ok(m.name.fr && m.name.en && m.description.fr && m.description.en);
-    assert.deepEqual([e.version, e.ref, e.subdir, e.skinContract, e.requires.core], [m.version, `${id}/v${m.version}`, `skins/${id}`, 2, "0.8.0"]);
+    assert.deepEqual([e.version, e.ref, e.subdir, e.skinContract, e.requires.core], [m.version, `${id}/v${m.version}`, `skins/${id}`, 3, "0.9.0"]);
+    assert.equal(e.previewAnim, `skins/${id}/previews/overlay-anim.webp`); assert.deepEqual(m.previews.map((p) => p.file), ["previews/overlay-640.webp", "previews/overlay-anim.webp"]);
     assert.equal(e.preview, `skins/${id}/${m.previews[0].file}`);
     const png = readFileSync(path.join(root, "skins", id, m.previews[0].file));
     assert.equal(png.subarray(0, 4).toString("latin1"), "RIFF"); assert.equal(png.subarray(8, 12).toString("latin1"), "WEBP");
-    assert.ok(png.length < 150 * 1024, "preview weight");
-    assert.ok(m.previews[0].alt.fr && m.previews[0].alt.en);
+    assert.ok(png.length < 150 * 1024, "still preview weight");
+    const anim = readFileSync(path.join(root, "skins", id, m.previews[1].file));
+    assert.equal(anim.subarray(0, 4).toString("latin1"), "RIFF"); assert.equal(anim.subarray(8, 12).toString("latin1"), "WEBP"); assert.ok(anim.includes("ANIM") && anim.includes("ANMF"), "an animated webp (several frames)");
+    assert.ok(anim.length <= 450 * 1024, "animated preview weight");
+    assert.ok(m.previews.every((p) => p.alt.fr && p.alt.en));
     assert.ok(existsSync(path.join(root, "skins", id, "LICENSE")) && existsSync(path.join(root, "skins", id, "README.md")));
     assert.deepEqual(readdirSync(path.join(root, "skins", id)).sort(), ["LICENSE", "README.md", "previews", "skin.css", "skin.json", "tokens.json"], "no other file");
   });
@@ -39,6 +43,8 @@ for (const id of overlay) {
     for (const k of Object.keys(tokens)) assert.match(k, /^--ov-[a-z-]+$/);
     const css = read("skins", id, "skin.css").replace(/\/\*[\s\S]*?\*\//g, "");
     assert.doesNotMatch(css, /@|url\(|!important|expression|javascript:|<|\.\w+\s*\{|#\w+\s*\{/);
+    // contract 3: only closed preset names, never raw clip-path, pseudo-elements, positions or animations
+    assert.doesNotMatch(css, /clip-path|::?(before|after)|(^|[;{\s])position\s*:|animation|content\s*:|keyframes/);
     for (const sel of [...css.matchAll(/([^{}]+)\{/g)].map((m) => m[1].trim())) for (const one of sel.split(",")) assert.match(one.trim(), /^\[data-ov-(part|region)="[a-z0-9-]+"\]/, one);
   });
 }

@@ -1,1 +1,7 @@
-[data-ov-part="panel"],[data-ov-part="card"]{padding:0.8em 1.1em 0.8em 1.5em}
+[data-ov-part="panel"]{ov-shape:notch 14px;ov-deco:halftone var(--ov-accent)}
+[data-ov-part="card"]{ov-shape:ribbon 16px;text-align:center}
+[data-ov-part="bubble"]{ov-shape:chevron 16px}
+[data-ov-part="avatar"]{ov-shape:hexagon 8px flush}
+[data-ov-part="badge"]{ov-shape:hexagon 6px flush}
+[data-ov-part="bar-fill"]{ov-shape:chevron 5px flush}
+[data-ov-part="title"]{ov-font:wide}

@@ -1,1 +1,8 @@
-[data-ov-part="title"]{border-bottom:1px solid var(--ov-accent, #3ddc84)}
+[data-ov-part="panel"]{ov-deco:radar var(--ov-accent),scanlines;ov-motion:flicker}
+[data-ov-part="card"]{ov-deco:halftone var(--ov-accent)}
+[data-ov-part="bubble"]{ov-deco:hazard #e8a317,scanlines;padding-bottom:1.2em}
+[data-ov-part="avatar"]{ov-shape:notch 7px flush}
+[data-ov-part="badge"]{ov-shape:notch 4px flush}
+[data-ov-part="title"]{ov-font:mono;ov-text:glow var(--ov-accent)}
+[data-ov-part="value"]{ov-font:mono;ov-text:glow var(--ov-accent)}
+[data-ov-part="title"],[data-ov-part="name"],[data-ov-part="body"],[data-ov-part="text"],[data-ov-part="message"],[data-ov-part="label"],[data-ov-part="value"]{font-size:90%}

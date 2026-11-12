@@ -1,1 +1,5 @@
-[data-ov-part="panel"],[data-ov-part="card"],[data-ov-part="bubble"]{backdrop-filter:blur(14px)}
+[data-ov-part="panel"]{ov-deco:shimmer;ov-motion:float;backdrop-filter:blur(14px)}
+[data-ov-part="card"]{ov-shape:pill;backdrop-filter:blur(14px);text-align:center}
+[data-ov-part="bubble"]{ov-shape:pill;backdrop-filter:blur(14px)}
+[data-ov-part="avatar"]{ov-frame:glow rgba(255,255,255,0.8)}
+[data-ov-part="badge"]{ov-shape:pill}

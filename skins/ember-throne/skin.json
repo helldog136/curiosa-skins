@@ -1,5 +1,5 @@
 {
-  "skinContract": 2,
+  "skinContract": 3,
   "kind": "overlay",
   "id": "ember-throne",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Parchemin sombre, or et braise, empattements et double filet doré : l'allure d'une épopée.",
     "en": "Dark parchment, gold and ember, serif type and a double gold rule: the look of an epic."
   },
-  "version": "1.0.0",
-  "minCore": "0.8.0",
+  "version": "1.1.0",
+  "minCore": "0.9.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -30,6 +30,14 @@
       "alt": {
         "fr": "Aperçu du skin Trône de braise sur des éléments d'exemple",
         "en": "Preview of the Ember throne skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Trône de braise : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Ember throne skin: alert, counter, list, featured card and banner"
       }
     }
   ]

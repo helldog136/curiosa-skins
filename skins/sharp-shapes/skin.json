@@ -1,5 +1,5 @@
 {
-  "skinContract": 2,
+  "skinContract": 3,
   "kind": "overlay",
   "id": "sharp-shapes",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Cartes blanches à angles droits, barre d'accent bleue à gauche, ombre légère.",
     "en": "White square-cornered cards with a blue accent bar on the left and a light shadow."
   },
-  "version": "1.0.0",
-  "minCore": "0.8.0",
+  "version": "1.1.0",
+  "minCore": "0.9.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -30,6 +30,14 @@
       "alt": {
         "fr": "Aperçu du skin Formes nettes sur des éléments d'exemple",
         "en": "Preview of the Sharp shapes skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Formes nettes : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Sharp shapes skin: alert, counter, list, featured card and banner"
       }
     }
   ]

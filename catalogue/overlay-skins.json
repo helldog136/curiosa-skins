@@ -13,9 +13,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/ember-throne",
-   "ref": "ember-throne/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "ember-throne/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "🔥",
    "tags": [
@@ -25,9 +25,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/ember-throne/previews/overlay-640.webp"
+   "preview": "skins/ember-throne/previews/overlay-640.webp",
+   "previewAnim": "skins/ember-throne/previews/overlay-anim.webp"
   },
   {
    "id": "heroic-banner",
@@ -41,9 +42,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/heroic-banner",
-   "ref": "heroic-banner/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "heroic-banner/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "🛡️",
    "tags": [
@@ -53,9 +54,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/heroic-banner/previews/overlay-640.webp"
+   "preview": "skins/heroic-banner/previews/overlay-640.webp",
+   "previewAnim": "skins/heroic-banner/previews/overlay-anim.webp"
   },
   {
    "id": "deep-signal",
@@ -69,9 +71,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/deep-signal",
-   "ref": "deep-signal/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "deep-signal/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "📡",
    "tags": [
@@ -81,9 +83,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/deep-signal/previews/overlay-640.webp"
+   "preview": "skins/deep-signal/previews/overlay-640.webp",
+   "previewAnim": "skins/deep-signal/previews/overlay-anim.webp"
   },
   {
    "id": "night-watch",
@@ -97,9 +100,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/night-watch",
-   "ref": "night-watch/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "night-watch/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "🔦",
    "tags": [
@@ -109,9 +112,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/night-watch/previews/overlay-640.webp"
+   "preview": "skins/night-watch/previews/overlay-640.webp",
+   "previewAnim": "skins/night-watch/previews/overlay-anim.webp"
   },
   {
    "id": "night-neon",
@@ -125,9 +129,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/night-neon",
-   "ref": "night-neon/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "night-neon/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "🌃",
    "tags": [
@@ -137,9 +141,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/night-neon/previews/overlay-640.webp"
+   "preview": "skins/night-neon/previews/overlay-640.webp",
+   "previewAnim": "skins/night-neon/previews/overlay-anim.webp"
   },
   {
    "id": "arcade-hall",
@@ -153,9 +158,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/arcade-hall",
-   "ref": "arcade-hall/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "arcade-hall/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "🕹️",
    "tags": [
@@ -166,9 +171,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/arcade-hall/previews/overlay-640.webp"
+   "preview": "skins/arcade-hall/previews/overlay-640.webp",
+   "previewAnim": "skins/arcade-hall/previews/overlay-anim.webp"
   },
   {
    "id": "arena-pulse",
@@ -182,9 +188,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/arena-pulse",
-   "ref": "arena-pulse/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "arena-pulse/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "🏟️",
    "tags": [
@@ -194,9 +200,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/arena-pulse/previews/overlay-640.webp"
+   "preview": "skins/arena-pulse/previews/overlay-640.webp",
+   "previewAnim": "skins/arena-pulse/previews/overlay-anim.webp"
   },
   {
    "id": "paper-collage",
@@ -210,9 +217,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/paper-collage",
-   "ref": "paper-collage/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "paper-collage/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "✂️",
    "tags": [
@@ -222,9 +229,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/paper-collage/previews/overlay-640.webp"
+   "preview": "skins/paper-collage/previews/overlay-640.webp",
+   "previewAnim": "skins/paper-collage/previews/overlay-anim.webp"
   },
   {
    "id": "studio-desk",
@@ -238,9 +246,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/studio-desk",
-   "ref": "studio-desk/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "studio-desk/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "📺",
    "tags": [
@@ -250,9 +258,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/studio-desk/previews/overlay-640.webp"
+   "preview": "skins/studio-desk/previews/overlay-640.webp",
+   "previewAnim": "skins/studio-desk/previews/overlay-anim.webp"
   },
   {
    "id": "film-reel",
@@ -266,9 +275,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/film-reel",
-   "ref": "film-reel/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "film-reel/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "🎞️",
    "tags": [
@@ -278,9 +287,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/film-reel/previews/overlay-640.webp"
+   "preview": "skins/film-reel/previews/overlay-640.webp",
+   "previewAnim": "skins/film-reel/previews/overlay-anim.webp"
   },
   {
    "id": "soft-glass",
@@ -294,9 +304,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/soft-glass",
-   "ref": "soft-glass/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "soft-glass/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "🫧",
    "tags": [
@@ -306,9 +316,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/soft-glass/previews/overlay-640.webp"
+   "preview": "skins/soft-glass/previews/overlay-640.webp",
+   "previewAnim": "skins/soft-glass/previews/overlay-anim.webp"
   },
   {
    "id": "bold-poster",
@@ -322,9 +333,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/bold-poster",
-   "ref": "bold-poster/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "bold-poster/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "📢",
    "tags": [
@@ -334,9 +345,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/bold-poster/previews/overlay-640.webp"
+   "preview": "skins/bold-poster/previews/overlay-640.webp",
+   "previewAnim": "skins/bold-poster/previews/overlay-anim.webp"
   },
   {
    "id": "sharp-shapes",
@@ -350,9 +362,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/sharp-shapes",
-   "ref": "sharp-shapes/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "sharp-shapes/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "◼️",
    "tags": [
@@ -362,9 +374,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/sharp-shapes/previews/overlay-640.webp"
+   "preview": "skins/sharp-shapes/previews/overlay-640.webp",
+   "previewAnim": "skins/sharp-shapes/previews/overlay-anim.webp"
   },
   {
    "id": "momentum",
@@ -378,9 +391,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/momentum",
-   "ref": "momentum/v1.0.0",
-   "version": "1.0.0",
-   "skinContract": 2,
+   "ref": "momentum/v1.1.0",
+   "version": "1.1.0",
+   "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "⚡",
    "tags": [
@@ -390,9 +403,10 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.8.0"
+    "core": "0.9.0"
    },
-   "preview": "skins/momentum/previews/overlay-640.webp"
+   "preview": "skins/momentum/previews/overlay-640.webp",
+   "previewAnim": "skins/momentum/previews/overlay-anim.webp"
   }
  ]
 }

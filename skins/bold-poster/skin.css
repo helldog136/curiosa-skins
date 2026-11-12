@@ -1,1 +1,7 @@
-/* This skin only sets tokens: the core maps them onto the shared parts. */
+[data-ov-part="panel"]{transform:rotate(-0.8deg)}
+[data-ov-part="card"]{transform:rotate(1.2deg);ov-deco:stamp #111111;text-align:center}
+[data-ov-part="bubble"]{ov-deco:hazard #111111;transform:rotate(-0.5deg);padding-bottom:1.2em}
+[data-ov-part="avatar"]{border-radius:0;transform:rotate(-6deg)}
+[data-ov-part="title"]{ov-font:stencil}
+[data-ov-part="value"]{ov-font:stencil}
+[data-ov-part="title"],[data-ov-part="name"],[data-ov-part="body"],[data-ov-part="text"],[data-ov-part="message"],[data-ov-part="label"],[data-ov-part="value"]{font-size:94%}
