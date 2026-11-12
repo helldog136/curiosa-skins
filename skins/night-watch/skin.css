@@ -1,1 +1,7 @@
-[data-ov-part="badge"]{border-radius:2px}
+[data-ov-part="panel"]{ov-shape:ticket 12px;ov-deco:flashlight var(--ov-accent);ov-motion:flicker}
+[data-ov-part="card"]{ov-shape:ticket 8px;ov-font:typewriter}
+[data-ov-part="bubble"]{ov-deco:tape;transform:rotate(-0.8deg);padding-top:1.1em}
+[data-ov-part="avatar"]{ov-frame:inset var(--ov-accent)}
+[data-ov-part="title"]{ov-font:typewriter;ov-text:engrave}
+[data-ov-part="badge"]{ov-shape:ticket 6px flush}
+[data-ov-part="title"],[data-ov-part="name"],[data-ov-part="body"],[data-ov-part="text"],[data-ov-part="message"],[data-ov-part="label"],[data-ov-part="value"]{font-size:92%}

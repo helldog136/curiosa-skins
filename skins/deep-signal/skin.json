@@ -1,5 +1,5 @@
 {
-  "skinContract": 2,
+  "skinContract": 3,
   "kind": "overlay",
   "id": "deep-signal",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Terminal de vaisseau à la dérive : noir, vert phosphore, lueur discrète et chasse fixe.",
     "en": "A drifting ship's terminal: black, phosphor green, a soft glow and fixed-width type."
   },
-  "version": "1.0.0",
-  "minCore": "0.8.0",
+  "version": "1.1.0",
+  "minCore": "0.9.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -30,6 +30,14 @@
       "alt": {
         "fr": "Aperçu du skin Signal profond sur des éléments d'exemple",
         "en": "Preview of the Deep signal skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Signal profond : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Deep signal skin: alert, counter, list, featured card and banner"
       }
     }
   ]

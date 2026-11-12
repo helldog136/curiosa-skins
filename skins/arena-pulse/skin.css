@@ -1,1 +1,7 @@
-/* This skin only sets tokens: the core maps them onto the shared parts. */
+[data-ov-part="panel"]{ov-shape:notch 14px;ov-deco:halftone var(--ov-accent)}
+[data-ov-part="card"]{ov-shape:notch 14px;ov-deco:shimmer;text-align:center}
+[data-ov-part="bubble"]{ov-shape:notch 16px;ov-deco:halftone var(--ov-accent),shimmer}
+[data-ov-part="avatar"]{ov-shape:notch 9px flush}
+[data-ov-part="badge"]{ov-shape:notch 6px flush}
+[data-ov-part="bar-fill"]{ov-shape:notch 4px flush}
+[data-ov-part="title"]{ov-font:condensed}

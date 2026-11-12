@@ -1,1 +1,8 @@
-[data-ov-part="badge"]{border-radius:4px}
+[data-ov-part="panel"]{ov-shape:slanted 22px;ov-deco:stripe var(--ov-accent)}
+[data-ov-part="card"]{ov-shape:chevron 16px;text-align:center}
+[data-ov-part="bubble"]{ov-shape:slanted-both 20px;ov-deco:stripe var(--ov-accent)}
+[data-ov-part="avatar"]{ov-shape:hexagon 8px flush}
+[data-ov-part="badge"]{ov-shape:chevron 8px flush}
+[data-ov-part="bar-fill"]{ov-shape:slanted 6px flush}
+[data-ov-part="title"]{ov-font:condensed;ov-text:lift}
+[data-ov-part="value"]{ov-font:stencil;ov-text:lift}

@@ -1,1 +1,6 @@
-/* This skin only sets tokens: the core maps them onto the shared parts. */
+[data-ov-part="panel"]{ov-deco:scanlines}
+[data-ov-part="title"]{ov-shape:ribbon 10px;background-color:#c8102e;color:#ffffff;padding:0.1em 0.9em 0.1em 0.6em;ov-font:condensed}
+[data-ov-part="card"]{ov-shape:chevron 14px;text-align:center}
+[data-ov-part="bubble"]{ov-shape:chevron 18px;ov-deco:shimmer}
+[data-ov-part="avatar"]{border-radius:0}
+[data-ov-part="badge"]{ov-shape:ribbon 7px flush}

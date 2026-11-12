@@ -1,1 +1,6 @@
-/* This skin only sets tokens: the core maps them onto the shared parts. */
+[data-ov-part="panel"]{ov-deco:tape;transform:rotate(-0.8deg);padding-top:1.1em}
+[data-ov-part="card"]{ov-deco:stamp #b04a33;transform:rotate(1deg);text-align:center}
+[data-ov-part="bubble"]{ov-deco:tape;transform:rotate(-0.6deg);padding-top:1.1em}
+[data-ov-part="avatar"]{border-radius:3px;transform:rotate(-5deg)}
+[data-ov-part="title"]{ov-font:handwritten}
+[data-ov-part="value"]{ov-font:handwritten}

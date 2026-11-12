@@ -1,2 +1,7 @@
-[data-ov-part="title"]{letter-spacing:0.5px}
-[data-ov-part="badge"]{border-radius:2px}
+[data-ov-part="panel"]{ov-frame:double var(--ov-accent);ov-deco:brackets var(--ov-accent);ov-motion:float;text-align:center}
+[data-ov-part="card"]{ov-frame:double var(--ov-accent);ov-deco:rings var(--ov-accent);text-align:center}
+[data-ov-part="bubble"]{ov-shape:ribbon 18px;ov-deco:glow var(--ov-accent);text-align:center}
+[data-ov-part="avatar"]{ov-frame:thick #f4ead4}
+[data-ov-part="title"]{ov-font:display;ov-text:emboss}
+[data-ov-part="value"]{ov-font:display;ov-text:glow var(--ov-accent)}
+[data-ov-part="badge"]{ov-shape:ribbon 8px flush}

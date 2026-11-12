@@ -1,5 +1,5 @@
 {
-  "skinContract": 2,
+  "skinContract": 3,
   "kind": "overlay",
   "id": "bold-poster",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Aplat jaune vif, texte noir, cadre épais et ombre dure : un contraste maximal.",
     "en": "A bright yellow flat, black text, a thick frame and a hard shadow: maximum contrast."
   },
-  "version": "1.0.0",
-  "minCore": "0.8.0",
+  "version": "1.1.0",
+  "minCore": "0.9.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -30,6 +30,14 @@
       "alt": {
         "fr": "Aperçu du skin Affiche audacieuse sur des éléments d'exemple",
         "en": "Preview of the Bold poster skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Affiche audacieuse : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Bold poster skin: alert, counter, list, featured card and banner"
       }
     }
   ]
