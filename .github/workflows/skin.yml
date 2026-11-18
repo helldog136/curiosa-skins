@@ -5,6 +5,9 @@ on:
   push:
     branches: [main, master]
   pull_request:
+# Hardening: the check only reads the repository; the default token gets no write access.
+permissions:
+  contents: read
 jobs:
   skin:
     runs-on: ubuntu-latest
