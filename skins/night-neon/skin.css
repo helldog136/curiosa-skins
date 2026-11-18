@@ -4,4 +4,4 @@
 [data-ov-part="avatar"]{ov-frame:glow var(--ov-accent)}
 [data-ov-part="title"]{ov-font:wide;ov-text:glow var(--ov-border)}
 [data-ov-part="value"]{ov-text:glow var(--ov-accent)}
-[data-ov-part="title"],[data-ov-part="name"],[data-ov-part="body"],[data-ov-part="text"],[data-ov-part="message"],[data-ov-part="label"],[data-ov-part="value"]{font-size:94%}
+[data-ov-part="title"],[data-ov-part="name"],[data-ov-part="body"],[data-ov-part="text"],[data-ov-part="message"],[data-ov-part="label"],[data-ov-part="value"]{font-size:100%}

@@ -36,16 +36,16 @@ Les skins d'overlay habillent les **pages d'overlay pour OBS** (jamais le site p
 |---|---|---|
 | Trône de braise / Ember throne | 1.1.0 | `skins/ember-throne` |
 | Bannière héroïque / Heroic banner | 1.1.0 | `skins/heroic-banner` |
-| Signal profond / Deep signal | 1.1.0 | `skins/deep-signal` |
-| Veille nocturne / Night watch | 1.1.0 | `skins/night-watch` |
+| Signal profond / Deep signal | 1.1.1 | `skins/deep-signal` |
+| Veille nocturne / Night watch | 1.1.1 | `skins/night-watch` |
 | Néon nocturne / Night neon | 1.2.0 | `skins/night-neon` |
-| Salle d'arcade / Arcade hall | 1.1.0 | `skins/arcade-hall` |
+| Salle d'arcade / Arcade hall | 1.1.1 | `skins/arcade-hall` |
 | Pouls d'arène / Arena pulse | 1.1.0 | `skins/arena-pulse` |
 | Collage de papier / Paper collage | 1.1.0 | `skins/paper-collage` |
 | Plateau télé / Studio desk | 1.1.0 | `skins/studio-desk` |
 | Bobine / Film reel | 1.1.0 | `skins/film-reel` |
 | Verre léger / Soft glass | 1.1.0 | `skins/soft-glass` |
-| Affiche audacieuse / Bold poster | 1.1.0 | `skins/bold-poster` |
+| Affiche audacieuse / Bold poster | 1.1.1 | `skins/bold-poster` |
 | Formes nettes / Sharp shapes | 1.1.0 | `skins/sharp-shapes` |
 | Élan / Momentum | 1.1.0 | `skins/momentum` |
 | Vitrail / Stained glass | 1.0.0 | `skins/stained-glass` |
