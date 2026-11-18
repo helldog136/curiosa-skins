@@ -1,5 +1,6 @@
 // Overlay skins (core 0.8.0): what this repository promises about its overlay skins, without the core. The core's own check (`npm run skin:check`, run by the Skin workflow)
-// judges tokens, rules and contrast; this test only guards the repository: kind and contract, no code or assets, the catalogue entry, the preview, the tag name.
+// judges tokens, rules, contrast and (contract 4) the animation recipe; this test only guards the repository: kind and contract, no code or assets, the catalogue
+// entry, the preview, the tag name.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { existsSync, readdirSync, readFileSync } from "node:fs";
@@ -21,10 +22,13 @@ test("every overlay skin is listed in catalogue/overlay-skins.json, and only tho
 for (const id of overlay) {
   test(`${id}: manifest, catalogue entry, tag, preview`, () => {
     const m = JSON.parse(read("skins", id, "skin.json")), e = catalogue.skins.find((s) => s.id === id);
-    assert.deepEqual([m.kind, m.skinContract, m.minCore, m.license, m.version], ["overlay", 3, "0.9.0", "MIT", "1.1.0"]);
+    // contract 3 (core 0.9.0), or contract 4 (core 0.30.0) for a skin that ships an animation recipe (animation.json: data drawn by the core's engine)
+    const [contract, core] = m.animation ? [4, "0.30.0"] : [3, "0.9.0"];
+    assert.deepEqual([m.kind, m.skinContract, m.minCore, m.license], ["overlay", contract, core, "MIT"]);
+    assert.match(m.version, /^1\.\d+\.\d+$/);
     assert.equal(m.assets, undefined, "overlay skins ship no font or image");
     assert.ok(m.name.fr && m.name.en && m.description.fr && m.description.en);
-    assert.deepEqual([e.version, e.ref, e.subdir, e.skinContract, e.requires.core], [m.version, `${id}/v${m.version}`, `skins/${id}`, 3, "0.9.0"]);
+    assert.deepEqual([e.version, e.ref, e.subdir, e.skinContract, e.requires.core], [m.version, `${id}/v${m.version}`, `skins/${id}`, contract, core]);
     assert.equal(e.previewAnim, `skins/${id}/previews/overlay-anim.webp`); assert.deepEqual(m.previews.map((p) => p.file), ["previews/overlay-640.webp", "previews/overlay-anim.webp"]);
     assert.equal(e.preview, `skins/${id}/${m.previews[0].file}`);
     const png = readFileSync(path.join(root, "skins", id, m.previews[0].file));
@@ -35,7 +39,14 @@ for (const id of overlay) {
     assert.ok(anim.length <= 450 * 1024, "animated preview weight");
     assert.ok(m.previews.every((p) => p.alt.fr && p.alt.en));
     assert.ok(existsSync(path.join(root, "skins", id, "LICENSE")) && existsSync(path.join(root, "skins", id, "README.md")));
-    assert.deepEqual(readdirSync(path.join(root, "skins", id)).sort(), ["LICENSE", "README.md", "previews", "skin.css", "skin.json", "tokens.json"], "no other file");
+    assert.deepEqual(readdirSync(path.join(root, "skins", id)).sort(), ["LICENSE", "README.md", ...(m.animation ? ["animation.json"] : []), "previews", "skin.css", "skin.json", "tokens.json"].sort(), "no other file");
+    if (m.animation) {
+      assert.equal(m.animation, "animation.json");
+      const a = JSON.parse(read("skins", id, "animation.json"));
+      assert.equal(a.animateContract, 1); assert.ok(a.genres && typeof a.genres === "object");
+      // data only: no address, no markup, no script-like text anywhere in the recipe
+      assert.doesNotMatch(read("skins", id, "animation.json"), /https?:|url\(|<|javascript:|function|=>/);
+    }
   });
   test(`${id}: tokens are --ov-* only, the sheet is data (no at-rule, url, class or !important)`, () => {
     const tokens = JSON.parse(read("skins", id, "tokens.json")).tokens;

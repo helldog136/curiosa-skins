@@ -5,4 +5,4 @@
 [data-ov-part="badge"]{ov-shape:notch 4px flush}
 [data-ov-part="title"]{ov-font:mono;ov-text:glow var(--ov-accent)}
 [data-ov-part="value"]{ov-font:mono;ov-text:glow var(--ov-accent)}
-[data-ov-part="title"],[data-ov-part="name"],[data-ov-part="body"],[data-ov-part="text"],[data-ov-part="message"],[data-ov-part="label"],[data-ov-part="value"]{font-size:90%}
+[data-ov-part="title"],[data-ov-part="name"],[data-ov-part="body"],[data-ov-part="text"],[data-ov-part="message"],[data-ov-part="label"],[data-ov-part="value"]{font-size:100%}

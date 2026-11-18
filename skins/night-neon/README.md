@@ -10,3 +10,6 @@ Installation : onglet **Skin** d'une page d'overlay, « Obtenir d'autres skins �
 *Install: the **Skin** tab of an overlay page, "Get more skins".*
 
 Licence MIT.
+
+**1.2.0 (cœur 0.30.0)** : jauges, niveaux et compteurs animés (`animation.json`) : un tube de néon qui s'allume jusqu'à la progression, des pistes de circuit parcourues d'une impulsion, un léger scintillement.
+*1.2.0 (core 0.30.0): animated gauges, levels and counters (`animation.json`): a neon tube that lights up to the progress, circuit traces with a travelling pulse, a light flicker.*
