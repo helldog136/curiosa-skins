@@ -71,8 +71,8 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/deep-signal",
-   "ref": "deep-signal/v1.1.0",
-   "version": "1.1.0",
+   "ref": "deep-signal/v1.1.1",
+   "version": "1.1.1",
    "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "📡",
@@ -100,8 +100,8 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/night-watch",
-   "ref": "night-watch/v1.1.0",
-   "version": "1.1.0",
+   "ref": "night-watch/v1.1.1",
+   "version": "1.1.1",
    "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "🔦",
@@ -129,9 +129,9 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/night-neon",
-   "ref": "night-neon/v1.1.0",
-   "version": "1.1.0",
-   "skinContract": 3,
+   "ref": "night-neon/v1.2.0",
+   "version": "1.2.0",
+   "skinContract": 4,
    "author": "Équipe Curiosa",
    "icon": "🌃",
    "tags": [
@@ -141,7 +141,7 @@
    ],
    "modes": [],
    "requires": {
-    "core": "0.9.0"
+    "core": "0.30.0"
    },
    "preview": "skins/night-neon/previews/overlay-640.webp",
    "previewAnim": "skins/night-neon/previews/overlay-anim.webp"
@@ -158,8 +158,8 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/arcade-hall",
-   "ref": "arcade-hall/v1.1.0",
-   "version": "1.1.0",
+   "ref": "arcade-hall/v1.1.1",
+   "version": "1.1.1",
    "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "🕹️",
@@ -333,8 +333,8 @@
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/bold-poster",
-   "ref": "bold-poster/v1.1.0",
-   "version": "1.1.0",
+   "ref": "bold-poster/v1.1.1",
+   "version": "1.1.1",
    "skinContract": 3,
    "author": "Équipe Curiosa",
    "icon": "📢",
@@ -407,6 +407,35 @@
    },
    "preview": "skins/momentum/previews/overlay-640.webp",
    "previewAnim": "skins/momentum/previews/overlay-anim.webp"
+  },
+  {
+   "id": "stained-glass",
+   "name": {
+    "fr": "Vitrail",
+    "en": "Stained glass"
+   },
+   "description": {
+    "fr": "Verre teinté et plomb coupé à la main, lueur chaude : les jauges deviennent des verrières qui s'allument pièce par pièce.",
+    "en": "Tinted glass and hand-cut lead, warm glow: gauges become windows that light up piece by piece."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/stained-glass",
+   "ref": "stained-glass/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 4,
+   "author": "Équipe Curiosa",
+   "icon": "🪟",
+   "tags": [
+    "dark",
+    "fantasy",
+    "glass"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.30.0"
+   },
+   "preview": "skins/stained-glass/previews/overlay-640.webp",
+   "previewAnim": "skins/stained-glass/previews/overlay-anim.webp"
   }
  ]
 }

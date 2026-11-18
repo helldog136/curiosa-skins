@@ -1,5 +1,5 @@
 {
-  "skinContract": 3,
+  "skinContract": 4,
   "kind": "overlay",
   "id": "night-neon",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Violet profond, filet rose et cyan, lueur de néon sur les panneaux et le texte.",
     "en": "Deep violet, pink and cyan rules, neon glow on panels and text."
   },
-  "version": "1.1.0",
-  "minCore": "0.9.0",
+  "version": "1.2.0",
+  "minCore": "0.30.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -23,6 +23,7 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
+  "animation": "animation.json",
   "previews": [
     {
       "file": "previews/overlay-640.webp",

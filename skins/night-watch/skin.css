@@ -4,4 +4,4 @@
 [data-ov-part="avatar"]{ov-frame:inset var(--ov-accent)}
 [data-ov-part="title"]{ov-font:typewriter;ov-text:engrave}
 [data-ov-part="badge"]{ov-shape:ticket 6px flush}
-[data-ov-part="title"],[data-ov-part="name"],[data-ov-part="body"],[data-ov-part="text"],[data-ov-part="message"],[data-ov-part="label"],[data-ov-part="value"]{font-size:92%}
+[data-ov-part="title"],[data-ov-part="name"],[data-ov-part="body"],[data-ov-part="text"],[data-ov-part="message"],[data-ov-part="label"],[data-ov-part="value"]{font-size:100%}

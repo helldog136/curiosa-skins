@@ -36,18 +36,22 @@ Les skins d'overlay habillent les **pages d'overlay pour OBS** (jamais le site p
 |---|---|---|
 | Trône de braise / Ember throne | 1.1.0 | `skins/ember-throne` |
 | Bannière héroïque / Heroic banner | 1.1.0 | `skins/heroic-banner` |
-| Signal profond / Deep signal | 1.1.0 | `skins/deep-signal` |
-| Veille nocturne / Night watch | 1.1.0 | `skins/night-watch` |
-| Néon nocturne / Night neon | 1.1.0 | `skins/night-neon` |
-| Salle d'arcade / Arcade hall | 1.1.0 | `skins/arcade-hall` |
+| Signal profond / Deep signal | 1.1.1 | `skins/deep-signal` |
+| Veille nocturne / Night watch | 1.1.1 | `skins/night-watch` |
+| Néon nocturne / Night neon | 1.2.0 | `skins/night-neon` |
+| Salle d'arcade / Arcade hall | 1.1.1 | `skins/arcade-hall` |
 | Pouls d'arène / Arena pulse | 1.1.0 | `skins/arena-pulse` |
 | Collage de papier / Paper collage | 1.1.0 | `skins/paper-collage` |
 | Plateau télé / Studio desk | 1.1.0 | `skins/studio-desk` |
 | Bobine / Film reel | 1.1.0 | `skins/film-reel` |
 | Verre léger / Soft glass | 1.1.0 | `skins/soft-glass` |
-| Affiche audacieuse / Bold poster | 1.1.0 | `skins/bold-poster` |
+| Affiche audacieuse / Bold poster | 1.1.1 | `skins/bold-poster` |
 | Formes nettes / Sharp shapes | 1.1.0 | `skins/sharp-shapes` |
 | Élan / Momentum | 1.1.0 | `skins/momentum` |
+| Vitrail / Stained glass | 1.0.0 | `skins/stained-glass` |
+
+**Jauges, niveaux et compteurs animés (cœur 0.30.0, contrat 4).** Un skin d'overlay peut ajouter `animation.json` : une recette de données (primitives procédurales, paramètres, graines) que le cœur dessine lui-même. *Vitrail* (verrière, rosace, cartouche de plomb) et *Néon nocturne* 1.2.0 (tubes et pistes de circuit) en ont une. Les autres skins donnent une jauge simple qui suit leurs couleurs. Contrat : `docs/OVERLAY-ANIMATIONS.md` du cœur.
+*Animated gauges, levels and counters (core 0.30.0, contract 4). An overlay skin may add `animation.json`: a data recipe (procedural primitives, parameters, seeds) that the core draws itself. Stained glass (window, rose, lead cartouche) and Night neon 1.2.0 (tubes and circuit traces) have one. Other skins give a plain gauge that follows their colours. Contract: the core's `docs/OVERLAY-ANIMATIONS.md`.*
 
 Écrire un skin d'overlay : `docs/OVERLAY-SKINS.md` du cœur ; le vérifier : `npm run skin:check -- <dossier>`.
 *Writing an overlay skin: the core's `docs/OVERLAY-SKINS.md`; checking it: `npm run skin:check -- <folder>`.*

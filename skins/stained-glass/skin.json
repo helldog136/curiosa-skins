@@ -1,0 +1,45 @@
+{
+  "skinContract": 4,
+  "kind": "overlay",
+  "id": "stained-glass",
+  "name": {
+    "fr": "Vitrail",
+    "en": "Stained glass"
+  },
+  "description": {
+    "fr": "Verre teinté et plomb coupé à la main, lueur chaude : les jauges deviennent des verrières qui s'allument pièce par pièce.",
+    "en": "Tinted glass and hand-cut lead, warm glow: gauges become windows that light up piece by piece."
+  },
+  "version": "1.0.0",
+  "minCore": "0.30.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "dark",
+    "fantasy",
+    "glass"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "animation": "animation.json",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Vitrail : une jauge en verrière, une rosace de niveaux et un cartouche de plomb",
+        "en": "Preview of the Stained glass skin: a window gauge, a rose of levels and a lead cartouche"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Vitrail : la verrière s'allume pièce par pièce, éclats de verre au palier",
+        "en": "Animated preview of the Stained glass skin: the window lights up piece by piece, glass shards at the milestone"
+      }
+    }
+  ]
+}
