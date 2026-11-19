@@ -10,6 +10,7 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 | Brutaliste clair / Light brutalist | 1.1.3 | clair / light | `skins/brutaliste-clair` |
 | Curiosa / Curiosa | 1.0.2 | clair, sombre / light, dark | `skins/curiosa` |
 | Éditorial papier / Editorial paper | 1.1.3 | clair, sombre / light, dark | `skins/editorial-papier` |
+| Globe-trotter / Globe-trotter | 1.0.0 | clair, sombre / light, dark | `skins/globe-trotter` |
 | Féodal / Feudal | 1.1.3 | clair, sombre / light, dark | `skins/feodal` |
 | Pirates / Pirates | 1.1.3 | clair, sombre / light, dark | `skins/pirates` |
 | Nef de braise / Ember nave | 1.1.3 | sombre, clair / dark, light | `skins/nef-de-braise` |
@@ -92,4 +93,4 @@ Exemple / Example : `https://github.com/helldog136/curiosa-skins#retro-neon/v1.0
 
 ## Licence / License
 
-Chaque skin porte sa licence (MIT) et celles de ses polices et images dans son dossier. / *Each skin carries its own license (MIT) and those of its fonts and images in its folder.*
+Chaque skin porte sa licence (MIT, sauf Globe-trotter : CC0-1.0) et celles de ses polices et images dans son dossier. / *Each skin carries its own license (MIT, except Globe-trotter: CC0-1.0) and those of its fonts and images in its folder.*

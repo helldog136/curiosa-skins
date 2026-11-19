@@ -1,0 +1,171 @@
+{
+  "skinContract": 1,
+  "id": "globe-trotter",
+  "name": {
+    "fr": "Globe-trotter",
+    "en": "Globe-trotter"
+  },
+  "description": {
+    "fr": "Un carnet de terrain posé sur un sol de forêt : crêtes dans la brume, courbes de niveau, fougères et traces de sabots. Clair à l'aube, sombre à la tombée de la nuit.",
+    "en": "A field notebook lying on a forest floor: misty ridges, contour lines, ferns and hoof tracks. Light at dawn, dark at dusk."
+  },
+  "version": "1.0.0",
+  "minCore": "0.6.3",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "CC0-1.0",
+  "tags": [
+    "light",
+    "dark",
+    "serif"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/home-light.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode clair : crêtes dans la brume à l'aube, feuille de carnet au bord déchiré, courbes de niveau",
+        "en": "Home page, light mode: misty ridges at dawn, a notebook page with a torn edge, contour lines"
+      }
+    },
+    {
+      "file": "previews/home-dark.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode sombre : la forêt à la tombée de la nuit, lueur ambrée à l'horizon",
+        "en": "Home page, dark mode: the forest at nightfall, an amber glow on the horizon"
+      }
+    },
+    {
+      "file": "previews/mobile-dark.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone, mode sombre",
+        "en": "Home page on a phone, dark mode"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "images/boussole.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/camo.webp",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/courbes.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/dechirure.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/fougere.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/herbes.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/oiseaux.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/papier.webp",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/relief-s.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/relief.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/traces.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/trait.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "classic",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    800,
+    1120
+  ],
+  "supports": {
+    "reducedMotion": true
+  }
+}
