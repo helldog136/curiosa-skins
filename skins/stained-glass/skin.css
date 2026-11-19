@@ -1,6 +1,0 @@
-[data-ov-part="panel"]{ov-frame:thick var(--ov-border);ov-deco:grain}
-[data-ov-part="card"]{ov-frame:double var(--ov-accent);text-align:center}
-[data-ov-part="bubble"]{ov-frame:thick var(--ov-border);ov-deco:glow}
-[data-ov-part="avatar"]{ov-frame:double var(--ov-accent)}
-[data-ov-part="title"]{ov-font:serif;ov-text:engrave}
-[data-ov-part="value"]{ov-text:lift}

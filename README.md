@@ -51,13 +51,12 @@ Les skins d'overlay habillent les **pages d'overlay pour OBS** (jamais le site p
 | Affiche audacieuse / Bold poster | 1.1.2 | `skins/bold-poster` |
 | Formes nettes / Sharp shapes | 1.1.1 | `skins/sharp-shapes` |
 | Élan / Momentum | 1.1.1 | `skins/momentum` |
-| Vitrail / Stained glass | 1.0.1 | `skins/stained-glass` |
 
-**Jauges, niveaux et compteurs animés (cœur 0.30.0, contrat 4).** Un skin d'overlay peut ajouter `animation.json` : une recette de données (primitives procédurales, paramètres, graines) que le cœur dessine lui-même. *Vitrail* (verrière, rosace, cartouche de plomb) et *Néon nocturne* 1.2.0 (tubes et pistes de circuit) en ont une. Les autres skins donnent une jauge simple qui suit leurs couleurs. Contrat : `docs/OVERLAY-ANIMATIONS.md` du cœur.
-*Animated gauges, levels and counters (core 0.30.0, contract 4). An overlay skin may add `animation.json`: a data recipe (procedural primitives, parameters, seeds) that the core draws itself. Stained glass (window, rose, lead cartouche) and Night neon 1.2.0 (tubes and circuit traces) have one. Other skins give a plain gauge that follows their colours. Contract: the core's `docs/OVERLAY-ANIMATIONS.md`.*
+**Jauges, niveaux et compteurs animés (cœur 0.30.0, contrat 4).** Un skin d'overlay peut ajouter `animation.json` : une recette de données (primitives procédurales, paramètres, graines) que le cœur dessine lui-même. *Néon nocturne* 1.2.0 (tubes et pistes de circuit) en a une. Les autres skins donnent une jauge simple qui suit leurs couleurs. Contrat : `docs/OVERLAY-ANIMATIONS.md` du cœur.
+*Animated gauges, levels and counters (core 0.30.0, contract 4). An overlay skin may add `animation.json`: a data recipe (procedural primitives, parameters, seeds) that the core draws itself. Night neon 1.2.0 (tubes and circuit traces) has one. Other skins give a plain gauge that follows their colours. Contract: the core's `docs/OVERLAY-ANIMATIONS.md`.*
 
-Corrections mécaniques (sans changement de style) : Salle d'arcade 1.1.2 et Affiche audacieuse 1.1.2 réservent la place du tampon des cartes ; Trône de braise, Bannière héroïque et Élan 1.1.1 ne coupent plus le texte des pastilles ; Formes nettes 1.1.1 rend la piste de barre visible sur le panneau blanc ; Néon nocturne 1.2.1 et Vitrail 1.0.1 gardent l'anneau de choc dans l'élément.
-*Mechanical fixes (no change of style): Arcade hall 1.1.2 and Bold poster 1.1.2 reserve room for the card stamp; Ember throne, Heroic banner and Momentum 1.1.1 no longer cut the badge text; Sharp shapes 1.1.1 makes the bar track visible on the white panel; Night neon 1.2.1 and Stained glass 1.0.1 keep the shock ring inside the element.*
+Corrections mécaniques (sans changement de style) : Salle d'arcade 1.1.2 et Affiche audacieuse 1.1.2 réservent la place du tampon des cartes ; Trône de braise, Bannière héroïque et Élan 1.1.1 ne coupent plus le texte des pastilles ; Formes nettes 1.1.1 rend la piste de barre visible sur le panneau blanc ; Néon nocturne 1.2.1 garde l'anneau de choc dans l'élément.
+*Mechanical fixes (no change of style): Arcade hall 1.1.2 and Bold poster 1.1.2 reserve room for the card stamp; Ember throne, Heroic banner and Momentum 1.1.1 no longer cut the badge text; Sharp shapes 1.1.1 makes the bar track visible on the white panel; Night neon 1.2.1 keeps the shock ring inside the element.*
 
 Écrire un skin d'overlay : `docs/OVERLAY-SKINS.md` du cœur ; le vérifier : `npm run skin:check -- <dossier>`.
 *Writing an overlay skin: the core's `docs/OVERLAY-SKINS.md`; checking it: `npm run skin:check -- <folder>`.*

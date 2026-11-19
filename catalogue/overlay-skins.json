@@ -407,35 +407,6 @@
    },
    "preview": "skins/momentum/previews/overlay-640.webp",
    "previewAnim": "skins/momentum/previews/overlay-anim.webp"
-  },
-  {
-   "id": "stained-glass",
-   "name": {
-    "fr": "Vitrail",
-    "en": "Stained glass"
-   },
-   "description": {
-    "fr": "Verre teinté et plomb coupé à la main, lueur chaude : les jauges deviennent des verrières qui s'allument pièce par pièce.",
-    "en": "Tinted glass and hand-cut lead, warm glow: gauges become windows that light up piece by piece."
-   },
-   "repo": "https://github.com/helldog136/curiosa-skins",
-   "subdir": "skins/stained-glass",
-   "ref": "stained-glass/v1.0.1",
-   "version": "1.0.1",
-   "skinContract": 4,
-   "author": "Équipe Curiosa",
-   "icon": "🪟",
-   "tags": [
-    "dark",
-    "fantasy",
-    "glass"
-   ],
-   "modes": [],
-   "requires": {
-    "core": "0.30.0"
-   },
-   "preview": "skins/stained-glass/previews/overlay-640.webp",
-   "previewAnim": "skins/stained-glass/previews/overlay-anim.webp"
   }
  ]
 }
