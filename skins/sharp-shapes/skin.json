@@ -10,7 +10,7 @@
     "fr": "Cartes blanches à angles droits, barre d'accent bleue à gauche, ombre légère.",
     "en": "White square-cornered cards with a blue accent bar on the left and a light shadow."
   },
-  "version": "1.1.0",
+  "version": "1.1.1",
   "minCore": "0.9.0",
   "author": {
     "name": "Équipe Curiosa"

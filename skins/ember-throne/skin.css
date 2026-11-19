@@ -4,4 +4,4 @@
 [data-ov-part="avatar"]{ov-frame:thick #f4ead4}
 [data-ov-part="title"]{ov-font:display;ov-text:emboss}
 [data-ov-part="value"]{ov-font:display;ov-text:glow var(--ov-accent)}
-[data-ov-part="badge"]{ov-shape:ribbon 8px flush}
+[data-ov-part="badge"]{ov-shape:ribbon 8px}

@@ -28,3 +28,36 @@ Il ne change **que l'apparence**. Aucun texte, aucun lien, aucune image de votre
 - `previews/` : captures réelles (accueil et blog, 1280 px et 390 px).
 
 Licence du skin : MIT (voir `LICENSE`).
+
+---
+
+# Light brutalist (English)
+
+A **light**, outspoken skin: cream background with a dot pattern, thick black borders, hard offset shadows, square corners, bright flat colours (yellow, orange, electric blue).
+
+## What you see
+
+- **Yellow banner header**: the brand in a white frame, the menu as **square tabs**, then a second strip with social links and the language.
+- **Massive titles** in big capitals (Archivo Black), body text in a typewriter font (Space Mono).
+- **Boxed cards** in a tidy grid: the first card is wider, the others alternate white, yellow and mint green.
+- **"Stamp" buttons**: they sink when clicked.
+- A single mode: **light**. No light/dark switch is offered.
+
+## What this skin does not do
+
+It changes **the look only**. No text, link or image of your site is added, removed or moved in the code: if you switch skins, you lose nothing.
+
+## Accessibility
+
+- AA contrast checked (black text on cream: about 17 to 1).
+- Touch targets of at least 44 px, a thick, clearly visible blue focus indicator.
+- Animations (card hover) only run if your device has not asked for reduced motion.
+
+## Folder contents
+
+- `skin.json`, `tokens.json`, `skin.css`: the skin itself.
+- `fonts/`: Archivo Black and Space Mono (SIL OFL 1.1 licence, see `LICENSES/`).
+- `images/points.svg`: the dot pattern (CC0).
+- `previews/`: real screenshots (home and blog, 1280 px and 390 px).
+
+Skin licence: MIT (see `LICENSE`).

@@ -28,3 +28,36 @@ Il ne change **que l'apparence**. Aucun texte, aucun lien, aucune image de votre
 - `previews/` : captures réelles (accueil et blog, 1280 px et 390 px).
 
 Licence du skin : MIT (voir `LICENSE`).
+
+---
+
+# Retro neon (English)
+
+A **dark** arcade skin: deep black, **magenta** and **cyan** neon, pixel fonts, a grid and scan lines in the background, a **menu in a column on the left**.
+
+## What you see
+
+- **Side column** on the left from 640 px wide: the brand at the top, the menu as a vertical list, social links and language at the bottom. On a phone, it is a strip at the top with the "Menu" button.
+- **Glowing titles** in a pixel font (Press Start 2P), very readable text in JetBrains Mono.
+- **Cards and panels with a neon frame**, buttons that light up on hover.
+- A single mode: **dark**. No light/dark switch is offered.
+- If your device has not asked for reduced motion, the main title pulses gently and the grid slides slowly. Otherwise everything stays still.
+
+## What this skin does not do
+
+It changes **the look only**. No text, link or image of your site is added, removed or moved in the code: if you switch skins, you lose nothing. Body text keeps strong contrast despite the neon (neon is used for frames and titles).
+
+## Accessibility
+
+- AA contrast checked for all texts.
+- Touch targets of at least 44 px, a thick yellow focus indicator.
+- Reduced motion respected: animations only exist inside a `prefers-reduced-motion: no-preference` rule.
+
+## Folder contents
+
+- `skin.json`, `tokens.json`, `skin.css`: the skin itself.
+- `fonts/`: Press Start 2P and JetBrains Mono (SIL OFL 1.1 licence, see `LICENSES/`).
+- `images/grille.svg`: the background grid (CC0).
+- `previews/`: real screenshots (home and blog, 1280 px and 390 px).
+
+Skin licence: MIT (see `LICENSE`).

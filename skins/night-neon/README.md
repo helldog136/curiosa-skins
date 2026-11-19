@@ -13,3 +13,6 @@ Licence MIT.
 
 **1.2.0 (cœur 0.30.0)** : jauges, niveaux et compteurs animés (`animation.json`) : un tube de néon qui s'allume jusqu'à la progression, des pistes de circuit parcourues d'une impulsion, un léger scintillement.
 *1.2.0 (core 0.30.0): animated gauges, levels and counters (`animation.json`): a neon tube that lights up to the progress, circuit traces with a travelling pulse, a light flicker.*
+
+**1.2.1** : l'anneau de choc tient dans l'élément (taille réduite) et les bords gauche, droit et bas sont adoucis ; l'anneau reste circulaire.
+*1.2.1: the shock ring fits inside the element (smaller size) and the left, right and bottom edges are softened; the ring stays circular.*

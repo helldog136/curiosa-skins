@@ -7,22 +7,25 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 
 | Skin | Version | Modes | Dossier / Folder |
 |---|---|---|---|
-| Brutaliste clair / Light brutalist | 1.1.2 | clair / light | `skins/brutaliste-clair` |
-| Curiosa / Curiosa | 1.0.1 | clair, sombre / light, dark | `skins/curiosa` |
-| Éditorial papier / Editorial paper | 1.1.2 | clair, sombre / light, dark | `skins/editorial-papier` |
-| Féodal / Feudal | 1.1.2 | clair, sombre / light, dark | `skins/feodal` |
-| Pirates / Pirates | 1.1.2 | clair, sombre / light, dark | `skins/pirates` |
-| Nef de braise / Ember nave | 1.1.2 | sombre, clair / dark, light | `skins/nef-de-braise` |
-| Rétro néon / Retro neon | 1.1.2 | sombre / dark | `skins/retro-neon` |
-| Steampunk victorien / Victorian steampunk | 1.1.2 | sombre, clair / dark, light | `skins/steampunk-victorien` |
+| Brutaliste clair / Light brutalist | 1.1.3 | clair / light | `skins/brutaliste-clair` |
+| Curiosa / Curiosa | 1.0.2 | clair, sombre / light, dark | `skins/curiosa` |
+| Éditorial papier / Editorial paper | 1.1.3 | clair, sombre / light, dark | `skins/editorial-papier` |
+| Féodal / Feudal | 1.1.3 | clair, sombre / light, dark | `skins/feodal` |
+| Pirates / Pirates | 1.1.3 | clair, sombre / light, dark | `skins/pirates` |
+| Nef de braise / Ember nave | 1.1.3 | sombre, clair / dark, light | `skins/nef-de-braise` |
+| Rétro néon / Retro neon | 1.1.3 | sombre / dark | `skins/retro-neon` |
+| Steampunk victorien / Victorian steampunk | 1.1.3 | sombre, clair / dark, light | `skins/steampunk-victorien` |
 | Tissu / Fabric | 1.1.2 | clair, sombre / light, dark | `skins/tissu` |
-| Verre et dégradés doux / Soft glass | 1.1.2 | clair, sombre / light, dark | `skins/verre-doux` |
+| Verre et dégradés doux / Soft glass | 1.1.3 | clair, sombre / light, dark | `skins/verre-doux` |
 
 Les versions 1.1.x habillent la recherche dans le site (pièces `search` et `mark`, champ et mot mis en valeur) et demandent le cœur 0.6.3 ou plus. La 1.1.1 corrige la mise en page des en-têtes à petite largeur (en-têtes sobre, à deux rangées et classique) et les cibles tactiles de 44 px.
 *Version 1.1.x of each skin styles the site search (`search` and `mark` parts: the field and the highlighted word) and needs core 0.6.3 or later. Version 1.1.1 fixes the header layouts on narrow screens (minimal, two-row and classic headers) and the 44 px touch targets.*
 
 La 1.1.2 (1.0.1 pour Curiosa) habille l'affichage en liste du cœur 0.6.18 (lignes `card` `data-kind="row"` et champ `search` `data-variant="list"`) ; les anciennes règles `list-item` du mode liste sont retirées.
 *Version 1.1.2 (1.0.1 for Curiosa) styles the core 0.6.18 list display (`card` `data-kind="row"` rows and the `search` `data-variant="list"` field); the old `list-item` rules of the list mode are removed.*
+
+La 1.1.3 (1.0.2 pour Curiosa) corrige le débordement horizontal d'Éditorial papier à 390 px (cartes de pastille de couleur et de phrase à copier) et ajoute un README bilingue à chaque skin de site.
+*Version 1.1.3 (1.0.2 for Curiosa) fixes Editorial paper's horizontal overflow at 390 px (colour swatch and copy-phrase cards) and gives every site skin a bilingual README.*
 
 Chaque skin est un dossier de données (`skin.json`, `tokens.json`, `skin.css`, polices et images avec leurs licences) : aucun programme ne s'exécute, seule l'apparence change.
 *Each skin is a folder of data: no code runs, only the appearance changes.*
@@ -34,24 +37,27 @@ Les skins d'overlay habillent les **pages d'overlay pour OBS** (jamais le site p
 
 | Skin | Version | Dossier / Folder |
 |---|---|---|
-| Trône de braise / Ember throne | 1.1.0 | `skins/ember-throne` |
-| Bannière héroïque / Heroic banner | 1.1.0 | `skins/heroic-banner` |
+| Trône de braise / Ember throne | 1.1.1 | `skins/ember-throne` |
+| Bannière héroïque / Heroic banner | 1.1.1 | `skins/heroic-banner` |
 | Signal profond / Deep signal | 1.1.1 | `skins/deep-signal` |
 | Veille nocturne / Night watch | 1.1.1 | `skins/night-watch` |
-| Néon nocturne / Night neon | 1.2.0 | `skins/night-neon` |
-| Salle d'arcade / Arcade hall | 1.1.1 | `skins/arcade-hall` |
+| Néon nocturne / Night neon | 1.2.1 | `skins/night-neon` |
+| Salle d'arcade / Arcade hall | 1.1.2 | `skins/arcade-hall` |
 | Pouls d'arène / Arena pulse | 1.1.0 | `skins/arena-pulse` |
 | Collage de papier / Paper collage | 1.1.0 | `skins/paper-collage` |
 | Plateau télé / Studio desk | 1.1.0 | `skins/studio-desk` |
 | Bobine / Film reel | 1.1.0 | `skins/film-reel` |
 | Verre léger / Soft glass | 1.1.0 | `skins/soft-glass` |
-| Affiche audacieuse / Bold poster | 1.1.1 | `skins/bold-poster` |
-| Formes nettes / Sharp shapes | 1.1.0 | `skins/sharp-shapes` |
-| Élan / Momentum | 1.1.0 | `skins/momentum` |
-| Vitrail / Stained glass | 1.0.0 | `skins/stained-glass` |
+| Affiche audacieuse / Bold poster | 1.1.2 | `skins/bold-poster` |
+| Formes nettes / Sharp shapes | 1.1.1 | `skins/sharp-shapes` |
+| Élan / Momentum | 1.1.1 | `skins/momentum` |
+| Vitrail / Stained glass | 1.0.1 | `skins/stained-glass` |
 
 **Jauges, niveaux et compteurs animés (cœur 0.30.0, contrat 4).** Un skin d'overlay peut ajouter `animation.json` : une recette de données (primitives procédurales, paramètres, graines) que le cœur dessine lui-même. *Vitrail* (verrière, rosace, cartouche de plomb) et *Néon nocturne* 1.2.0 (tubes et pistes de circuit) en ont une. Les autres skins donnent une jauge simple qui suit leurs couleurs. Contrat : `docs/OVERLAY-ANIMATIONS.md` du cœur.
 *Animated gauges, levels and counters (core 0.30.0, contract 4). An overlay skin may add `animation.json`: a data recipe (procedural primitives, parameters, seeds) that the core draws itself. Stained glass (window, rose, lead cartouche) and Night neon 1.2.0 (tubes and circuit traces) have one. Other skins give a plain gauge that follows their colours. Contract: the core's `docs/OVERLAY-ANIMATIONS.md`.*
+
+Corrections mécaniques (sans changement de style) : Salle d'arcade 1.1.2 et Affiche audacieuse 1.1.2 réservent la place du tampon des cartes ; Trône de braise, Bannière héroïque et Élan 1.1.1 ne coupent plus le texte des pastilles ; Formes nettes 1.1.1 rend la piste de barre visible sur le panneau blanc ; Néon nocturne 1.2.1 et Vitrail 1.0.1 gardent l'anneau de choc dans l'élément.
+*Mechanical fixes (no change of style): Arcade hall 1.1.2 and Bold poster 1.1.2 reserve room for the card stamp; Ember throne, Heroic banner and Momentum 1.1.1 no longer cut the badge text; Sharp shapes 1.1.1 makes the bar track visible on the white panel; Night neon 1.2.1 and Stained glass 1.0.1 keep the shock ring inside the element.*
 
 Écrire un skin d'overlay : `docs/OVERLAY-SKINS.md` du cœur ; le vérifier : `npm run skin:check -- <dossier>`.
 *Writing an overlay skin: the core's `docs/OVERLAY-SKINS.md`; checking it: `npm run skin:check -- <folder>`.*

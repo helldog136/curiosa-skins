@@ -30,3 +30,38 @@ Elles sont dans le skin (rien n'est chargé depuis un autre site). Polices : Cin
 ## Côté technique
 
 Skin au format du contrat 1 de Curiosa (`skin.json`, `tokens.json`, `skin.css`). Contrôle : `npm run skin:check -- skins/feodal --visual --strict` depuis le cœur de Curiosa. Licence du skin : MIT (fichier `LICENSE`).
+
+---
+
+# Feudal (English)
+
+A pale stone castle under its banner by day; the same hall by torchlight in the evening.
+
+**Who is it for?** A site about games, fantasy, stories, role-playing or models, that likes the mood of castles, tournaments and old illuminated books.
+
+## What it changes
+
+- Colours: in light mode ("day at the castle"), pale stone, cream parchment, gold, royal blue and heraldic red. In dark mode ("torch vigil"), dark stone, embers, tarnished gold.
+- Lettering: engraved capital titles (Cinzel) and a very readable book text (EB Garamond). The first paragraph of a text starts with an illuminated drop cap.
+- Layout: a dressed-stone wall as the background; the page is a parchment held by four iron brackets, under a tapestry frieze. The header is a midnight-blue banner with pennants hanging from it; the footer is a crenellated rampart crowned by a stylised eagle.
+- Details: titles underlined with a chain and a shield, crossed-sword dividers, cards as riveted plates, buttons as gold-edged iron plates, the avatar as a shield, the call to action stamped with a wax seal. On a large screen, two torches frame the page.
+
+## What it does not change
+
+No text, link or button is added, removed or moved in the code: only the look changes. The "Curiosa" name in the footer always keeps its own appearance. You can switch skins at any time without losing anything.
+
+## Light and dark
+
+The skin follows the device mode, and visitors can pick "Light", "Dark" or "Auto" with the small switch in the header.
+
+## Motion
+
+The glow of the two torches flickers very gently on a large screen, and only if the person has not asked for less motion. Nothing else moves.
+
+## Fonts and images
+
+They are inside the skin (nothing is loaded from another site). Fonts: Cinzel and EB Garamond, SIL Open Font License 1.1. Images (stone, pennants, battlements, chain, frieze, swords, shield, helm, eagle, seal, torch): drawn for this skin, public domain. Licences: `LICENSES/` folder. No real coat of arms, brand or logo: the motifs are inventions of this skin.
+
+## Technical side
+
+Skin in Curiosa contract 1 format (`skin.json`, `tokens.json`, `skin.css`). Check: `npm run skin:check -- skins/feodal --visual --strict` from the Curiosa core. Skin licence: MIT (`LICENSE` file).
