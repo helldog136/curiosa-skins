@@ -65,3 +65,12 @@ They are inside the skin (nothing is loaded from another site). Fonts: Cinzel an
 ## Technical side
 
 Skin in Curiosa contract 1 format (`skin.json`, `tokens.json`, `skin.css`). Check: `npm run skin:check -- skins/feodal --visual --strict` from the Curiosa core. Skin licence: MIT (`LICENSE` file).
+
+
+## Personnalisation (1.2.0, Curiosa 0.44.0 ou plus)
+
+Ce skin déclare ce que la personne propriétaire peut changer (Apparence > Personnaliser) : couleur de la bannière, fanions, image de la bannière et écu (avec envoi d'image possible), ton du parchemin, rayon des coins, couleur des filets, et quatre ambiances (Bleu royal, Cramoisi, Forêt, Veille de nuit). Sans rien toucher, le rendu est exactement celui de la 1.1.3.
+
+## Customization (1.2.0, Curiosa 0.44.0 or later)
+
+This skin declares what the owner can change (Appearance > Customize): banner colour, pennants, banner picture and shield (with picture upload), parchment tone, corner radius, trim colour, and four looks (Royal blue, Crimson, Forest, Night watch). Untouched, the rendering is exactly that of 1.1.3.
