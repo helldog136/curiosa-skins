@@ -2,6 +2,6 @@
 [data-ov-part="card"]{ov-shape:pill;ov-deco:halftone #ffffff;text-align:center}
 [data-ov-part="bubble"]{ov-shape:slanted-both 22px;ov-motion:drift;ov-deco:shimmer}
 [data-ov-part="avatar"]{ov-shape:hexagon 7px flush}
-[data-ov-part="badge"]{ov-shape:slanted-both 6px flush}
+[data-ov-part="badge"]{ov-shape:slanted-both 6px}
 [data-ov-part="title"]{ov-text:lift}
 [data-ov-part="value"]{ov-text:lift}

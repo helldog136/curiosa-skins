@@ -26,3 +26,34 @@ Elles sont dans le skin (rien n'est chargé depuis un autre site). Polices : Arc
 ## Côté technique
 
 Skin au format du contrat 1 de Curiosa (`skin.json`, `tokens.json`, `skin.css`). Contrôle : `npm run skin:check -- skins/pirates --visual --strict` depuis le cœur de Curiosa. Licence du skin : MIT (fichier `LICENSE`).
+
+---
+
+# Pirates (English)
+
+A treasure map laid on a turquoise sea, under a warm stormy sky: tarred wood, brass, ropes, parchment, an oxblood red and big poster letters.
+
+**Who is it for?** A site about games, adventure, travel stories or community, that likes the mood of great crossings.
+
+## What it changes
+
+- Colours: in light mode, a bright turquoise sea, a parchment page and oxblood red for titles and buttons. In dark mode, called "night at sea", an ink sea, tarred planks and golden brass.
+- Lettering: massive poster capitals for titles (Archivo Black) and an easy-to-read book text (Libre Baskerville).
+- Layout: a narrow column laid on the sea, like a pinned map. The header and footer are wooden rails edged with brass, with a band of waves.
+- Details: ropes under titles, a small compass under the main title, a stylised skull in the dividers and the footer, brass corners, plate buttons that sink when pressed. The waves drift very slowly, only if your device has not asked for less motion.
+
+## What it does not change
+
+No text, link or button is added, removed or moved in the code: only the look changes. You can switch skins at any time without losing anything.
+
+## Light and dark
+
+The skin follows the device mode, and visitors can pick "Light", "Dark" or "Auto" with the small switch in the header. Both modes meet AA contrast.
+
+## Fonts and images
+
+They are inside the skin (nothing is loaded from another site). Fonts: Archivo Black and Libre Baskerville, SIL Open Font License 1.1. Images (compass, skull, waves, rope, corners): drawn for this skin, public domain. Licences: `LICENSES/` folder. No brand, logo or resource from a game or a publisher: the world inspires the mood, nothing is copied.
+
+## Technical side
+
+Skin in Curiosa contract 1 format (`skin.json`, `tokens.json`, `skin.css`). Check: `npm run skin:check -- skins/pirates --visual --strict` from the Curiosa core. Skin licence: MIT (`LICENSE` file).

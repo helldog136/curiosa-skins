@@ -26,3 +26,34 @@ Elles sont dans le skin (rien n'est chargé depuis un autre site). Polices : Pla
 ## Côté technique
 
 Skin au format du contrat 1 de Curiosa (`skin.json`, `tokens.json`, `skin.css`). Contrôle : `npm run skin:check -- skins/steampunk-victorien --visual --strict` depuis le cœur de Curiosa. Licence du skin : MIT (fichier `LICENSE`).
+
+---
+
+# Victorian steampunk (English)
+
+A parlour of bygone inventions: dark wood, leather, brass and copper, aged paper, small gears.
+
+**Who is it for?** A site about games, stories, models or tinkering, that likes the mood of old workshops.
+
+## What it changes
+
+- Colours: a very dark wood background, brown leather for the page, golden brass for rules, titles and buttons. Light mode, called "parchment", keeps the same idea with old paper and copper.
+- Lettering: elegant old-style titles (Playfair Display) and an easy-to-read book text (Libre Baskerville). Small titles are in spaced capitals.
+- Layout: a narrow column resting on the background, framed by a double rule with four ornate corners. The header is a compact bar: the brand on the left, the menu on the right.
+- Details: small gears drawn under big titles and in dividers, a barely visible damask pattern, double-rule frames, brass plate buttons, no rounded corner.
+
+## What it does not change
+
+No text, link or button is added, removed or moved in the code: only the look changes. You can switch skins at any time without losing anything.
+
+## Light and dark
+
+The skin follows the device mode, and visitors can pick "Light", "Dark" or "Auto" with the small switch in the header. No motion is needed: the skin animates nothing.
+
+## Fonts and images
+
+They are inside the skin (nothing is loaded from another site). Fonts: Playfair Display and Libre Baskerville, SIL Open Font License 1.1. Images (gears, corners, pattern): drawn for this skin, public domain. Licences: `LICENSES/` folder. No brand, no logo.
+
+## Technical side
+
+Skin in Curiosa contract 1 format (`skin.json`, `tokens.json`, `skin.css`). Check: `npm run skin:check -- skins/steampunk-victorien --visual --strict` from the Curiosa core. Skin licence: MIT (`LICENSE` file).

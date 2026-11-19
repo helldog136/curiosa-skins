@@ -30,3 +30,38 @@ Elles sont dans le skin (rien n'est chargé depuis un autre site). Licences : vo
 ## Côté technique
 
 Skin au format du contrat 1 de Curiosa. Contrôle : `npm run skin:check -- skins/verre-doux` depuis le cœur. Licence du skin : MIT (fichier `LICENSE`). Les fichiers `README.md` et `LICENSE` sont permis à la racine du dossier du skin.
+
+---
+
+# Soft glass and gradients (English)
+
+A modern app look: frosted glass, pastel colours that melt into each other, fully rounded shapes.
+
+**Who is it for?** A lively, welcoming site: workshops, creative collectives, communities. The menu and the cards seem to float.
+
+## What it changes
+
+- Colours: soft gradients in the background (lavender, pink, light blue by day; midnight blue, purple and pink at night). Buttons and the active menu item have a purple-pink gradient.
+- Shapes: everything is very rounded. The header is a glass "island" that stays at the top of the screen when you scroll (on a large screen), the menu is made of pills, cards are glass cards with a diffuse shadow.
+- Font: Outfit, a round, readable geometric font.
+- The home page is airy: large spaces between blocks.
+
+## Readability
+
+Text always sits on an opaque background. The blurred glass is only added on top, when the browser can do it, with a low transparency: if the browser cannot blur, the background stays solid and everything reads the same. Contrast meets AA level, in light and dark.
+
+## Light and dark: the showcase
+
+This skin has two modes. It follows the device mode, and visitors can pick "Light", "Dark" or "Auto" with the header switch (their choice stays in their browser, nothing is sent).
+
+## What it does not change
+
+No text, link or button is added, removed or moved: only the look changes. You can switch skins at any time without losing anything.
+
+## Fonts and images
+
+They are inside the skin (nothing is loaded from another site). Licences: see `LICENSES/` (font: SIL Open Font License 1.1; pattern: public domain).
+
+## Technical side
+
+Skin in Curiosa contract 1 format. Check: `npm run skin:check -- skins/verre-doux` from the core. Skin licence: MIT (`LICENSE` file). The `README.md` and `LICENSE` files are allowed at the root of the skin folder.

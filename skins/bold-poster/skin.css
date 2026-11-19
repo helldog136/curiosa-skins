@@ -1,5 +1,5 @@
 [data-ov-part="panel"]{transform:rotate(-0.8deg)}
-[data-ov-part="card"]{transform:rotate(1.2deg);ov-deco:stamp #111111;text-align:center}
+[data-ov-part="card"]{transform:rotate(1.2deg);ov-deco:stamp #111111;text-align:center;padding-right:34px}
 [data-ov-part="bubble"]{ov-deco:hazard #111111;transform:rotate(-0.5deg);padding-bottom:1.2em}
 [data-ov-part="avatar"]{border-radius:0;transform:rotate(-6deg)}
 [data-ov-part="title"]{ov-font:stencil}

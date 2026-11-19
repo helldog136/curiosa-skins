@@ -27,3 +27,35 @@ Elles sont dans le skin (rien n'est chargé depuis un autre site). Licences : vo
 ## Côté technique
 
 Skin au format du contrat 1 de Curiosa (`skin.json`, `tokens.json`, `skin.css`). Contrôle : `npm run skin:check -- skins/editorial-papier` depuis le cœur de Curiosa. Licence du skin : MIT (fichier `LICENSE`).
+
+---
+
+# Editorial paper (English)
+
+A magazine or book page: paper, ink, beautiful letters, hairline rules.
+
+**Who is it for?** A blog, a logbook, a site where people like to read. The text comes first.
+
+## What it changes
+
+- Colours: a cream paper and a brown-black ink, with an "ink red" for links and small details. Dark mode, called "ink", keeps the same warmth (very dark brown background, ivory text, golden accent).
+- Lettering: an elegant serif (Cormorant Garamond for headings, Source Serif for text). Large titles are in italic, section titles in spaced capitals.
+- Layout: a narrow, centred reading column with generous margins. The brand is centred at the top, the menu runs in a line under a double rule.
+- Lists: simple lines separated by rules, with a small thumbnail on the right.
+- No shadow, no rounded corner. The first letter of a text is enlarged (drop cap).
+
+## What it does not change
+
+No text, link or button is added, removed or moved in the code: only the look changes. You can switch skins at any time without losing anything.
+
+## Light and dark
+
+The skin follows the device mode, and visitors can pick "Light", "Dark" or "Auto" with the small switch in the menu.
+
+## Fonts and images
+
+They are inside the skin (nothing is loaded from another site). Licences: see `LICENSES/` (fonts: SIL Open Font License 1.1; paper texture: public domain).
+
+## Technical side
+
+Skin in Curiosa contract 1 format (`skin.json`, `tokens.json`, `skin.css`). Check: `npm run skin:check -- skins/editorial-papier` from the Curiosa core. Skin licence: MIT (`LICENSE` file).

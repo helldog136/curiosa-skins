@@ -37,3 +37,45 @@ Polices : SIL Open Font License 1.1 (textes dans `LICENSES/`). Motif de briques 
 ## Côté technique
 
 Skin au format du contrat 1 de Curiosa (`skin.json`, `tokens.json`, `skin.css`). Contrôle : `npm run skin:check -- skins/curiosa --visual --strict` depuis le cœur de Curiosa.
+
+---
+
+# Curiosa (English)
+
+The official Curiosa look: a warm cabinet of curiosities. *Your site, your collection.*
+
+**Who is it for?** A personal site that shows what you love and collect: blog, portfolio, creator page, notebook. Modules sit in it like drawers.
+
+## What it changes
+
+- Colours: a cream background, ink-night text, brass, terracotta and sage. Dark mode takes ink night as the background and cream as the text, with a light brass for links.
+- Shapes: rounded bricks. Section titles carry a small coloured brick, the page title is underlined with three bricks, bullet lists use bricks as bullets.
+- Cards: paper "drawers" with a thin brass handle at the bottom.
+- Badges (categories, labels): tinted background, text always in ink night.
+- The header layout (classic, two rows, centred or minimal) stays the one you choose in Appearance.
+
+## Fonts
+
+They are inside the skin: nothing is loaded from another site, and no visit contacts a third party.
+
+- Fraunces (headings): a soft, expressive serif, roman and italic.
+- Instrument Sans (text and interface).
+- JetBrains Mono (small labels, code).
+
+Only the Latin subset is embedded (about 134 KB for the four files). The text keeps a readable fallback font (Georgia / system font) for characters outside that subset.
+
+## Readability
+
+Body text in ink night on cream (14.6 to 1) and in cream on ink night (14.6 to 1). Brass, terracotta and sage never carry body text on cream: they are backgrounds, strokes and badges. Links use a dark terracotta in light mode and a light brass in dark mode (at least 4.5 to 1 in both). The focus ring is 3 px.
+
+## What it does not change
+
+No text, link or button is added, removed or moved: only the look changes. You can switch skins at any time without losing anything. The "Curiosa" name in the footer always keeps its brand rendering.
+
+## Licences
+
+Fonts: SIL Open Font License 1.1 (texts in `LICENSES/`). Brick pattern: public domain (CC0). Skin: MIT (`LICENSE` file).
+
+## Technical side
+
+Skin in Curiosa contract 1 format (`skin.json`, `tokens.json`, `skin.css`). Check: `npm run skin:check -- skins/curiosa --visual --strict` from the Curiosa core.
