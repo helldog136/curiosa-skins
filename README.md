@@ -10,6 +10,7 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 | Brutaliste clair / Light brutalist | 1.1.3 | clair / light | `skins/brutaliste-clair` |
 | Curiosa / Curiosa | 1.0.2 | clair, sombre / light, dark | `skins/curiosa` |
 | Éditorial papier / Editorial paper | 1.1.3 | clair, sombre / light, dark | `skins/editorial-papier` |
+| Globe-trotter / Globe-trotter | 1.1.0 | clair, sombre / light, dark | `skins/globe-trotter` |
 | Féodal / Feudal | 1.1.3 | clair, sombre / light, dark | `skins/feodal` |
 | Pirates / Pirates | 1.1.3 | clair, sombre / light, dark | `skins/pirates` |
 | Nef de braise / Ember nave | 1.1.3 | sombre, clair / dark, light | `skins/nef-de-braise` |
@@ -26,6 +27,9 @@ La 1.1.2 (1.0.1 pour Curiosa) habille l'affichage en liste du cœur 0.6.18 (lign
 
 La 1.1.3 (1.0.2 pour Curiosa) corrige le débordement horizontal d'Éditorial papier à 390 px (cartes de pastille de couleur et de phrase à copier) et ajoute un README bilingue à chaque skin de site.
 *Version 1.1.3 (1.0.2 for Curiosa) fixes Editorial paper's horizontal overflow at 390 px (colour swatch and copy-phrase cards) and gives every site skin a bilingual README.*
+
+Globe-trotter 1.1.0 déclare une personnalisation (cœur 0.44.0 ou plus : trois ambiances, couleur d'accent et couleurs du carnet) ; sans rien toucher, son rendu est celui de la 1.0.0.
+*Globe-trotter 1.1.0 declares a customization (core 0.44.0 or later: three looks, accent colour and notebook colours); untouched, it renders as 1.0.0 did.*
 
 Chaque skin est un dossier de données (`skin.json`, `tokens.json`, `skin.css`, polices et images avec leurs licences) : aucun programme ne s'exécute, seule l'apparence change.
 *Each skin is a folder of data: no code runs, only the appearance changes.*
@@ -92,4 +96,4 @@ Exemple / Example : `https://github.com/helldog136/curiosa-skins#retro-neon/v1.0
 
 ## Licence / License
 
-Chaque skin porte sa licence (MIT) et celles de ses polices et images dans son dossier. / *Each skin carries its own license (MIT) and those of its fonts and images in its folder.*
+Chaque skin porte sa licence (MIT, sauf Globe-trotter : CC0-1.0) et celles de ses polices et images dans son dossier. / *Each skin carries its own license (MIT, except Globe-trotter: CC0-1.0) and those of its fonts and images in its folder.*

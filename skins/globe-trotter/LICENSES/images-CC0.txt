@@ -1,0 +1,6 @@
+Les images du dossier images/ (boussole, camo, courbes, dechirure, fougere, herbes, oiseaux, papier, relief-s, relief, traces, trait)
+sont des dessins écrits par programme pour ce skin (graine fixe, bruit cohérent, tracés irréguliers construits dès le départ), sans élément tiers :
+aucune marque, aucun logo, aucune œuvre existante. Elles sont dédiées au domaine public (CC0 1.0 Universal) : https://creativecommons.org/publicdomain/zero/1.0/
+
+The images in the images/ folder are drawings written by program for this skin (fixed seed, coherent noise, irregular paths built that way from the start),
+with no third-party element: no brand, no logo, no existing work. They are dedicated to the public domain (CC0 1.0 Universal): https://creativecommons.org/publicdomain/zero/1.0/
