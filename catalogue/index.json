@@ -354,6 +354,37 @@
     "core": "0.44.0"
    },
    "preview": "skins/globe-trotter/previews/home-light.webp"
+  },
+  {
+   "id": "financier",
+   "name": {
+    "fr": "Financier",
+    "en": "Financier"
+   },
+   "description": {
+    "fr": "Fintech éditoriale : page blanche sur fond de couleur, titres serif, surligneur, tuiles en mosaïque et vraies bougies. Clair par défaut, crépuscule en sombre.",
+    "en": "Editorial fintech: white page on a coloured backdrop, serif headings, highlighter, mosaic tiles and real candlesticks. Light by default, dusk in dark."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/financier",
+   "ref": "financier/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 4,
+   "author": "Équipe Curiosa",
+   "icon": "📈",
+   "tags": [
+    "light",
+    "dark",
+    "serif"
+   ],
+   "modes": [
+    "light",
+    "dark"
+   ],
+   "requires": {
+    "core": "0.44.0"
+   },
+   "preview": "skins/financier/previews/home-light.webp"
   }
  ]
 }

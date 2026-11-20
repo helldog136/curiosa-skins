@@ -1,0 +1,625 @@
+{
+  "skinContract": 4,
+  "id": "financier",
+  "name": {
+    "fr": "Financier",
+    "en": "Trading desk"
+  },
+  "description": {
+    "fr": "La finance en revue de presse : carte de page sur fond uni, titres Didone, surligneur, tuiles de couleurs, bougies et courbes. Crépuscule ambré en sombre.",
+    "en": "Finance as a magazine: a page card on a flat backdrop, Didone headings, a highlighter, coloured tiles, candlesticks and curves. An amber dusk in dark."
+  },
+  "version": "1.0.0",
+  "minCore": "0.44.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "CC0-1.0",
+  "tags": [
+    "light",
+    "dark",
+    "serif"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/home-light.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Accueil, mode clair : carte blanche sur fond pervenche, grand titre serif, surligneur citron, bougies",
+        "en": "Home, light mode: a white card on periwinkle, a large serif heading, lime highlighter, candlesticks"
+      }
+    },
+    {
+      "file": "previews/home-dark.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Accueil, mode sombre : crépuscule d'encre et de brume ambrée, accent ambre",
+        "en": "Home, dark mode: a dusk of ink and amber haze, an amber accent"
+      }
+    },
+    {
+      "file": "previews/mobile-dark.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone, mode sombre",
+        "en": "Home page on a phone, dark mode"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "images/barres.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/candles.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/collines.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/courbe.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/croix.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/marque.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/pistes.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "classic",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    800,
+    1120
+  ],
+  "supports": {
+    "reducedMotion": true
+  },
+  "customize": {
+    "version": 1,
+    "looks": [
+      {
+        "id": "bourse",
+        "label": {
+          "fr": "Bourse",
+          "en": "Stock market"
+        },
+        "values": {
+          "accent": "ink",
+          "mark": "lime",
+          "up": "green",
+          "down": "red",
+          "ground": "periwinkle",
+          "paper": "white",
+          "tile": "ink"
+        }
+      },
+      {
+        "id": "bitcoin",
+        "label": {
+          "fr": "Bitcoin",
+          "en": "Bitcoin"
+        },
+        "values": {
+          "accent": "ink",
+          "mark": "orange",
+          "up": "green",
+          "down": "red",
+          "ground": "cream",
+          "paper": "ivory",
+          "tile": "cocoa"
+        }
+      },
+      {
+        "id": "altcoin",
+        "label": {
+          "fr": "Altcoin",
+          "en": "Altcoin"
+        },
+        "values": {
+          "accent": "violet",
+          "mark": "mint",
+          "up": "teal",
+          "down": "magenta",
+          "ground": "lilac",
+          "paper": "violet",
+          "tile": "plum"
+        }
+      }
+    ],
+    "groups": [
+      {
+        "id": "main",
+        "label": {
+          "fr": "L'essentiel",
+          "en": "The essentials"
+        },
+        "controls": [
+          {
+            "id": "accent",
+            "type": "color",
+            "featured": true,
+            "label": {
+              "fr": "Couleur d'accent",
+              "en": "Accent colour"
+            },
+            "hint": {
+              "fr": "Boutons, soulignements et barres de graphique",
+              "en": "Buttons, underlines and chart bars"
+            },
+            "palette": [
+              {
+                "id": "ink",
+                "label": {
+                  "fr": "Encre",
+                  "en": "Ink"
+                },
+                "light": "#0e0e16",
+                "dark": "#f3efe6"
+              },
+              {
+                "id": "violet",
+                "label": {
+                  "fr": "Violet",
+                  "en": "Violet"
+                },
+                "light": "#4b2bb3",
+                "dark": "#c3b0ff"
+              },
+              {
+                "id": "indigo",
+                "label": {
+                  "fr": "Indigo",
+                  "en": "Indigo"
+                },
+                "light": "#2a3fbf",
+                "dark": "#a9bbff"
+              },
+              {
+                "id": "forest",
+                "label": {
+                  "fr": "Forêt",
+                  "en": "Forest"
+                },
+                "light": "#14583a",
+                "dark": "#7fe3b0"
+              },
+              {
+                "id": "ember",
+                "label": {
+                  "fr": "Braise",
+                  "en": "Ember"
+                },
+                "light": "#b8430f",
+                "dark": "#ff9a5e"
+              }
+            ],
+            "default": "ink",
+            "custom": {
+              "l": [
+                0.2,
+                0.5
+              ],
+              "c": [
+                0,
+                0.2
+              ],
+              "dark": {
+                "l": [
+                  0.72,
+                  0.95
+                ]
+              }
+            },
+            "contrast": [
+              {
+                "text": "--v-accent-fg",
+                "min": 4.5
+              },
+              {
+                "against": [
+                  "--v-surface"
+                ],
+                "min": 3
+              }
+            ]
+          },
+          {
+            "id": "mark",
+            "type": "color",
+            "featured": true,
+            "label": {
+              "fr": "Couleur du surligneur",
+              "en": "Highlighter colour"
+            },
+            "hint": {
+              "fr": "Mots forts, étiquettes, tuiles et crépuscule",
+              "en": "Strong words, labels, tiles and dusk"
+            },
+            "palette": [
+              {
+                "id": "lime",
+                "label": {
+                  "fr": "Citron",
+                  "en": "Lime"
+                },
+                "light": "#dfe95a",
+                "dark": "#f0b13c"
+              },
+              {
+                "id": "orange",
+                "label": {
+                  "fr": "Orange",
+                  "en": "Orange"
+                },
+                "light": "#ffb25e",
+                "dark": "#ff8a3d"
+              },
+              {
+                "id": "mint",
+                "label": {
+                  "fr": "Menthe",
+                  "en": "Mint"
+                },
+                "light": "#9fe9c9",
+                "dark": "#4fd6ae"
+              },
+              {
+                "id": "lilac",
+                "label": {
+                  "fr": "Lilas",
+                  "en": "Lilac"
+                },
+                "light": "#d4c6ff",
+                "dark": "#b79cff"
+              },
+              {
+                "id": "rose",
+                "label": {
+                  "fr": "Rose",
+                  "en": "Rose"
+                },
+                "light": "#ffbdd2",
+                "dark": "#ff8fb0"
+              }
+            ],
+            "default": "lime",
+            "contrast": [
+              {
+                "text": "--v-accent2-fg",
+                "min": 4.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "market",
+        "label": {
+          "fr": "Couleurs du marché",
+          "en": "Market colours"
+        },
+        "controls": [
+          {
+            "id": "up",
+            "type": "color",
+            "label": {
+              "fr": "Couleur de la hausse",
+              "en": "Rise colour"
+            },
+            "hint": {
+              "fr": "Bougies creuses du graphique",
+              "en": "Hollow candles of the chart"
+            },
+            "palette": [
+              {
+                "id": "green",
+                "label": {
+                  "fr": "Vert",
+                  "en": "Green"
+                },
+                "light": "#08531f",
+                "dark": "#3ddc97"
+              },
+              {
+                "id": "teal",
+                "label": {
+                  "fr": "Sarcelle",
+                  "en": "Teal"
+                },
+                "light": "#00796b",
+                "dark": "#4fe3c4"
+              },
+              {
+                "id": "azure",
+                "label": {
+                  "fr": "Azur",
+                  "en": "Azure"
+                },
+                "light": "#1f5fbf",
+                "dark": "#7cb8ff"
+              }
+            ],
+            "default": "green",
+            "contrast": [
+              {
+                "against": [
+                  "--v-surface"
+                ],
+                "min": 3
+              }
+            ]
+          },
+          {
+            "id": "down",
+            "type": "color",
+            "label": {
+              "fr": "Couleur de la baisse",
+              "en": "Fall colour"
+            },
+            "hint": {
+              "fr": "Bougies pleines du graphique",
+              "en": "Solid candles of the chart"
+            },
+            "palette": [
+              {
+                "id": "red",
+                "label": {
+                  "fr": "Rouge",
+                  "en": "Red"
+                },
+                "light": "#8f1620",
+                "dark": "#ff7070"
+              },
+              {
+                "id": "magenta",
+                "label": {
+                  "fr": "Magenta",
+                  "en": "Magenta"
+                },
+                "light": "#a8115f",
+                "dark": "#ff6fb4"
+              },
+              {
+                "id": "coral",
+                "label": {
+                  "fr": "Corail",
+                  "en": "Coral"
+                },
+                "light": "#b8430f",
+                "dark": "#ff9a5e"
+              }
+            ],
+            "default": "red",
+            "contrast": [
+              {
+                "against": [
+                  "--v-surface"
+                ],
+                "min": 3
+              }
+            ]
+          },
+          {
+            "id": "ground",
+            "type": "color",
+            "label": {
+              "fr": "Fond derrière la page",
+              "en": "Backdrop colour"
+            },
+            "hint": {
+              "fr": "Le fond uni autour de la carte de page",
+              "en": "The flat background around the page card"
+            },
+            "palette": [
+              {
+                "id": "periwinkle",
+                "label": {
+                  "fr": "Pervenche",
+                  "en": "Periwinkle"
+                },
+                "light": "#b7bfe3",
+                "dark": "#090b12"
+              },
+              {
+                "id": "cream",
+                "label": {
+                  "fr": "Crème",
+                  "en": "Cream"
+                },
+                "light": "#efe0c8",
+                "dark": "#0f0a07"
+              },
+              {
+                "id": "lilac",
+                "label": {
+                  "fr": "Lilas",
+                  "en": "Lilac"
+                },
+                "light": "#d4c8f0",
+                "dark": "#0b0716"
+              },
+              {
+                "id": "sage",
+                "label": {
+                  "fr": "Sauge",
+                  "en": "Sage"
+                },
+                "light": "#c4d6c8",
+                "dark": "#070d0b"
+              }
+            ],
+            "default": "periwinkle"
+          },
+          {
+            "id": "paper",
+            "type": "color",
+            "label": {
+              "fr": "Fond de la page",
+              "en": "Page colour"
+            },
+            "hint": {
+              "fr": "La carte de page, ses cartes et ses menus",
+              "en": "The page card, its cards and menus"
+            },
+            "palette": [
+              {
+                "id": "white",
+                "label": {
+                  "fr": "Blanc",
+                  "en": "White"
+                },
+                "light": "#ffffff",
+                "dark": "#12141f"
+              },
+              {
+                "id": "ivory",
+                "label": {
+                  "fr": "Ivoire",
+                  "en": "Ivory"
+                },
+                "light": "#fffaf0",
+                "dark": "#1c140d"
+              },
+              {
+                "id": "violet",
+                "label": {
+                  "fr": "Violet clair",
+                  "en": "Pale violet"
+                },
+                "light": "#fbf9ff",
+                "dark": "#181030"
+              },
+              {
+                "id": "mist",
+                "label": {
+                  "fr": "Brume",
+                  "en": "Mist"
+                },
+                "light": "#f6f8f6",
+                "dark": "#0f1a16"
+              }
+            ],
+            "default": "white",
+            "contrast": [
+              {
+                "text": "--v-fg",
+                "min": 4.5
+              }
+            ]
+          },
+          {
+            "id": "tile",
+            "type": "color",
+            "label": {
+              "fr": "Couleur des tuiles sombres",
+              "en": "Dark tile colour"
+            },
+            "hint": {
+              "fr": "Tuiles de chiffres et cartes foncées",
+              "en": "Figure tiles and dark cards"
+            },
+            "palette": [
+              {
+                "id": "ink",
+                "label": {
+                  "fr": "Encre",
+                  "en": "Ink"
+                },
+                "light": "#0c0c14",
+                "dark": "#0c0c14"
+              },
+              {
+                "id": "plum",
+                "label": {
+                  "fr": "Prune",
+                  "en": "Plum"
+                },
+                "light": "#2a1654",
+                "dark": "#2a1654"
+              },
+              {
+                "id": "navy",
+                "label": {
+                  "fr": "Marine",
+                  "en": "Navy"
+                },
+                "light": "#122657",
+                "dark": "#122657"
+              },
+              {
+                "id": "cocoa",
+                "label": {
+                  "fr": "Cacao",
+                  "en": "Cocoa"
+                },
+                "light": "#3a2212",
+                "dark": "#3a2212"
+              }
+            ],
+            "default": "ink",
+            "contrast": [
+              {
+                "text": "#ffffff",
+                "min": 4.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
