@@ -1,6 +1,6 @@
-Les images du dossier images/ (candles, courbe, piece, regle, ticker, trait)
+Les images du dossier images/ (barres, candles, collines, courbe, croix, marque, pistes)
 sont des dessins écrits par programme pour ce skin (graine fixe, marche aléatoire, formes géométriques simples), sans élément tiers :
 aucune marque, aucun logo, aucune bourse ni aucune monnaie existante, aucune œuvre existante. Elles sont dédiées au domaine public (CC0 1.0 Universal) : https://creativecommons.org/publicdomain/zero/1.0/
 
-The images in the images/ folder (candles, courbe, piece, regle, ticker, trait) are drawings written by program for this skin (fixed seed, random walk, simple geometric shapes),
+The images in the images/ folder (barres, candles, collines, courbe, croix, marque, pistes) are drawings written by program for this skin (fixed seed, random walk, simple geometric shapes),
 with no third-party element: no brand, no logo, no existing exchange or currency, no existing work. They are dedicated to the public domain (CC0 1.0 Universal): https://creativecommons.org/publicdomain/zero/1.0/

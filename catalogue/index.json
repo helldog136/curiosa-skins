@@ -359,11 +359,11 @@
    "id": "financier",
    "name": {
     "fr": "Financier",
-    "en": "Trading desk"
+    "en": "Financier"
    },
    "description": {
-    "fr": "Tableau de marché : grille de graphique, bandeau de cotations peint, bougies japonaises, chiffres à chasse fixe. Sombre par défaut, clair comme un journal financier.",
-    "en": "Market board: chart grid, painted ticker band, candlesticks, fixed-width figures. Dark by default, light like a financial newspaper."
+    "fr": "Fintech éditoriale : page blanche sur fond de couleur, titres serif, surligneur, tuiles en mosaïque et vraies bougies. Clair par défaut, crépuscule en sombre.",
+    "en": "Editorial fintech: white page on a coloured backdrop, serif headings, highlighter, mosaic tiles and real candlesticks. Light by default, dusk in dark."
    },
    "repo": "https://github.com/helldog136/curiosa-skins",
    "subdir": "skins/financier",
@@ -373,18 +373,18 @@
    "author": "Équipe Curiosa",
    "icon": "📈",
    "tags": [
-    "dark",
     "light",
-    "mono"
+    "dark",
+    "serif"
    ],
    "modes": [
-    "dark",
-    "light"
+    "light",
+    "dark"
    ],
    "requires": {
     "core": "0.44.0"
    },
-   "preview": "skins/financier/previews/home-dark.webp"
+   "preview": "skins/financier/previews/home-light.webp"
   }
  ]
 }

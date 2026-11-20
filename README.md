@@ -12,7 +12,7 @@ Catalogue officiel des skins de [Curiosa](https://github.com/helldog136/Curiosa)
 | Éditorial papier / Editorial paper | 1.1.3 | clair, sombre / light, dark | `skins/editorial-papier` |
 | Globe-trotter / Globe-trotter | 1.1.0 | clair, sombre / light, dark | `skins/globe-trotter` |
 | Féodal / Feudal | 1.1.3 | clair, sombre / light, dark | `skins/feodal` |
-| Financier / Trading desk | 1.0.0 | sombre, clair / dark, light | `skins/financier` |
+| Financier | 1.0.0 | clair, sombre / light, dark | `skins/financier` |
 | Pirates / Pirates | 1.1.3 | clair, sombre / light, dark | `skins/pirates` |
 | Nef de braise / Ember nave | 1.1.3 | sombre, clair / dark, light | `skins/nef-de-braise` |
 | Rétro néon / Retro neon | 1.1.3 | sombre / dark | `skins/retro-neon` |
@@ -29,8 +29,8 @@ La 1.1.2 (1.0.1 pour Curiosa) habille l'affichage en liste du cœur 0.6.18 (lign
 La 1.1.3 (1.0.2 pour Curiosa) corrige le débordement horizontal d'Éditorial papier à 390 px (cartes de pastille de couleur et de phrase à copier) et ajoute un README bilingue à chaque skin de site.
 *Version 1.1.3 (1.0.2 for Curiosa) fixes Editorial paper's horizontal overflow at 390 px (colour swatch and copy-phrase cards) and gives every site skin a bilingual README.*
 
-Financier 1.0.0 est un tableau de marché (bourse, bitcoin et altcoins : bandeau de cotations, bougies, chiffres à chasse fixe) ; il demande le cœur 0.44.0 ou plus et déclare une personnalisation (trois ambiances : Haussier, Baissier, Néon crypto ; couleur d'accent et couleur de la hausse en accès direct). Il ne donne aucun conseil financier : seul l'aspect change.
-*Financier 1.0.0 is a market board (stocks, bitcoin and altcoins: ticker band, candlesticks, fixed-width figures); it needs core 0.44.0 or later and declares a customization (three looks: Bull, Bear, Crypto neon; accent colour and rise colour within direct reach). It gives no financial advice: only the look changes.*
+Financier 1.0.0 est une fintech éditoriale (bourse, bitcoin et altcoins : page blanche sur fond de couleur, titres serif, surligneur, tuiles, bougies) ; il demande le cœur 0.44.0 ou plus et déclare une personnalisation (trois ambiances : Bourse, Bitcoin, Altcoin ; couleur d'accent et surligneur en accès direct). Il ne donne aucun conseil financier : seul l'aspect change.
+*Financier 1.0.0 is an editorial fintech look (stocks, bitcoin and altcoins: white page on a coloured backdrop, serif headings, highlighter, tiles, candlesticks); it needs core 0.44.0 or later and declares a customization (three looks: Bourse, Bitcoin, Altcoin; accent colour and highlighter within direct reach). It gives no financial advice: only the look changes.*
 
 Globe-trotter 1.1.0 déclare une personnalisation (cœur 0.44.0 ou plus : trois ambiances, couleur d'accent et couleurs du carnet) ; sans rien toucher, son rendu est celui de la 1.0.0.
 *Globe-trotter 1.1.0 declares a customization (core 0.44.0 or later: three looks, accent colour and notebook colours); untouched, it renders as 1.0.0 did.*
