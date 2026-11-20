@@ -1,0 +1,536 @@
+{
+  "skinContract": 4,
+  "id": "globe-trotter",
+  "name": {
+    "fr": "Globe-trotter",
+    "en": "Globe-trotter"
+  },
+  "description": {
+    "fr": "Un carnet de terrain posé sur un sol de forêt : crêtes dans la brume, courbes de niveau, fougères et traces de sabots. Clair à l'aube, sombre à la tombée de la nuit.",
+    "en": "A field notebook lying on a forest floor: misty ridges, contour lines, ferns and hoof tracks. Light at dawn, dark at dusk."
+  },
+  "version": "1.1.0",
+  "minCore": "0.44.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "CC0-1.0",
+  "tags": [
+    "light",
+    "dark",
+    "serif"
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/home-light.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode clair : crêtes dans la brume à l'aube, feuille de carnet au bord déchiré, courbes de niveau",
+        "en": "Home page, light mode: misty ridges at dawn, a notebook page with a torn edge, contour lines"
+      }
+    },
+    {
+      "file": "previews/home-dark.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode sombre : la forêt à la tombée de la nuit, lueur ambrée à l'horizon",
+        "en": "Home page, dark mode: the forest at nightfall, an amber glow on the horizon"
+      }
+    },
+    {
+      "file": "previews/mobile-dark.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone, mode sombre",
+        "en": "Home page on a phone, dark mode"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "images/boussole.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/camo.webp",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/courbes.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/dechirure.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/fougere.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/herbes.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/oiseaux.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/papier.webp",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/relief-s.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/relief.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/traces.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/trait.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "classic",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    800,
+    1120
+  ],
+  "supports": {
+    "reducedMotion": true
+  },
+  "customize": {
+    "version": 1,
+    "looks": [
+      {
+        "id": "moss",
+        "label": {
+          "fr": "Mousse",
+          "en": "Moss"
+        },
+        "values": {
+          "ground": "moss",
+          "paper": "moss",
+          "line": "moss",
+          "accent": "moss",
+          "sun": "moss",
+          "link": "moss"
+        }
+      },
+      {
+        "id": "dusk",
+        "label": {
+          "fr": "Crépuscule",
+          "en": "Dusk"
+        },
+        "values": {
+          "ground": "dusk",
+          "paper": "dusk",
+          "line": "dusk",
+          "accent": "dusk",
+          "sun": "dusk",
+          "link": "dusk"
+        }
+      },
+      {
+        "id": "ochre",
+        "label": {
+          "fr": "Ocre",
+          "en": "Ochre"
+        },
+        "values": {
+          "ground": "ochre",
+          "paper": "ochre",
+          "line": "ochre",
+          "accent": "ochre",
+          "sun": "ochre",
+          "link": "ochre"
+        }
+      }
+    ],
+    "groups": [
+      {
+        "id": "main",
+        "label": {
+          "fr": "L'essentiel",
+          "en": "The essentials"
+        },
+        "controls": [
+          {
+            "id": "accent",
+            "type": "color",
+            "featured": true,
+            "label": {
+              "fr": "Couleur d'accent",
+              "en": "Accent colour"
+            },
+            "hint": {
+              "fr": "Boutons, sous-titres et menu actif",
+              "en": "Buttons, subheadings and active menu"
+            },
+            "palette": [
+              {
+                "id": "moss",
+                "label": {
+                  "fr": "Mousse",
+                  "en": "Moss"
+                },
+                "light": "#2d5822",
+                "dark": "#a9d56f"
+              },
+              {
+                "id": "dusk",
+                "label": {
+                  "fr": "Crépuscule",
+                  "en": "Dusk"
+                },
+                "light": "#2f4a7d",
+                "dark": "#9db8f0"
+              },
+              {
+                "id": "ochre",
+                "label": {
+                  "fr": "Ocre",
+                  "en": "Ochre"
+                },
+                "light": "#8a4f12",
+                "dark": "#e6b455"
+              }
+            ],
+            "default": "moss",
+            "custom": {
+              "l": [
+                0.3,
+                0.55
+              ],
+              "c": [
+                0,
+                0.16
+              ],
+              "dark": {
+                "l": [
+                  0.7,
+                  0.9
+                ]
+              }
+            },
+            "contrast": [
+              {
+                "text": "--v-accent-fg",
+                "min": 4.5
+              },
+              {
+                "against": [
+                  "--v-surface"
+                ],
+                "min": 4.5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "colours",
+        "label": {
+          "fr": "Couleurs du carnet",
+          "en": "Notebook colours"
+        },
+        "controls": [
+          {
+            "id": "ground",
+            "type": "color",
+            "label": {
+              "fr": "Couleur du sol",
+              "en": "Ground colour"
+            },
+            "hint": {
+              "fr": "Le fond derrière la page",
+              "en": "The background behind the page"
+            },
+            "palette": [
+              {
+                "id": "moss",
+                "label": {
+                  "fr": "Mousse",
+                  "en": "Moss"
+                },
+                "light": "#c3cca4",
+                "dark": "#0a120e"
+              },
+              {
+                "id": "dusk",
+                "label": {
+                  "fr": "Crépuscule",
+                  "en": "Dusk"
+                },
+                "light": "#b9c4d4",
+                "dark": "#0b1020"
+              },
+              {
+                "id": "ochre",
+                "label": {
+                  "fr": "Ocre",
+                  "en": "Ochre"
+                },
+                "light": "#d8c79a",
+                "dark": "#17110a"
+              }
+            ],
+            "default": "moss"
+          },
+          {
+            "id": "paper",
+            "type": "color",
+            "label": {
+              "fr": "Couleur du papier",
+              "en": "Paper colour"
+            },
+            "hint": {
+              "fr": "La page du carnet et les fiches",
+              "en": "The notebook page and the cards"
+            },
+            "palette": [
+              {
+                "id": "moss",
+                "label": {
+                  "fr": "Mousse",
+                  "en": "Moss"
+                },
+                "light": "#f5f1e0",
+                "dark": "#14201a"
+              },
+              {
+                "id": "dusk",
+                "label": {
+                  "fr": "Crépuscule",
+                  "en": "Dusk"
+                },
+                "light": "#f1f2f6",
+                "dark": "#141a2e"
+              },
+              {
+                "id": "ochre",
+                "label": {
+                  "fr": "Ocre",
+                  "en": "Ochre"
+                },
+                "light": "#f8f0dc",
+                "dark": "#241a10"
+              }
+            ],
+            "default": "moss",
+            "contrast": [
+              {
+                "text": "--v-fg",
+                "min": 4.5
+              }
+            ]
+          },
+          {
+            "id": "line",
+            "type": "color",
+            "label": {
+              "fr": "Couleur des traits",
+              "en": "Line colour"
+            },
+            "hint": {
+              "fr": "Bordures et courbes de niveau",
+              "en": "Borders and contour lines"
+            },
+            "palette": [
+              {
+                "id": "moss",
+                "label": {
+                  "fr": "Mousse",
+                  "en": "Moss"
+                },
+                "light": "#7f8d64",
+                "dark": "#35503f"
+              },
+              {
+                "id": "dusk",
+                "label": {
+                  "fr": "Crépuscule",
+                  "en": "Dusk"
+                },
+                "light": "#7a89a6",
+                "dark": "#34405f"
+              },
+              {
+                "id": "ochre",
+                "label": {
+                  "fr": "Ocre",
+                  "en": "Ochre"
+                },
+                "light": "#a08a55",
+                "dark": "#5a4528"
+              }
+            ],
+            "default": "moss"
+          },
+          {
+            "id": "sun",
+            "type": "color",
+            "label": {
+              "fr": "Couleur de la lueur",
+              "en": "Glow colour"
+            },
+            "hint": {
+              "fr": "Ciel, rubans adhésifs et surlignage",
+              "en": "Sky, tape strips and highlights"
+            },
+            "palette": [
+              {
+                "id": "moss",
+                "label": {
+                  "fr": "Mousse",
+                  "en": "Moss"
+                },
+                "light": "#d79a3c",
+                "dark": "#e2b157"
+              },
+              {
+                "id": "dusk",
+                "label": {
+                  "fr": "Crépuscule",
+                  "en": "Dusk"
+                },
+                "light": "#d4806a",
+                "dark": "#e0a07a"
+              },
+              {
+                "id": "ochre",
+                "label": {
+                  "fr": "Ocre",
+                  "en": "Ochre"
+                },
+                "light": "#c9792a",
+                "dark": "#e08a4a"
+              }
+            ],
+            "default": "moss"
+          },
+          {
+            "id": "link",
+            "type": "color",
+            "label": {
+              "fr": "Couleur des liens",
+              "en": "Link colour"
+            },
+            "hint": {
+              "fr": "Les liens dans les textes",
+              "en": "Links inside texts"
+            },
+            "palette": [
+              {
+                "id": "moss",
+                "label": {
+                  "fr": "Mousse",
+                  "en": "Moss"
+                },
+                "light": "#1f4217",
+                "dark": "#bfe48a"
+              },
+              {
+                "id": "dusk",
+                "label": {
+                  "fr": "Crépuscule",
+                  "en": "Dusk"
+                },
+                "light": "#263f6e",
+                "dark": "#b5caf5"
+              },
+              {
+                "id": "ochre",
+                "label": {
+                  "fr": "Ocre",
+                  "en": "Ochre"
+                },
+                "light": "#6e3d0c",
+                "dark": "#f0c878"
+              }
+            ],
+            "default": "moss",
+            "contrast": [
+              {
+                "against": [
+                  "--v-surface"
+                ],
+                "min": 4.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
