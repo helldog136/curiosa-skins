@@ -26,7 +26,11 @@ Aucune police n'est embarquée : le skin utilise celles du système, rien n'est 
 
 ## Côté technique
 
-Skin au format du contrat 1 de Curiosa (`skin.json`, `tokens.json`, `skin.css`). Contrôle : `npm run skin:check -- skins/globe-trotter --visual --strict` depuis le cœur de Curiosa. Licence du skin : CC0-1.0 (fichier `LICENSE`).
+Skin au format du contrat 4 de Curiosa (`skin.json`, `tokens.json`, `skin.css`). Contrôle : `npm run skin:check -- skins/globe-trotter --visual --strict` depuis le cœur de Curiosa. Licence du skin : CC0-1.0 (fichier `LICENSE`).
+
+## Personnalisation (1.1.0, Curiosa 0.44.0 ou plus)
+
+Ce skin déclare ce que la personne propriétaire peut changer (Apparence > Personnaliser) : trois ambiances prêtes à l'emploi (Mousse, Crépuscule, Ocre), la couleur d'accent en accès direct, et, dans « Couleurs du carnet », la couleur du sol, du papier, des traits, de la lueur et des liens. Chaque couleur existe en clair et en sombre. Sans rien toucher, le rendu est exactement celui de la 1.0.0 (ambiance Mousse). Si une couleur choisie rend un texte difficile à lire, la page de personnalisation le signale à côté du réglage.
 
 ---
 
@@ -58,4 +62,8 @@ No font is embedded: the skin uses the system fonts, nothing is loaded from anot
 
 ## Technical side
 
-A skin in contract 1 format (`skin.json`, `tokens.json`, `skin.css`). Check: `npm run skin:check -- skins/globe-trotter --visual --strict` from a Curiosa core checkout. Skin license: CC0-1.0 (`LICENSE` file).
+A skin in contract 4 format (`skin.json`, `tokens.json`, `skin.css`). Check: `npm run skin:check -- skins/globe-trotter --visual --strict` from a Curiosa core checkout. Skin license: CC0-1.0 (`LICENSE` file).
+
+## Customization (1.1.0, Curiosa 0.44.0 or later)
+
+This skin declares what the owner can change (Appearance > Customize): three ready-made looks (Moss, Dusk, Ochre), the accent colour within direct reach, and, under "Notebook colours", the colour of the ground, the paper, the lines, the glow and the links. Every colour exists in light and dark. Untouched, the rendering is exactly that of 1.0.0 (the Moss look). If a chosen colour makes a text hard to read, the customization page says so next to the setting.
