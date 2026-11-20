@@ -1,0 +1,622 @@
+{
+  "skinContract": 4,
+  "id": "financier",
+  "name": {
+    "fr": "Financier",
+    "en": "Trading desk"
+  },
+  "description": {
+    "fr": "Un tableau de marché : grille de graphique, bandeau de cotations peint, bougies japonaises, chiffres à chasse fixe. Sombre par défaut, clair comme les pages finance d'un journal.",
+    "en": "A market board: chart grid, a painted ticker band, candlesticks, fixed-width figures. Dark by default, light like the finance pages of a newspaper."
+  },
+  "version": "1.0.0",
+  "minCore": "0.44.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "CC0-1.0",
+  "tags": [
+    "dark",
+    "light",
+    "mono"
+  ],
+  "modes": [
+    "dark",
+    "light"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/home-dark.webp",
+      "mode": "dark",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode sombre : bandeau de cotations, bougies sur fond bleu nuit, panneau quadrillé, accents or",
+        "en": "Home page, dark mode: a ticker band, candlesticks on a midnight blue background, a gridded panel, gold accents"
+      }
+    },
+    {
+      "file": "previews/home-light.webp",
+      "mode": "light",
+      "width": 1280,
+      "alt": {
+        "fr": "Page d'accueil, mode clair : pages finance d'un journal, fond saumon, panneau crème, bandeau noir de cotations, bougies",
+        "en": "Home page, light mode: the finance pages of a newspaper, salmon background, cream panel, black ticker band, candlesticks"
+      }
+    },
+    {
+      "file": "previews/mobile-dark.webp",
+      "mode": "dark",
+      "width": 390,
+      "alt": {
+        "fr": "Accueil sur téléphone, mode sombre",
+        "en": "Home page on a phone, dark mode"
+      }
+    }
+  ],
+  "assets": [
+    {
+      "file": "images/candles.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/courbe.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/piece.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/regle.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/ticker.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    },
+    {
+      "file": "images/trait.svg",
+      "kind": "image",
+      "license": "CC0-1.0",
+      "licenseFile": "LICENSES/images-CC0.txt",
+      "author": "Équipe Curiosa",
+      "source": "https://github.com/helldog136/curiosa-skins"
+    }
+  ],
+  "defaults": {
+    "headerLayout": "classic",
+    "font": "skin",
+    "glow": "none",
+    "background": "none"
+  },
+  "options": [],
+  "breakpoints": [
+    640,
+    800,
+    1120
+  ],
+  "supports": {
+    "reducedMotion": true
+  },
+  "customize": {
+    "version": 1,
+    "looks": [
+      {
+        "id": "bull",
+        "label": {
+          "fr": "Haussier",
+          "en": "Bull"
+        },
+        "values": {
+          "accent": "gold",
+          "up": "green",
+          "down": "red",
+          "ground": "night",
+          "paper": "night",
+          "line": "night",
+          "link": "gold"
+        }
+      },
+      {
+        "id": "bear",
+        "label": {
+          "fr": "Baissier",
+          "en": "Bear"
+        },
+        "values": {
+          "accent": "ember",
+          "up": "amber",
+          "down": "red",
+          "ground": "wine",
+          "paper": "wine",
+          "line": "wine",
+          "link": "gold"
+        }
+      },
+      {
+        "id": "crypto",
+        "label": {
+          "fr": "Néon crypto",
+          "en": "Crypto neon"
+        },
+        "values": {
+          "accent": "orange",
+          "up": "mint",
+          "down": "magenta",
+          "ground": "ink",
+          "paper": "ink",
+          "line": "ink",
+          "link": "ice"
+        }
+      }
+    ],
+    "groups": [
+      {
+        "id": "main",
+        "label": {
+          "fr": "L'essentiel",
+          "en": "The essentials"
+        },
+        "controls": [
+          {
+            "id": "accent",
+            "type": "color",
+            "featured": true,
+            "label": {
+              "fr": "Couleur d'accent",
+              "en": "Accent colour"
+            },
+            "hint": {
+              "fr": "Boutons, titres de section et menu actif",
+              "en": "Buttons, section headings and active menu"
+            },
+            "palette": [
+              {
+                "id": "gold",
+                "label": {
+                  "fr": "Or",
+                  "en": "Gold"
+                },
+                "light": "#7a4b00",
+                "dark": "#f5b335"
+              },
+              {
+                "id": "orange",
+                "label": {
+                  "fr": "Orange",
+                  "en": "Orange"
+                },
+                "light": "#a33e00",
+                "dark": "#ff8a3d"
+              },
+              {
+                "id": "ember",
+                "label": {
+                  "fr": "Braise",
+                  "en": "Ember"
+                },
+                "light": "#a8231b",
+                "dark": "#ff6b5e"
+              },
+              {
+                "id": "azure",
+                "label": {
+                  "fr": "Azur",
+                  "en": "Azure"
+                },
+                "light": "#1b57b0",
+                "dark": "#7cb8ff"
+              },
+              {
+                "id": "violet",
+                "label": {
+                  "fr": "Violet",
+                  "en": "Violet"
+                },
+                "light": "#5f35b8",
+                "dark": "#b9a2ff"
+              }
+            ],
+            "default": "gold",
+            "custom": {
+              "l": [
+                0.3,
+                0.55
+              ],
+              "c": [
+                0,
+                0.17
+              ],
+              "dark": {
+                "l": [
+                  0.7,
+                  0.92
+                ]
+              }
+            },
+            "contrast": [
+              {
+                "text": "--v-accent-fg",
+                "min": 4.5
+              },
+              {
+                "against": [
+                  "--v-surface"
+                ],
+                "min": 4.5
+              }
+            ]
+          },
+          {
+            "id": "up",
+            "type": "color",
+            "featured": true,
+            "label": {
+              "fr": "Couleur de la hausse",
+              "en": "Rise colour"
+            },
+            "hint": {
+              "fr": "Bougies, bandeau et repères de hausse",
+              "en": "Candles, ticker band and rise markers"
+            },
+            "palette": [
+              {
+                "id": "green",
+                "label": {
+                  "fr": "Vert",
+                  "en": "Green"
+                },
+                "light": "#0b6b32",
+                "dark": "#22d68a"
+              },
+              {
+                "id": "mint",
+                "label": {
+                  "fr": "Menthe",
+                  "en": "Mint"
+                },
+                "light": "#00796b",
+                "dark": "#4ff0d0"
+              },
+              {
+                "id": "azure",
+                "label": {
+                  "fr": "Azur",
+                  "en": "Azure"
+                },
+                "light": "#1565c0",
+                "dark": "#5fb2ff"
+              },
+              {
+                "id": "amber",
+                "label": {
+                  "fr": "Ambre",
+                  "en": "Amber"
+                },
+                "light": "#a85f00",
+                "dark": "#ffb02e"
+              }
+            ],
+            "default": "green",
+            "contrast": [
+              {
+                "against": [
+                  "--v-surface"
+                ],
+                "min": 3
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "market",
+        "label": {
+          "fr": "Couleurs du marché",
+          "en": "Market colours"
+        },
+        "controls": [
+          {
+            "id": "down",
+            "type": "color",
+            "label": {
+              "fr": "Couleur de la baisse",
+              "en": "Fall colour"
+            },
+            "hint": {
+              "fr": "Bougies, bandeau et repères de baisse",
+              "en": "Candles, ticker band and fall markers"
+            },
+            "palette": [
+              {
+                "id": "red",
+                "label": {
+                  "fr": "Rouge",
+                  "en": "Red"
+                },
+                "light": "#b3261e",
+                "dark": "#ff5d6c"
+              },
+              {
+                "id": "magenta",
+                "label": {
+                  "fr": "Magenta",
+                  "en": "Magenta"
+                },
+                "light": "#a8115f",
+                "dark": "#ff5fb0"
+              },
+              {
+                "id": "coral",
+                "label": {
+                  "fr": "Corail",
+                  "en": "Coral"
+                },
+                "light": "#b8430f",
+                "dark": "#ff8a5c"
+              },
+              {
+                "id": "violet",
+                "label": {
+                  "fr": "Violet",
+                  "en": "Violet"
+                },
+                "light": "#6a3fc4",
+                "dark": "#b78cff"
+              }
+            ],
+            "default": "red",
+            "contrast": [
+              {
+                "against": [
+                  "--v-surface"
+                ],
+                "min": 3
+              }
+            ]
+          },
+          {
+            "id": "ground",
+            "type": "color",
+            "label": {
+              "fr": "Fond de la page",
+              "en": "Page background"
+            },
+            "hint": {
+              "fr": "La grille de graphique derrière le panneau",
+              "en": "The chart grid behind the panel"
+            },
+            "palette": [
+              {
+                "id": "night",
+                "label": {
+                  "fr": "Nuit",
+                  "en": "Night"
+                },
+                "light": "#f3d3bb",
+                "dark": "#070b14"
+              },
+              {
+                "id": "graphite",
+                "label": {
+                  "fr": "Graphite",
+                  "en": "Graphite"
+                },
+                "light": "#e6e2dc",
+                "dark": "#0c0d10"
+              },
+              {
+                "id": "ink",
+                "label": {
+                  "fr": "Encre",
+                  "en": "Ink"
+                },
+                "light": "#e4dbf5",
+                "dark": "#0a0618"
+              },
+              {
+                "id": "wine",
+                "label": {
+                  "fr": "Vin",
+                  "en": "Wine"
+                },
+                "light": "#f0cfd0",
+                "dark": "#120609"
+              }
+            ],
+            "default": "night"
+          },
+          {
+            "id": "paper",
+            "type": "color",
+            "label": {
+              "fr": "Fond des panneaux",
+              "en": "Panel background"
+            },
+            "hint": {
+              "fr": "Panneaux, cartes et en-tête",
+              "en": "Panels, cards and header"
+            },
+            "palette": [
+              {
+                "id": "night",
+                "label": {
+                  "fr": "Nuit",
+                  "en": "Night"
+                },
+                "light": "#fff6ec",
+                "dark": "#0d1526"
+              },
+              {
+                "id": "graphite",
+                "label": {
+                  "fr": "Graphite",
+                  "en": "Graphite"
+                },
+                "light": "#fbf8f3",
+                "dark": "#16181d"
+              },
+              {
+                "id": "ink",
+                "label": {
+                  "fr": "Encre",
+                  "en": "Ink"
+                },
+                "light": "#fbf8ff",
+                "dark": "#150d2c"
+              },
+              {
+                "id": "wine",
+                "label": {
+                  "fr": "Vin",
+                  "en": "Wine"
+                },
+                "light": "#fff4f3",
+                "dark": "#200d12"
+              }
+            ],
+            "default": "night",
+            "contrast": [
+              {
+                "text": "--v-fg",
+                "min": 4.5
+              }
+            ]
+          },
+          {
+            "id": "line",
+            "type": "color",
+            "label": {
+              "fr": "Couleur de la grille",
+              "en": "Grid colour"
+            },
+            "hint": {
+              "fr": "Bordures, filets et quadrillage",
+              "en": "Borders, rules and grid lines"
+            },
+            "palette": [
+              {
+                "id": "night",
+                "label": {
+                  "fr": "Nuit",
+                  "en": "Night"
+                },
+                "light": "#c9a287",
+                "dark": "#253350"
+              },
+              {
+                "id": "graphite",
+                "label": {
+                  "fr": "Graphite",
+                  "en": "Graphite"
+                },
+                "light": "#bcb4a8",
+                "dark": "#33363d"
+              },
+              {
+                "id": "ink",
+                "label": {
+                  "fr": "Encre",
+                  "en": "Ink"
+                },
+                "light": "#b3a5d6",
+                "dark": "#3c2a6b"
+              },
+              {
+                "id": "wine",
+                "label": {
+                  "fr": "Vin",
+                  "en": "Wine"
+                },
+                "light": "#cfa0a2",
+                "dark": "#4a2229"
+              }
+            ],
+            "default": "night"
+          },
+          {
+            "id": "link",
+            "type": "color",
+            "label": {
+              "fr": "Couleur des liens",
+              "en": "Link colour"
+            },
+            "hint": {
+              "fr": "Les liens dans les textes",
+              "en": "Links inside texts"
+            },
+            "palette": [
+              {
+                "id": "gold",
+                "label": {
+                  "fr": "Or",
+                  "en": "Gold"
+                },
+                "light": "#7a4300",
+                "dark": "#ffd36e"
+              },
+              {
+                "id": "ice",
+                "label": {
+                  "fr": "Glace",
+                  "en": "Ice"
+                },
+                "light": "#14498f",
+                "dark": "#9bd0ff"
+              },
+              {
+                "id": "mint",
+                "label": {
+                  "fr": "Menthe",
+                  "en": "Mint"
+                },
+                "light": "#00594d",
+                "dark": "#7ff0cf"
+              },
+              {
+                "id": "rose",
+                "label": {
+                  "fr": "Rose",
+                  "en": "Rose"
+                },
+                "light": "#8f1055",
+                "dark": "#ff9fc4"
+              }
+            ],
+            "default": "gold",
+            "contrast": [
+              {
+                "against": [
+                  "--v-surface"
+                ],
+                "min": 4.5
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

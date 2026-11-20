@@ -354,6 +354,37 @@
     "core": "0.44.0"
    },
    "preview": "skins/globe-trotter/previews/home-light.webp"
+  },
+  {
+   "id": "financier",
+   "name": {
+    "fr": "Financier",
+    "en": "Trading desk"
+   },
+   "description": {
+    "fr": "Tableau de marché : grille de graphique, bandeau de cotations peint, bougies japonaises, chiffres à chasse fixe. Sombre par défaut, clair comme un journal financier.",
+    "en": "Market board: chart grid, painted ticker band, candlesticks, fixed-width figures. Dark by default, light like a financial newspaper."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/financier",
+   "ref": "financier/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 4,
+   "author": "Équipe Curiosa",
+   "icon": "📈",
+   "tags": [
+    "dark",
+    "light",
+    "mono"
+   ],
+   "modes": [
+    "dark",
+    "light"
+   ],
+   "requires": {
+    "core": "0.44.0"
+   },
+   "preview": "skins/financier/previews/home-dark.webp"
   }
  ]
 }
