@@ -1,0 +1,45 @@
+{
+  "skinContract": 3,
+  "kind": "overlay",
+  "id": "pirates-overlay",
+  "name": {
+    "fr": "Pirates (overlay)",
+    "en": "Pirates overlay"
+  },
+  "description": {
+    "fr": "Jumeau d'overlay du skin de site Pirates : parchemin de carte au trésor, rouge sang de bœuf, laiton et mer turquoise, lettres d'affiche.",
+    "en": "Overlay twin of the Pirates site skin: treasure-map parchment, oxblood red, brass and turquoise sea, poster lettering."
+  },
+  "version": "1.0.0",
+  "minCore": "0.9.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "bold",
+    "retro",
+    "playful"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Pirates (overlay) sur des éléments d'exemple",
+        "en": "Preview of the Pirates overlay skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Pirates (overlay) : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Pirates overlay skin: alert, counter, list, featured card and banner"
+      }
+    }
+  ]
+}

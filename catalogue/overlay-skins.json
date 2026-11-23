@@ -527,6 +527,126 @@
    },
    "preview": "skins/financier-overlay/previews/overlay-640.webp",
    "previewAnim": "skins/financier-overlay/previews/overlay-anim.webp"
+  },
+  {
+   "id": "feodal-overlay",
+   "name": {
+    "fr": "Féodal (overlay)",
+    "en": "Feudal overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Féodal : parchemin enluminé, filet d'or, bleu royal et rouge de blason, capitales gravées.",
+    "en": "Overlay twin of the Feudal site skin: illuminated parchment, a gold rule, royal blue and heraldic red, engraved capitals."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/feodal-overlay",
+   "ref": "feodal-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "🏰",
+   "tags": [
+    "light",
+    "serif",
+    "epic",
+    "fantasy"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/feodal-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/feodal-overlay/previews/overlay-anim.webp"
+  },
+  {
+   "id": "pirates-overlay",
+   "name": {
+    "fr": "Pirates (overlay)",
+    "en": "Pirates overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Pirates : parchemin de carte au trésor, rouge sang de bœuf, laiton et mer turquoise, lettres d'affiche.",
+    "en": "Overlay twin of the Pirates site skin: treasure-map parchment, oxblood red, brass and turquoise sea, poster lettering."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/pirates-overlay",
+   "ref": "pirates-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "🏴‍☠️",
+   "tags": [
+    "light",
+    "bold",
+    "retro",
+    "playful"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/pirates-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/pirates-overlay/previews/overlay-anim.webp"
+  },
+  {
+   "id": "steampunk-victorien-overlay",
+   "name": {
+    "fr": "Steampunk victorien (overlay)",
+    "en": "Victorian steampunk overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Steampunk victorien : bois sombre et cuir, laiton, cuivre, plaques à coins coupés.",
+    "en": "Overlay twin of the Victorian steampunk site skin: dark wood and leather, brass, copper, plates with cut corners."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/steampunk-victorien-overlay",
+   "ref": "steampunk-victorien-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "⚙️",
+   "tags": [
+    "dark",
+    "serif",
+    "retro",
+    "fantasy"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/steampunk-victorien-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/steampunk-victorien-overlay/previews/overlay-anim.webp"
+  },
+  {
+   "id": "nef-de-braise-overlay",
+   "name": {
+    "fr": "Nef de braise (overlay)",
+    "en": "Ember nave overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Nef de braise : obsidienne, braise, rouge sang et or terni, capitales espacées d'une nef gothique.",
+    "en": "Overlay twin of the Ember nave site skin: obsidian, embers, blood red and tarnished gold, spaced capitals of a gothic nave."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/nef-de-braise-overlay",
+   "ref": "nef-de-braise-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "🕯️",
+   "tags": [
+    "dark",
+    "serif",
+    "epic",
+    "spooky"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/nef-de-braise-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/nef-de-braise-overlay/previews/overlay-anim.webp"
   }
  ]
 }

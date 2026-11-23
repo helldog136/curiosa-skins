@@ -1,0 +1,45 @@
+{
+  "skinContract": 3,
+  "kind": "overlay",
+  "id": "nef-de-braise-overlay",
+  "name": {
+    "fr": "Nef de braise (overlay)",
+    "en": "Ember nave overlay"
+  },
+  "description": {
+    "fr": "Jumeau d'overlay du skin de site Nef de braise : obsidienne, braise, rouge sang et or terni, capitales espacées d'une nef gothique.",
+    "en": "Overlay twin of the Ember nave site skin: obsidian, embers, blood red and tarnished gold, spaced capitals of a gothic nave."
+  },
+  "version": "1.0.0",
+  "minCore": "0.9.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "dark",
+    "serif",
+    "epic",
+    "spooky"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Nef de braise (overlay) sur des éléments d'exemple",
+        "en": "Preview of the Ember nave overlay skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Nef de braise (overlay) : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Ember nave overlay skin: alert, counter, list, featured card and banner"
+      }
+    }
+  ]
+}

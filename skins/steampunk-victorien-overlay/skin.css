@@ -1,0 +1,8 @@
+[data-ov-part="panel"],[data-ov-part="card"]{ov-shape:notch 10px;ov-frame:inset #d9a94f;ov-deco:grain}
+[data-ov-part="card"]{text-align:center}
+[data-ov-part="bubble"]{ov-shape:notch 10px;ov-frame:inset #d9a94f}
+[data-ov-part="title"]{font-style:italic}
+[data-ov-part="kind"],[data-ov-part="label"],[data-ov-part="tag"]{text-transform:uppercase;letter-spacing:2px}
+[data-ov-part="badge"]{background-color:#8c3a12;color:#fbf1d9}
+[data-ov-part="avatar"]{border:3px solid #d9a94f}
+[data-ov-part="track"]{background-color:#5c4020}
