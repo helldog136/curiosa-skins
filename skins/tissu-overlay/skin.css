@@ -1,0 +1,6 @@
+[data-ov-part="panel"],[data-ov-part="card"]{ov-frame:dashed #a3432a}
+[data-ov-part="card"]{text-align:center}
+[data-ov-part="bubble"]{ov-shape:pill;ov-frame:dashed #a3432a}
+[data-ov-part="badge"]{ov-shape:pill;background-color:#2f5476;color:#fffaf2}
+[data-ov-part="avatar"]{border:3px solid #fffaf2}
+[data-ov-part="track"]{background-color:#f6e4de}

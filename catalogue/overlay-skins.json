@@ -647,6 +647,96 @@
    },
    "preview": "skins/nef-de-braise-overlay/previews/overlay-640.webp",
    "previewAnim": "skins/nef-de-braise-overlay/previews/overlay-anim.webp"
+  },
+  {
+   "id": "verre-doux-overlay",
+   "name": {
+    "fr": "Verre et dégradés doux (overlay)",
+    "en": "Soft glass and gradients overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Verre et dégradés doux : verre dépoli clair, dégradé violet et rose, formes très rondes.",
+    "en": "Overlay twin of the Soft glass site skin: pale frosted glass, a violet and pink gradient, very round shapes."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/verre-doux-overlay",
+   "ref": "verre-doux-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "💠",
+   "tags": [
+    "light",
+    "glass",
+    "playful",
+    "sans"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/verre-doux-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/verre-doux-overlay/previews/overlay-anim.webp"
+  },
+  {
+   "id": "tissu-overlay",
+   "name": {
+    "fr": "Tissu (overlay)",
+    "en": "Fabric overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Tissu : lin et feutre, point de croix en pointillés, terracotta et bleu, lettres rondes et douces.",
+    "en": "Overlay twin of the Fabric site skin: linen and felt, dashed cross-stitch, terracotta and blue, soft round lettering."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/tissu-overlay",
+   "ref": "tissu-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "🧵",
+   "tags": [
+    "light",
+    "sans",
+    "playful",
+    "cozy"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/tissu-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/tissu-overlay/previews/overlay-anim.webp"
+  },
+  {
+   "id": "globe-trotter-overlay",
+   "name": {
+    "fr": "Globe-trotter (overlay)",
+    "en": "Globe-trotter overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Globe-trotter : papier de carnet de terrain, vert forêt, ocre, courbes de niveau et empattements.",
+    "en": "Overlay twin of the Globe-trotter site skin: field-notebook paper, forest green, ochre, contour lines and serif type."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/globe-trotter-overlay",
+   "ref": "globe-trotter-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "🧭",
+   "tags": [
+    "light",
+    "serif",
+    "nature",
+    "cozy"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/globe-trotter-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/globe-trotter-overlay/previews/overlay-anim.webp"
   }
  ]
 }

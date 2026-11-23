@@ -40,3 +40,14 @@ A skin is **adopted** only if a person would say it comes from the same brand: s
 | Pirates (`pirates`) | Pirates overlay (`pirates-overlay`) | new | Nothing with treasure-map parchment, oxblood red, brass and turquoise sea with poster lettering. |
 | Victorian steampunk (`steampunk-victorien`) | Victorian steampunk overlay (`steampunk-victorien-overlay`) | new | Closest: Ember throne (dark brown, gold, serif): same family of tones, but it reads as epic fantasy (gold double rule, brackets). The site is a workshop: leather, brass and copper, plates with cut corners. Borderline, kept separate so neither installed skin changes. |
 | Ember nave (`nef-de-braise`) | Ember nave overlay (`nef-de-braise-overlay`) | new | Closest: Ember throne (dark parchment, gold accent). The site is obsidian with an ember red accent (`#ff5d4d`) and tarnished gold lines, spaced capitals; the accent colour differs, so not the same brand. |
+| Soft glass (`verre-doux`) | Soft glass and gradients overlay (`verre-doux-overlay`) | new | Closest: Soft glass (`soft-glass`, smoked navy glass, blue accent `#8ab4ff`). Same shape language, different palette: the site is pale frosted glass with a violet (`#5b4bdb`) to pink (`#c2307a`) gradient. Note the existing name clash: the site skin and `soft-glass` are both "Soft glass" in English; the twin is named "Soft glass and gradients overlay" (after the French site name) to avoid a third. |
+| Fabric (`tissu`) | Fabric overlay (`tissu-overlay`) | new | Nothing with linen and felt, dashed cross-stitch, terracotta and blue, soft round lettering. |
+| Globe-trotter (`globe-trotter`) | Globe-trotter overlay (`globe-trotter-overlay`) | new | Closest: Paper collage (kraft, rust, handwritten headings, offset shadow): another mood and palette. Nothing in forest green and ochre with contour lines. |
+
+Result: 1 of 12 site skins is served by an existing overlay skin (adopted), 11 get a new twin. Once all twins exist `planned` in `catalogue/twins.json` is empty and the test fails for any new site skin without a twin.
+
+## Limits
+
+- Overlay skins cannot ship fonts, images or `modes`: twins keep the site's stack minus its shipped families, the site's default mode, and the site's decoration only where a closed overlay preset can express it (rules, brackets, dashes, rings, notches).
+- The twins were judged on the core's sample scene (alert, counter, list, featured card, banner), side by side with the site's preview, not in OBS or on a live site.
+- Proposal for the core (not implemented): an optional `twinOf: "<site skin id>"` in `skin.json` of an overlay skin (and in its catalogue entry), so the overlay gallery could offer "Matches your site skin" and suggest the twin when the site skin changes.

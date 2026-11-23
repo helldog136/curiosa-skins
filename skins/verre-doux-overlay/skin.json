@@ -1,0 +1,45 @@
+{
+  "skinContract": 3,
+  "kind": "overlay",
+  "id": "verre-doux-overlay",
+  "name": {
+    "fr": "Verre et dégradés doux (overlay)",
+    "en": "Soft glass and gradients overlay"
+  },
+  "description": {
+    "fr": "Jumeau d'overlay du skin de site Verre et dégradés doux : verre dépoli clair, dégradé violet et rose, formes très rondes.",
+    "en": "Overlay twin of the Soft glass site skin: pale frosted glass, a violet and pink gradient, very round shapes."
+  },
+  "version": "1.0.0",
+  "minCore": "0.9.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "glass",
+    "playful",
+    "sans"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Verre et dégradés doux (overlay) sur des éléments d'exemple",
+        "en": "Preview of the Soft glass and gradients overlay skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Verre et dégradés doux (overlay) : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Soft glass and gradients overlay skin: alert, counter, list, featured card and banner"
+      }
+    }
+  ]
+}
