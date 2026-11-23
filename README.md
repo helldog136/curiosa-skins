@@ -63,6 +63,10 @@ Les skins d'overlay habillent les **pages d'overlay pour OBS** (jamais le site p
 | Brutaliste clair (overlay) / Light brutalist overlay | 1.0.0 | `skins/brutaliste-clair-overlay` |
 | Curiosa (overlay) / Curiosa overlay | 1.0.0 | `skins/curiosa-overlay` |
 | Financier (overlay) / Trading desk overlay | 1.0.0 | `skins/financier-overlay` |
+| Féodal (overlay) / Feudal overlay | 1.0.0 | `skins/feodal-overlay` |
+| Pirates (overlay) / Pirates overlay | 1.0.0 | `skins/pirates-overlay` |
+| Steampunk victorien (overlay) / Victorian steampunk overlay | 1.0.0 | `skins/steampunk-victorien-overlay` |
+| Nef de braise (overlay) / Ember nave overlay | 1.0.0 | `skins/nef-de-braise-overlay` |
 
 **Jauges, niveaux et compteurs animés (cœur 0.30.0, contrat 4).** Un skin d'overlay peut ajouter `animation.json` : une recette de données (primitives procédurales, paramètres, graines) que le cœur dessine lui-même. *Néon nocturne* 1.2.0 (tubes et pistes de circuit) en a une. Les autres skins donnent une jauge simple qui suit leurs couleurs. Contrat : `docs/OVERLAY-ANIMATIONS.md` du cœur.
 *Animated gauges, levels and counters (core 0.30.0, contract 4). An overlay skin may add `animation.json`: a data recipe (procedural primitives, parameters, seeds) that the core draws itself. Night neon 1.2.0 (tubes and circuit traces) has one. Other skins give a plain gauge that follows their colours. Contract: the core's `docs/OVERLAY-ANIMATIONS.md`.*
@@ -85,6 +89,10 @@ Chaque skin de site du catalogue a un **jumeau d'overlay** : un skin d'overlay d
 | Brutaliste clair / Light brutalist (`skins/brutaliste-clair`) | Brutaliste clair (overlay) / Light brutalist overlay (`skins/brutaliste-clair-overlay`) | nouveau / new |
 | Curiosa / Curiosa (`skins/curiosa`) | Curiosa (overlay) / Curiosa overlay (`skins/curiosa-overlay`) | nouveau / new |
 | Financier / Trading desk (`skins/financier`) | Financier (overlay) / Trading desk overlay (`skins/financier-overlay`) | nouveau / new |
+| Féodal / Feudal (`skins/feodal`) | Féodal (overlay) / Feudal overlay (`skins/feodal-overlay`) | nouveau / new |
+| Pirates / Pirates (`skins/pirates`) | Pirates (overlay) / Pirates overlay (`skins/pirates-overlay`) | nouveau / new |
+| Steampunk victorien / Victorian steampunk (`skins/steampunk-victorien`) | Steampunk victorien (overlay) / Victorian steampunk overlay (`skins/steampunk-victorien-overlay`) | nouveau / new |
+| Nef de braise / Ember nave (`skins/nef-de-braise`) | Nef de braise (overlay) / Ember nave overlay (`skins/nef-de-braise-overlay`) | nouveau / new |
 
 ## Installer un skin / Installing a skin
 

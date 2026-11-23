@@ -1,0 +1,45 @@
+{
+  "skinContract": 3,
+  "kind": "overlay",
+  "id": "steampunk-victorien-overlay",
+  "name": {
+    "fr": "Steampunk victorien (overlay)",
+    "en": "Victorian steampunk overlay"
+  },
+  "description": {
+    "fr": "Jumeau d'overlay du skin de site Steampunk victorien : bois sombre et cuir, laiton, cuivre, plaques à coins coupés.",
+    "en": "Overlay twin of the Victorian steampunk site skin: dark wood and leather, brass, copper, plates with cut corners."
+  },
+  "version": "1.0.0",
+  "minCore": "0.9.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "dark",
+    "serif",
+    "retro",
+    "fantasy"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Steampunk victorien (overlay) sur des éléments d'exemple",
+        "en": "Preview of the Victorian steampunk overlay skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Steampunk victorien (overlay) : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Victorian steampunk overlay skin: alert, counter, list, featured card and banner"
+      }
+    }
+  ]
+}

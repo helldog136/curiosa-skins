@@ -1,0 +1,8 @@
+[data-ov-part="panel"],[data-ov-part="card"]{ov-frame:double #a8832f;ov-deco:brackets #203f94}
+[data-ov-part="card"]{text-align:center}
+[data-ov-part="title"]{color:#203f94}
+[data-ov-part="bubble"]{background-color:#203f94;color:#fff9e8;ov-shape:ribbon 14px}
+[data-ov-part="bubble"] [data-ov-part="title"],[data-ov-part="bubble"] [data-ov-part="body"]{color:#fff9e8}
+[data-ov-part="badge"]{background-color:#9d1e1e;color:#fff9e8}
+[data-ov-part="avatar"]{border:2px solid #a8832f}
+[data-ov-part="track"]{background-color:#d9d2c0}

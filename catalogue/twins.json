@@ -97,13 +97,86 @@
      "\"Times New Roman\""
     ]
    }
+  },
+  {
+   "site": "feodal",
+   "overlay": "feodal-overlay",
+   "status": "new",
+   "siteMode": "light",
+   "match": {
+    "--ov-fg": "--v-fg",
+    "--ov-surface": "--v-surface",
+    "--ov-border": "--v-line",
+    "--ov-accent": "--v-accent",
+    "--ov-accent-fg": "--v-accent-fg",
+    "--ov-muted": "--v-muted"
+   },
+   "fonts": {
+    "--ov-font": "--v-font",
+    "--ov-font-heading": "--sk-font-heading"
+   }
+  },
+  {
+   "site": "pirates",
+   "overlay": "pirates-overlay",
+   "status": "new",
+   "siteMode": "light",
+   "match": {
+    "--ov-fg": "--v-fg",
+    "--ov-surface": "--v-surface",
+    "--ov-border": "--v-line",
+    "--ov-accent": "--v-accent",
+    "--ov-accent-fg": "--v-accent-fg",
+    "--ov-muted": "--v-muted"
+   },
+   "fonts": {
+    "--ov-font": "--v-font",
+    "--ov-font-heading": "--sk-font-heading"
+   }
+  },
+  {
+   "site": "steampunk-victorien",
+   "overlay": "steampunk-victorien-overlay",
+   "status": "new",
+   "siteMode": "dark",
+   "match": {
+    "--ov-fg": "--v-fg",
+    "--ov-surface": "--v-surface",
+    "--ov-border": "--v-line",
+    "--ov-accent": "--v-accent",
+    "--ov-accent-fg": "--v-accent-fg",
+    "--ov-muted": "--v-muted"
+   },
+   "fonts": {
+    "--ov-font": "--v-font",
+    "--ov-font-heading": "--sk-font-heading"
+   }
+  },
+  {
+   "site": "nef-de-braise",
+   "overlay": "nef-de-braise-overlay",
+   "status": "new",
+   "siteMode": "dark",
+   "match": {
+    "--ov-fg": "--v-fg",
+    "--ov-surface": "--v-surface",
+    "--ov-border": "--v-line",
+    "--ov-accent": "--v-accent",
+    "--ov-accent-fg": "--v-accent-fg",
+    "--ov-muted": "--v-muted"
+   },
+   "fonts": {
+    "--ov-font": "--v-font",
+    "--ov-font-heading": "--sk-font-heading"
+   },
+   "fontDrop": {
+    "--ov-font-heading": [
+     "\"Baskerville Old Face\""
+    ]
+   }
   }
  ],
  "planned": [
-  "feodal",
-  "nef-de-braise",
-  "pirates",
-  "steampunk-victorien",
   "tissu",
   "verre-doux",
   "globe-trotter"
