@@ -407,6 +407,126 @@
    },
    "preview": "skins/momentum/previews/overlay-640.webp",
    "previewAnim": "skins/momentum/previews/overlay-anim.webp"
+  },
+  {
+   "id": "editorial-papier-overlay",
+   "name": {
+    "fr": "Éditorial papier (overlay)",
+    "en": "Editorial paper overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Éditorial papier : papier crème, encre, filet double et serif élégant, façon page de magazine.",
+    "en": "Overlay twin of the Editorial paper site skin: cream paper, ink, a double rule and elegant serif type, like a magazine page."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/editorial-papier-overlay",
+   "ref": "editorial-papier-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "📰",
+   "tags": [
+    "light",
+    "serif",
+    "editorial",
+    "minimal"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/editorial-papier-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/editorial-papier-overlay/previews/overlay-anim.webp"
+  },
+  {
+   "id": "brutaliste-clair-overlay",
+   "name": {
+    "fr": "Brutaliste clair (overlay)",
+    "en": "Light brutalist overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Brutaliste clair : blocs blancs, gros filets noirs, ombre dure, jaune, orange et bleu vifs.",
+    "en": "Overlay twin of the Light brutalist site skin: white blocks, thick black borders, hard shadows, bright yellow, orange and blue."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/brutaliste-clair-overlay",
+   "ref": "brutaliste-clair-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "🟨",
+   "tags": [
+    "light",
+    "bold",
+    "mono",
+    "high-contrast"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/brutaliste-clair-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/brutaliste-clair-overlay/previews/overlay-anim.webp"
+  },
+  {
+   "id": "curiosa-overlay",
+   "name": {
+    "fr": "Curiosa (overlay)",
+    "en": "Curiosa overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Curiosa : cabinet de curiosités crème et nuit d'encre, laiton, terracotta et sauge, cartes en tiroir.",
+    "en": "Overlay twin of the Curiosa site skin: a cabinet of curiosities in cream and ink night, brass, terracotta and sage, drawer-style cards."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/curiosa-overlay",
+   "ref": "curiosa-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "🗝️",
+   "tags": [
+    "light",
+    "serif",
+    "editorial",
+    "cozy"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/curiosa-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/curiosa-overlay/previews/overlay-anim.webp"
+  },
+  {
+   "id": "financier-overlay",
+   "name": {
+    "fr": "Financier (overlay)",
+    "en": "Trading desk overlay"
+   },
+   "description": {
+    "fr": "Jumeau d'overlay du skin de site Financier : page blanche, titres à empattements fins, surligneur citron et noir profond.",
+    "en": "Overlay twin of the Trading desk site skin: white page, fine serif headings, a lime highlighter and deep black."
+   },
+   "repo": "https://github.com/helldog136/curiosa-skins",
+   "subdir": "skins/financier-overlay",
+   "ref": "financier-overlay/v1.0.0",
+   "version": "1.0.0",
+   "skinContract": 3,
+   "author": "Équipe Curiosa",
+   "icon": "📈",
+   "tags": [
+    "light",
+    "serif",
+    "editorial",
+    "minimal"
+   ],
+   "modes": [],
+   "requires": {
+    "core": "0.9.0"
+   },
+   "preview": "skins/financier-overlay/previews/overlay-640.webp",
+   "previewAnim": "skins/financier-overlay/previews/overlay-anim.webp"
   }
  ]
 }

@@ -29,6 +29,8 @@ jobs:
         run: node --test tests/contrastes-curiosa.test.mjs
       - name: Skins d'overlay (catalogue, contrat, feuille sans code ni ressource)
         run: node --test tests/overlay-skins.test.mjs
+      - name: Jumeaux d'overlay (chaque skin de site a un skin d'overlay de même identité, sans dérive)
+        run: node --test tests/overlay-twins.test.mjs
       - name: Préparer le cœur (sans lancer le site)
         working-directory: curiosa-core
         run: npm ci --ignore-scripts && npx prisma generate

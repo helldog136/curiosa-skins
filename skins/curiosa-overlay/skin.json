@@ -1,0 +1,45 @@
+{
+  "skinContract": 3,
+  "kind": "overlay",
+  "id": "curiosa-overlay",
+  "name": {
+    "fr": "Curiosa (overlay)",
+    "en": "Curiosa overlay"
+  },
+  "description": {
+    "fr": "Jumeau d'overlay du skin de site Curiosa : cabinet de curiosités crème et nuit d'encre, laiton, terracotta et sauge, cartes en tiroir.",
+    "en": "Overlay twin of the Curiosa site skin: a cabinet of curiosities in cream and ink night, brass, terracotta and sage, drawer-style cards."
+  },
+  "version": "1.0.0",
+  "minCore": "0.9.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "serif",
+    "editorial",
+    "cozy"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Curiosa (overlay) sur des éléments d'exemple",
+        "en": "Preview of the Curiosa overlay skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Curiosa (overlay) : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Curiosa overlay skin: alert, counter, list, featured card and banner"
+      }
+    }
+  ]
+}

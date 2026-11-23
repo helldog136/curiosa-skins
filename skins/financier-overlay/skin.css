@@ -1,0 +1,7 @@
+[data-ov-part="badge"]{background-color:#dfe95a;color:#0c0c14}
+[data-ov-part="card"] [data-ov-part="value"]{background:linear-gradient(transparent 62%, #dfe95a 62%)}
+[data-ov-part="bubble"]{background-color:#0e0e16;color:#f3efe6}
+[data-ov-part="bubble"] [data-ov-part="title"]{color:#dfe95a}
+[data-ov-part="bubble"] [data-ov-part="body"]{color:#f3efe6}
+[data-ov-part="card"]{text-align:center}
+[data-ov-part="track"]{background-color:var(--ov-border, #dcdeea)}
