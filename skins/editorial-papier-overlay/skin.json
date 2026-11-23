@@ -1,5 +1,5 @@
 {
-  "skinContract": 3,
+  "skinContract": 6,
   "kind": "overlay",
   "id": "editorial-papier-overlay",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Jumeau d'overlay du skin de site Éditorial papier : papier crème, encre, filet double et serif élégant, façon page de magazine.",
     "en": "Overlay twin of the Editorial paper site skin: cream paper, ink, a double rule and elegant serif type, like a magazine page."
   },
-  "version": "1.0.0",
-  "minCore": "0.9.0",
+  "version": "1.1.0",
+  "minCore": "0.47.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -24,6 +24,52 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
+  "assets": [
+    {
+      "file": "fonts/titre-romain.woff2",
+      "kind": "font",
+      "family": "Papier Titre",
+      "weight": "300 700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/cormorant-garamond-OFL.txt",
+      "author": "The Cormorant Project Authors",
+      "source": "https://github.com/CatharsisFonts/Cormorant"
+    },
+    {
+      "file": "fonts/titre-italique.woff2",
+      "kind": "font",
+      "family": "Papier Titre",
+      "weight": "300 700",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/cormorant-garamond-OFL.txt",
+      "author": "The Cormorant Project Authors",
+      "source": "https://github.com/CatharsisFonts/Cormorant"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Papier Texte",
+      "weight": "200 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/source-serif-4-OFL.txt",
+      "author": "Adobe",
+      "source": "https://github.com/adobe-fonts/source-serif"
+    },
+    {
+      "file": "fonts/texte-italique.woff2",
+      "kind": "font",
+      "family": "Papier Texte",
+      "weight": "200 900",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/source-serif-4-OFL.txt",
+      "author": "Adobe",
+      "source": "https://github.com/adobe-fonts/source-serif"
+    }
+  ],
   "previews": [
     {
       "file": "previews/overlay-640.webp",
@@ -41,5 +87,6 @@
         "en": "Animated preview of the Editorial paper overlay skin: alert, counter, list, featured card and banner"
       }
     }
-  ]
+  ],
+  "twinOf": "editorial-papier"
 }

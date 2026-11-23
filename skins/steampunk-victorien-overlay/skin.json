@@ -1,5 +1,5 @@
 {
-  "skinContract": 3,
+  "skinContract": 6,
   "kind": "overlay",
   "id": "steampunk-victorien-overlay",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Jumeau d'overlay du skin de site Steampunk victorien : bois sombre et cuir, laiton, cuivre, plaques à coins coupés.",
     "en": "Overlay twin of the Victorian steampunk site skin: dark wood and leather, brass, copper, plates with cut corners."
   },
-  "version": "1.0.0",
-  "minCore": "0.9.0",
+  "version": "1.1.0",
+  "minCore": "0.47.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -24,6 +24,52 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
+  "assets": [
+    {
+      "file": "fonts/titre-romain.woff2",
+      "kind": "font",
+      "family": "Vapeur Titre",
+      "weight": "300 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/playfair-display-OFL.txt",
+      "author": "The Playfair Display Project Authors",
+      "source": "https://github.com/clauseggers/Playfair-Display"
+    },
+    {
+      "file": "fonts/titre-italique.woff2",
+      "kind": "font",
+      "family": "Vapeur Titre",
+      "weight": "300 900",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/playfair-display-OFL.txt",
+      "author": "The Playfair Display Project Authors",
+      "source": "https://github.com/clauseggers/Playfair-Display"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Vapeur Texte",
+      "weight": "400 700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/libre-baskerville-OFL.txt",
+      "author": "The Libre Baskerville Project Authors",
+      "source": "https://github.com/impallari/Libre-Baskerville"
+    },
+    {
+      "file": "fonts/texte-italique.woff2",
+      "kind": "font",
+      "family": "Vapeur Texte",
+      "weight": "400 700",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/libre-baskerville-OFL.txt",
+      "author": "The Libre Baskerville Project Authors",
+      "source": "https://github.com/impallari/Libre-Baskerville"
+    }
+  ],
   "previews": [
     {
       "file": "previews/overlay-640.webp",
@@ -41,5 +87,6 @@
         "en": "Animated preview of the Victorian steampunk overlay skin: alert, counter, list, featured card and banner"
       }
     }
-  ]
+  ],
+  "twinOf": "steampunk-victorien"
 }

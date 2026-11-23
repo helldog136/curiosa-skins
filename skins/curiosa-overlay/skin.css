@@ -1,7 +1,7 @@
 [data-ov-part="panel"]{border-left:6px solid #c4552d}
 [data-ov-part="card"]{border-top:5px solid #b8862b;text-align:center}
 [data-ov-part="bubble"]{border-left:6px solid #b8862b}
-[data-ov-part="kind"],[data-ov-part="label"],[data-ov-part="tag"]{font-family:"JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;text-transform:uppercase;letter-spacing:1px}
+[data-ov-part="kind"],[data-ov-part="label"],[data-ov-part="tag"]{font-family:"Curiosa Etiquettes", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;text-transform:uppercase;letter-spacing:1px}
 [data-ov-part="badge"]{background-color:#b8862b;color:#1b1a2e}
 [data-ov-part="avatar"]{background-color:#6e8b74}
 [data-ov-part="track"]{background-color:var(--ov-border, #cdbf9f)}

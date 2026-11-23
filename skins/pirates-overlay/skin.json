@@ -1,5 +1,5 @@
 {
-  "skinContract": 3,
+  "skinContract": 6,
   "kind": "overlay",
   "id": "pirates-overlay",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Jumeau d'overlay du skin de site Pirates : parchemin de carte au trésor, rouge sang de bœuf, laiton et mer turquoise, lettres d'affiche.",
     "en": "Overlay twin of the Pirates site skin: treasure-map parchment, oxblood red, brass and turquoise sea, poster lettering."
   },
-  "version": "1.0.0",
-  "minCore": "0.9.0",
+  "version": "1.1.0",
+  "minCore": "0.47.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -24,6 +24,41 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
+  "assets": [
+    {
+      "file": "fonts/titre-affiche.woff2",
+      "kind": "font",
+      "family": "Affiche Titre",
+      "weight": "400 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/archivo-black-OFL.txt",
+      "author": "The Archivo Black Project Authors",
+      "source": "https://github.com/Omnibus-Type/ArchivoBlack"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Affiche Texte",
+      "weight": "400 700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/libre-baskerville-OFL.txt",
+      "author": "The Libre Baskerville Project Authors",
+      "source": "https://github.com/impallari/Libre-Baskerville"
+    },
+    {
+      "file": "fonts/texte-italique.woff2",
+      "kind": "font",
+      "family": "Affiche Texte",
+      "weight": "400 700",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/libre-baskerville-OFL.txt",
+      "author": "The Libre Baskerville Project Authors",
+      "source": "https://github.com/impallari/Libre-Baskerville"
+    }
+  ],
   "previews": [
     {
       "file": "previews/overlay-640.webp",
@@ -41,5 +76,6 @@
         "en": "Animated preview of the Pirates overlay skin: alert, counter, list, featured card and banner"
       }
     }
-  ]
+  ],
+  "twinOf": "pirates"
 }

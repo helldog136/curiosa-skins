@@ -40,8 +40,8 @@ Chaque skin est un dossier de données (`skin.json`, `tokens.json`, `skin.css`, 
 
 ## Skins d'overlay / Overlay skins
 
-Les skins d'overlay habillent les **pages d'overlay pour OBS** (jamais le site public) : couleurs, polices du système, bordures, ombres, petite animation. Ils demandent le cœur **0.9.0** ou plus, se choisissent dans l'onglet **Skin** d'une page d'overlay, et peuvent changer tout seuls selon le jeu en cours (ou toute autre situation fournie par une extension). Depuis la 1.1.0, chaque skin a sa propre composition (formes découpées, cadres, décorations, mouvements discrets) et un aperçu animé. Ils sont listés dans `catalogue/overlay-skins.json` (fichier à part : un cœur plus ancien ne les voit pas). Aucun programme, aucune police, aucune image : `skin.json` avec `"kind": "overlay"`, `tokens.json` (jetons `--ov-*`) et `skin.css` (règles `[data-ov-part]`).
-*Overlay skins restyle the **OBS overlay pages** (never the public site): colours, system fonts, borders, shadows, a small animation. They need core **0.9.0** or later, are picked in the **Skin** tab of an overlay page, and can change by themselves with the current game (or any other situation an extension provides). Since 1.1.0, each skin has its own composition (cut shapes, frames, decorations, quiet motion) and an animated preview. They are listed in `catalogue/overlay-skins.json` (a separate file: an older core does not see them). No program, no font, no image: `skin.json` with `"kind": "overlay"`, `tokens.json` (`--ov-*` tokens) and `skin.css` (`[data-ov-part]` rules).*
+Les skins d'overlay habillent les **pages d'overlay pour OBS** (jamais le site public) : couleurs, polices du système, bordures, ombres, petite animation. Ils demandent le cœur **0.9.0** ou plus, se choisissent dans l'onglet **Skin** d'une page d'overlay, et peuvent changer tout seuls selon le jeu en cours (ou toute autre situation fournie par une extension). Depuis la 1.1.0, chaque skin a sa propre composition (formes découpées, cadres, décorations, mouvements discrets) et un aperçu animé. Ils sont listés dans `catalogue/overlay-skins.json` (fichier à part : un cœur plus ancien ne les voit pas). Aucun programme, aucune image ; des polices seulement depuis le cœur 0.47.0 (contrat 6, voir plus bas) : `skin.json` avec `"kind": "overlay"`, `tokens.json` (jetons `--ov-*`) et `skin.css` (règles `[data-ov-part]`).
+*Overlay skins restyle the **OBS overlay pages** (never the public site): colours, system fonts, borders, shadows, a small animation. They need core **0.9.0** or later, are picked in the **Skin** tab of an overlay page, and can change by themselves with the current game (or any other situation an extension provides). Since 1.1.0, each skin has its own composition (cut shapes, frames, decorations, quiet motion) and an animated preview. They are listed in `catalogue/overlay-skins.json` (a separate file: an older core does not see them). No program, no image; fonts only since core 0.47.0 (contract 6, see below): `skin.json` with `"kind": "overlay"`, `tokens.json` (`--ov-*` tokens) and `skin.css` (`[data-ov-part]` rules).*
 
 | Skin | Version | Dossier / Folder |
 |---|---|---|
@@ -59,17 +59,20 @@ Les skins d'overlay habillent les **pages d'overlay pour OBS** (jamais le site p
 | Affiche audacieuse / Bold poster | 1.1.2 | `skins/bold-poster` |
 | Formes nettes / Sharp shapes | 1.1.1 | `skins/sharp-shapes` |
 | Élan / Momentum | 1.1.1 | `skins/momentum` |
-| Éditorial papier (overlay) / Editorial paper overlay | 1.0.0 | `skins/editorial-papier-overlay` |
-| Brutaliste clair (overlay) / Light brutalist overlay | 1.0.0 | `skins/brutaliste-clair-overlay` |
-| Curiosa (overlay) / Curiosa overlay | 1.0.0 | `skins/curiosa-overlay` |
-| Financier (overlay) / Trading desk overlay | 1.0.0 | `skins/financier-overlay` |
-| Féodal (overlay) / Feudal overlay | 1.0.0 | `skins/feodal-overlay` |
-| Pirates (overlay) / Pirates overlay | 1.0.0 | `skins/pirates-overlay` |
-| Steampunk victorien (overlay) / Victorian steampunk overlay | 1.0.0 | `skins/steampunk-victorien-overlay` |
-| Nef de braise (overlay) / Ember nave overlay | 1.0.0 | `skins/nef-de-braise-overlay` |
-| Verre et dégradés doux (overlay) / Soft glass and gradients overlay | 1.0.0 | `skins/verre-doux-overlay` |
-| Tissu (overlay) / Fabric overlay | 1.0.0 | `skins/tissu-overlay` |
-| Globe-trotter (overlay) / Globe-trotter overlay | 1.0.0 | `skins/globe-trotter-overlay` |
+| Éditorial papier (overlay) / Editorial paper overlay | 1.1.0 | `skins/editorial-papier-overlay` |
+| Brutaliste clair (overlay) / Light brutalist overlay | 1.1.0 | `skins/brutaliste-clair-overlay` |
+| Curiosa (overlay) / Curiosa overlay | 1.1.0 | `skins/curiosa-overlay` |
+| Financier (overlay) / Trading desk overlay | 1.1.0 | `skins/financier-overlay` |
+| Féodal (overlay) / Feudal overlay | 1.1.0 | `skins/feodal-overlay` |
+| Pirates (overlay) / Pirates overlay | 1.1.0 | `skins/pirates-overlay` |
+| Steampunk victorien (overlay) / Victorian steampunk overlay | 1.1.0 | `skins/steampunk-victorien-overlay` |
+| Nef de braise (overlay) / Ember nave overlay | 1.1.0 | `skins/nef-de-braise-overlay` |
+| Verre et dégradés doux (overlay) / Soft glass and gradients overlay | 1.1.0 | `skins/verre-doux-overlay` |
+| Tissu (overlay) / Fabric overlay | 1.1.0 | `skins/tissu-overlay` |
+| Globe-trotter (overlay) / Globe-trotter overlay | 1.1.0 | `skins/globe-trotter-overlay` |
+
+**Polices et jumeaux (cœur 0.47.0, contrat 6).** Un skin d'overlay peut embarquer jusqu'à 4 polices woff2 (150 Ko chacune, 400 Ko au total, licences dans `LICENSES/`) et nommer le skin de site dont il est le jumeau (`twinOf`, dans `skin.json` et dans `catalogue/overlay-skins.json`). Les versions 1.1.0 des jumeaux d'overlay déclarent `twinOf` ; celles dont le skin de site embarque des polices (Éditorial papier, Brutaliste clair, Curiosa, Féodal, Pirates, Steampunk victorien, Verre et dégradés doux, Tissu) embarquent **les mêmes fichiers de police** et **demandent le cœur 0.47.0 ou plus** : un cœur plus ancien les refuse comme « contrat plus récent ». Financier, Nef de braise et Globe-trotter (skins de site sans police) gardent la pile du système et le cœur 0.9.0 ; `twinOf` y est ignoré avant le cœur 0.47.0.
+*Fonts and twins (core 0.47.0, contract 6). An overlay skin may embed up to 4 woff2 fonts (150 KB each, 400 KB in all, licences in `LICENSES/`) and name the site skin it is the twin of (`twinOf`, in `skin.json` and in `catalogue/overlay-skins.json`). Version 1.1.0 of the overlay twins declares `twinOf`; those whose site skin embeds fonts (Editorial paper, Light brutalist, Curiosa, Feudal, Pirates, Victorian steampunk, Soft glass, Fabric) embed **the very same font files** and **need core 0.47.0 or later**: an older core refuses them as "contract newer". Trading desk, Ember nave and Globe-trotter (site skins without fonts) keep the system stack and core 0.9.0; `twinOf` is ignored there before core 0.47.0.*
 
 **Jauges, niveaux et compteurs animés (cœur 0.30.0, contrat 4).** Un skin d'overlay peut ajouter `animation.json` : une recette de données (primitives procédurales, paramètres, graines) que le cœur dessine lui-même. *Néon nocturne* 1.2.0 (tubes et pistes de circuit) en a une. Les autres skins donnent une jauge simple qui suit leurs couleurs. Contrat : `docs/OVERLAY-ANIMATIONS.md` du cœur.
 *Animated gauges, levels and counters (core 0.30.0, contract 4). An overlay skin may add `animation.json`: a data recipe (procedural primitives, parameters, seeds) that the core draws itself. Night neon 1.2.0 (tubes and circuit traces) has one. Other skins give a plain gauge that follows their colours. Contract: the core's `docs/OVERLAY-ANIMATIONS.md`.*
@@ -82,8 +85,8 @@ Corrections mécaniques (sans changement de style) : Salle d'arcade 1.1.2 et Aff
 
 ## Jumeaux d'overlay / Overlay twins
 
-Chaque skin de site du catalogue a un **jumeau d'overlay** (un test le garantit : un nouveau skin de site arrive avec son jumeau) : un skin d'overlay de même identité (couleurs, ambiance, formes de base, pile de polices du site sans les polices que le site embarque), pour que vos overlays OBS ressemblent à votre site. Le lien est écrit dans la description du jumeau (« Jumeau d'overlay du skin de site … »), dans son README et dans ce tableau ; `catalogue/twins.json` le dit aux outils et `tests/overlay-twins.test.mjs` vérifie qu'un jumeau ne s'écarte pas de son skin de site. L'audit et les choix sont dans `docs/OVERLAY-TWINS.md`.
-*Every site skin of the catalogue has an **overlay twin**: an overlay skin of the same identity (colours, mood, basic shapes, the site's font stack without the fonts the site ships), so your OBS overlays look like your site. The pairing is written in the twin's description ("Overlay twin of the … site skin"), in its README and in this table; `catalogue/twins.json` tells the tools and `tests/overlay-twins.test.mjs` checks that a twin does not drift from its site skin. The audit and the decisions are in `docs/OVERLAY-TWINS.md`.*
+Chaque skin de site du catalogue a un **jumeau d'overlay** (un test le garantit : un nouveau skin de site arrive avec son jumeau) : un skin d'overlay de même identité (couleurs, ambiance, formes de base et polices du site : les mêmes fichiers quand le site en embarque, avec le cœur 0.47.0 ou plus), pour que vos overlays OBS ressemblent à votre site. Le lien est écrit dans la description du jumeau (« Jumeau d'overlay du skin de site … »), dans son README et dans ce tableau ; `catalogue/twins.json` le dit aux outils et `tests/overlay-twins.test.mjs` vérifie qu'un jumeau ne s'écarte pas de son skin de site. L'audit et les choix sont dans `docs/OVERLAY-TWINS.md`.
+*Every site skin of the catalogue has an **overlay twin**: an overlay skin of the same identity (colours, mood, basic shapes and the site's fonts: the very same files when the site ships any, with core 0.47.0 or later), so your OBS overlays look like your site. The pairing is written in the twin's description ("Overlay twin of the … site skin"), in its README and in this table; `catalogue/twins.json` tells the tools and `tests/overlay-twins.test.mjs` checks that a twin does not drift from its site skin. The audit and the decisions are in `docs/OVERLAY-TWINS.md`.*
 
 | Skin de site / Site skin | Jumeau d'overlay / Overlay twin | Origine / Origin |
 |---|---|---|

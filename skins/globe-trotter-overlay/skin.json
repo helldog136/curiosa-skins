@@ -10,7 +10,7 @@
     "fr": "Jumeau d'overlay du skin de site Globe-trotter : papier de carnet de terrain, vert forêt, ocre, courbes de niveau et empattements.",
     "en": "Overlay twin of the Globe-trotter site skin: field-notebook paper, forest green, ochre, contour lines and serif type."
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "minCore": "0.9.0",
   "author": {
     "name": "Équipe Curiosa"
@@ -41,5 +41,6 @@
         "en": "Animated preview of the Globe-trotter overlay skin: alert, counter, list, featured card and banner"
       }
     }
-  ]
+  ],
+  "twinOf": "globe-trotter"
 }
