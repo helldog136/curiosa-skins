@@ -1,5 +1,5 @@
 {
-  "skinContract": 3,
+  "skinContract": 6,
   "kind": "overlay",
   "id": "tissu-overlay",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Jumeau d'overlay du skin de site Tissu : lin et feutre, point de croix en pointillés, terracotta et bleu, lettres rondes et douces.",
     "en": "Overlay twin of the Fabric site skin: linen and felt, dashed cross-stitch, terracotta and blue, soft round lettering."
   },
-  "version": "1.0.0",
-  "minCore": "0.9.0",
+  "version": "1.1.0",
+  "minCore": "0.47.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -24,6 +24,41 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
+  "assets": [
+    {
+      "file": "fonts/titre-doux.woff2",
+      "kind": "font",
+      "family": "Tissu Titre",
+      "weight": "300 700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/fredoka-OFL.txt",
+      "author": "The Fredoka Project Authors",
+      "source": "https://github.com/hafontia/Fredoka-One"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Tissu Texte",
+      "weight": "200 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/nunito-OFL.txt",
+      "author": "The Nunito Project Authors",
+      "source": "https://github.com/googlefonts/nunito"
+    },
+    {
+      "file": "fonts/texte-italique.woff2",
+      "kind": "font",
+      "family": "Tissu Texte",
+      "weight": "200 900",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/nunito-OFL.txt",
+      "author": "The Nunito Project Authors",
+      "source": "https://github.com/googlefonts/nunito"
+    }
+  ],
   "previews": [
     {
       "file": "previews/overlay-640.webp",
@@ -41,5 +76,6 @@
         "en": "Animated preview of the Fabric overlay skin: alert, counter, list, featured card and banner"
       }
     }
-  ]
+  ],
+  "twinOf": "tissu"
 }

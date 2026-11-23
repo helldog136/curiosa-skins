@@ -1,5 +1,5 @@
 {
-  "skinContract": 3,
+  "skinContract": 6,
   "kind": "overlay",
   "id": "feodal-overlay",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Jumeau d'overlay du skin de site Féodal : parchemin enluminé, filet d'or, bleu royal et rouge de blason, capitales gravées.",
     "en": "Overlay twin of the Feudal site skin: illuminated parchment, a gold rule, royal blue and heraldic red, engraved capitals."
   },
-  "version": "1.0.0",
-  "minCore": "0.9.0",
+  "version": "1.1.0",
+  "minCore": "0.47.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -24,6 +24,41 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
+  "assets": [
+    {
+      "file": "fonts/titre-grave.woff2",
+      "kind": "font",
+      "family": "Feodal Titre",
+      "weight": "400 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/cinzel-OFL.txt",
+      "author": "The Cinzel Project Authors",
+      "source": "https://github.com/NDISCOVER/Cinzel"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Feodal Texte",
+      "weight": "400 800",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/eb-garamond-OFL.txt",
+      "author": "The EB Garamond Project Authors",
+      "source": "https://github.com/octaviopardo/EBGaramond12"
+    },
+    {
+      "file": "fonts/texte-italique.woff2",
+      "kind": "font",
+      "family": "Feodal Texte",
+      "weight": "400 800",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/eb-garamond-OFL.txt",
+      "author": "The EB Garamond Project Authors",
+      "source": "https://github.com/octaviopardo/EBGaramond12"
+    }
+  ],
   "previews": [
     {
       "file": "previews/overlay-640.webp",
@@ -41,5 +76,6 @@
         "en": "Animated preview of the Feudal overlay skin: alert, counter, list, featured card and banner"
       }
     }
-  ]
+  ],
+  "twinOf": "feodal"
 }

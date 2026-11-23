@@ -20,7 +20,8 @@ The twin is built from the site skin's own files, and the test fails if they par
 
 - the key colours declared in `catalogue/twins.json` (`match`: text, panel, border, accent, muted…) are equal to the site skin's, in the mode the twin follows (`siteMode`, the site's default look);
 - every colour the twin writes (tokens and sheet) is a colour that the site skin also uses (black and white aside);
-- the font stacks are the site's stacks. An overlay skin cannot ship fonts, so only the families the site ships itself are left out (and, where a token would exceed its limit of 7 names, the entries listed in `fontDrop`);
+- the font stacks are the site's stacks. Since core 0.47.0 (skin contract 6) an overlay skin embeds fonts: a twin of a site skin that ships fonts ships **the very same files** (same bytes, same family name, weight, style and OFL text; the test compares hashes) and writes the site's declared families first. A contract 6 stack may only name declared families, a short list of known system fonts and a generic family last, so the entries it cannot carry ("Iowan Old Style", "Trajan Pro", a font name that is neither declared nor known…) are listed in `fontDrop` in `catalogue/twins.json`. A site skin that ships no font (Trading desk, Ember nave, Globe-trotter: named system fonts only) has a twin with no font and the same stack;
+- `twinOf` in the twin's `skin.json` and in its catalogue entry is the site skin id, and equals `catalogue/twins.json`;
 - the description, name, tags and README say whose twin it is.
 
 An overlay skin has a single look (no `modes`), so a twin follows the site's **default** mode: light for most, dark for the skins whose identity is dark (Retro neon, Victorian steampunk, Ember nave).
@@ -48,6 +49,7 @@ Result: 1 of 12 site skins is served by an existing overlay skin (adopted), 11 g
 
 ## Limits
 
-- Overlay skins cannot ship fonts, images or `modes`: twins keep the site's stack minus its shipped families, the site's default mode, and the site's decoration only where a closed overlay preset can express it (rules, brackets, dashes, rings, notches).
+- Overlay skins have no `modes` and (outside a `scene`) no images: twins follow the site's default mode and carry the site's decoration only where a closed overlay preset can express it (rules, brackets, dashes, rings, notches). Fonts need core 0.47.0: a twin with fonts has `skinContract` 6 and `minCore` 0.47.0 and cannot be installed on an older site.
+- Fonts are 150 KB each, 4 at most, 400 KB per skin. Twins ship the heading and body families (roman, plus italic when the site has it), not the site's drop-cap or ornamental faces, except Curiosa, whose label font is used by the twin's badges and tags.
 - The twins were judged on the core's sample scene (alert, counter, list, featured card, banner), side by side with the site's preview, not in OBS or on a live site.
-- Proposal for the core (not implemented): an optional `twinOf: "<site skin id>"` in `skin.json` of an overlay skin (and in its catalogue entry), so the overlay gallery could offer "Matches your site skin" and suggest the twin when the site skin changes.
+- `twinOf` (core 0.47.0) lets the overlay gallery show "Matches your site skin" and offer the twin when the site skin changes. Night neon (adopted, 1.2.1) does not declare it yet: it is an existing skin and was left untouched.

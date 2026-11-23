@@ -1,5 +1,5 @@
 {
-  "skinContract": 3,
+  "skinContract": 6,
   "kind": "overlay",
   "id": "brutaliste-clair-overlay",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Jumeau d'overlay du skin de site Brutaliste clair : blocs blancs, gros filets noirs, ombre dure, jaune, orange et bleu vifs.",
     "en": "Overlay twin of the Light brutalist site skin: white blocks, thick black borders, hard shadows, bright yellow, orange and blue."
   },
-  "version": "1.0.0",
-  "minCore": "0.9.0",
+  "version": "1.1.0",
+  "minCore": "0.47.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -24,6 +24,41 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
+  "assets": [
+    {
+      "file": "fonts/archivo-black.woff2",
+      "kind": "font",
+      "family": "Archivo Black",
+      "weight": "400",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/archivo-black-OFL.txt",
+      "author": "Omnibus-Type",
+      "source": "https://github.com/Omnibus-Type/ArchivoBlack"
+    },
+    {
+      "file": "fonts/space-mono-400.woff2",
+      "kind": "font",
+      "family": "Space Mono",
+      "weight": "400",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/space-mono-OFL.txt",
+      "author": "Colophon Foundry",
+      "source": "https://github.com/googlefonts/spacemono"
+    },
+    {
+      "file": "fonts/space-mono-700.woff2",
+      "kind": "font",
+      "family": "Space Mono",
+      "weight": "700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/space-mono-OFL.txt",
+      "author": "Colophon Foundry",
+      "source": "https://github.com/googlefonts/spacemono"
+    }
+  ],
   "previews": [
     {
       "file": "previews/overlay-640.webp",
@@ -41,5 +76,6 @@
         "en": "Animated preview of the Light brutalist overlay skin: alert, counter, list, featured card and banner"
       }
     }
-  ]
+  ],
+  "twinOf": "brutaliste-clair"
 }

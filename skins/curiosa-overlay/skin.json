@@ -1,5 +1,5 @@
 {
-  "skinContract": 3,
+  "skinContract": 6,
   "kind": "overlay",
   "id": "curiosa-overlay",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Jumeau d'overlay du skin de site Curiosa : cabinet de curiosités crème et nuit d'encre, laiton, terracotta et sauge, cartes en tiroir.",
     "en": "Overlay twin of the Curiosa site skin: a cabinet of curiosities in cream and ink night, brass, terracotta and sage, drawer-style cards."
   },
-  "version": "1.0.0",
-  "minCore": "0.9.0",
+  "version": "1.1.0",
+  "minCore": "0.47.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -24,6 +24,52 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
+  "assets": [
+    {
+      "file": "fonts/titre-romain.woff2",
+      "kind": "font",
+      "family": "Curiosa Titre",
+      "weight": "100 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/fraunces-OFL.txt",
+      "author": "The Fraunces Project Authors",
+      "source": "https://github.com/undercasetype/Fraunces"
+    },
+    {
+      "file": "fonts/titre-italique.woff2",
+      "kind": "font",
+      "family": "Curiosa Titre",
+      "weight": "100 900",
+      "style": "italic",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/fraunces-OFL.txt",
+      "author": "The Fraunces Project Authors",
+      "source": "https://github.com/undercasetype/Fraunces"
+    },
+    {
+      "file": "fonts/texte-romain.woff2",
+      "kind": "font",
+      "family": "Curiosa Texte",
+      "weight": "400 700",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/instrument-sans-OFL.txt",
+      "author": "The Instrument Sans Project Authors",
+      "source": "https://github.com/Instrument/instrument-sans"
+    },
+    {
+      "file": "fonts/etiquettes.woff2",
+      "kind": "font",
+      "family": "Curiosa Etiquettes",
+      "weight": "400",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/jetbrains-mono-OFL.txt",
+      "author": "The JetBrains Mono Project Authors",
+      "source": "https://github.com/JetBrains/JetBrainsMono"
+    }
+  ],
   "previews": [
     {
       "file": "previews/overlay-640.webp",
@@ -41,5 +87,6 @@
         "en": "Animated preview of the Curiosa overlay skin: alert, counter, list, featured card and banner"
       }
     }
-  ]
+  ],
+  "twinOf": "curiosa"
 }

@@ -1,5 +1,5 @@
 {
-  "skinContract": 3,
+  "skinContract": 6,
   "kind": "overlay",
   "id": "verre-doux-overlay",
   "name": {
@@ -10,8 +10,8 @@
     "fr": "Jumeau d'overlay du skin de site Verre et dégradés doux : verre dépoli clair, dégradé violet et rose, formes très rondes.",
     "en": "Overlay twin of the Soft glass site skin: pale frosted glass, a violet and pink gradient, very round shapes."
   },
-  "version": "1.0.0",
-  "minCore": "0.9.0",
+  "version": "1.1.0",
+  "minCore": "0.47.0",
   "author": {
     "name": "Équipe Curiosa"
   },
@@ -24,6 +24,19 @@
   ],
   "tokens": "tokens.json",
   "stylesheet": "skin.css",
+  "assets": [
+    {
+      "file": "fonts/outfit.woff2",
+      "kind": "font",
+      "family": "Verre Sans",
+      "weight": "100 900",
+      "style": "normal",
+      "license": "OFL-1.1",
+      "licenseFile": "LICENSES/outfit-OFL.txt",
+      "author": "The Outfit Project Authors",
+      "source": "https://github.com/Outfitio/Outfit-Fonts"
+    }
+  ],
   "previews": [
     {
       "file": "previews/overlay-640.webp",
@@ -41,5 +54,6 @@
         "en": "Animated preview of the Soft glass and gradients overlay skin: alert, counter, list, featured card and banner"
       }
     }
-  ]
+  ],
+  "twinOf": "verre-doux"
 }

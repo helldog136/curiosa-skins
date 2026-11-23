@@ -3,11 +3,15 @@
 //  - every site skin of catalogue/index.json has a twin (or is listed in "planned" while a series of changes is under way: the list must be empty at the end);
 //  - a twin exists, is an overlay skin, is listed in catalogue/overlay-skins.json, and is the twin of one site skin only;
 //  - the twin cannot drift from its site skin: the key colours it declares are the site skin's own, every colour it uses is a colour of the site skin,
-//    and its font stacks are the site's stacks (an overlay skin cannot ship fonts, so the families the site ships itself are the only ones left out);
+//    and its font stacks are the site's stacks. Since core 0.47.0 (skin contract 6) an overlay skin embeds fonts: a twin of a site skin that ships fonts ships the very same
+//    files (same bytes, same family, weight, style and licence text) and writes the site's declared families in its stacks; only the names an overlay stack may not carry
+//    (fontDrop: families that are neither declared nor known system fonts) are left out;
+//  - the pairing is machine readable: "twinOf" in skin.json and in the catalogue entry names the site skin, and both agree with catalogue/twins.json;
 //  - the pairing is visible to people: the description says "Overlay twin of the <site skin>" and the repository README lists the pair.
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync, existsSync } from "node:fs";
+import { createHash } from "node:crypto";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -18,6 +22,8 @@ const twins = json("catalogue", "twins.json");
 const siteIds = json("catalogue", "index.json").skins.map((s) => s.id);
 const overlayIds = json("catalogue", "overlay-skins.json").skins.map((s) => s.id);
 const readme = read("README.md");
+const overlayEntries = json("catalogue", "overlay-skins.json").skins;
+const sha = (...p) => createHash("sha256").update(readFileSync(path.join(root, ...p))).digest("hex");
 
 // ---- helpers -------------------------------------------------------------------------------------------------------------------------------------------
 const hex = (h) => h.toLowerCase();
@@ -82,13 +88,44 @@ for (const t of twins.twins) {
       assert.ok(NEUTRAL.has(c) || siteColours.has(c), `${t.overlay} uses ${c}, which ${t.site} does not use`);
     }
 
-    // Fonts: the site's stack, without the families the site ships (an overlay skin ships none) and without the entries listed in fontDrop (a token takes 7 names at most).
-    const shipped = new Set((s.assets ?? []).filter((a) => a.kind === "font" && a.family).map((a) => `"${a.family}"`));
+    // twinOf: skin.json, the catalogue entry and twins.json name the same site skin (core 0.47.0 reads it; an older core ignores it).
+    assert.equal(o.twinOf, t.site, `${t.overlay}: skin.json twinOf`);
+    assert.equal(overlayEntries.find((e) => e.id === t.overlay)?.twinOf, t.site, `${t.overlay}: catalogue twinOf`);
+    assert.notEqual(o.twinOf, t.overlay); assert.notEqual(o.twinOf, "basic");
+
+    // Fonts: the site's stack. Where the site ships fonts, the twin ships the same files and names the declared families; the entries listed in fontDrop are the ones
+    // an overlay stack may not carry (neither declared nor a known system font) and a token takes 7 names at most.
+    const siteFonts = (s.assets ?? []).filter((a) => a.kind === "font");
+    const ownFonts = (o.assets ?? []);
+    assert.ok(ownFonts.every((a) => a.kind === "font"), "an overlay twin ships fonts only");
+    if (!siteFonts.length) {
+      assert.equal(ownFonts.length, 0, `${t.site} ships no font: ${t.overlay} ships none either (same system stack)`);
+      assert.deepEqual([o.skinContract, o.minCore], [3, "0.9.0"], "no font: the contract and the minimum core do not change");
+    } else {
+      assert.ok(ownFonts.length >= 1 && ownFonts.length <= 4, `${t.overlay} ships 1 to 4 of the site's fonts`);
+      assert.deepEqual([o.skinContract, o.minCore], [6, "0.47.0"], "fonts: contract 6 and core 0.47.0");
+      for (const a of ownFonts) {
+        const src = siteFonts.find((x) => x.file === a.file);
+        assert.ok(src, `${t.overlay} ${a.file} is one of ${t.site}'s fonts`);
+        for (const k of ["family", "weight", "style", "license", "licenseFile", "author", "source"]) assert.equal(a[k], src[k], `${a.file} ${k}`);
+        assert.equal(sha("skins", t.overlay, a.file), sha("skins", t.site, src.file), `${a.file} has the site's bytes`);
+        assert.equal(sha("skins", t.overlay, a.licenseFile), sha("skins", t.site, src.licenseFile), `${a.licenseFile} is the site's licence text`);
+      }
+      // the heading and the body family of the site are both carried (the pairing is the point), and each declared family is used by a stack or the sheet
+      const css = read("skins", t.overlay, "skin.css");
+      const declared = new Set(ownFonts.map((a) => a.family));
+      for (const f of declared) assert.ok(tk["--ov-font"].includes(`"${f}"`) || tk["--ov-font-heading"].includes(`"${f}"`) || css.includes(`"${f}"`), `${f} is used`);
+    }
     for (const [ov, site] of Object.entries(t.fonts)) {
       const drop = t.fontDrop?.[ov] ?? [];
-      const expected = splitTop(siteTokens(t.site, mode, site)).filter((f) => !shipped.has(f) && !drop.includes(f));
+      const expected = splitTop(siteTokens(t.site, mode, site)).filter((f) => !drop.includes(f));
       assert.ok(expected.length >= 2 && expected.length <= 7, `${ov}: ${expected.length} names`);
-      assert.deepEqual(splitTop(tk[ov]), expected, `${t.overlay} ${ov} is not ${t.site}'s ${site} (minus the fonts it ships)`);
+      assert.deepEqual(splitTop(tk[ov]), expected, `${t.overlay} ${ov} is not ${t.site}'s ${site} (minus fontDrop)`);
+    }
+    // the site's first family (its own, shipped font) leads the twin's stack when the twin ships it
+    for (const [ov, site] of Object.entries(t.fonts)) {
+      const lead = splitTop(siteTokens(t.site, mode, site))[0];
+      if (siteFonts.some((a) => `"${a.family}"` === lead)) assert.equal(splitTop(tk[ov])[0], lead, `${ov} starts with the site's own font ${lead}`);
     }
 
     // The pairing says so in the description (both languages), the tags name the site mode, the README names the site skin.

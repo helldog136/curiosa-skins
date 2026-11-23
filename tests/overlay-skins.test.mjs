@@ -22,13 +22,29 @@ test("every overlay skin is listed in catalogue/overlay-skins.json, and only tho
 for (const id of overlay) {
   test(`${id}: manifest, catalogue entry, tag, preview`, () => {
     const m = JSON.parse(read("skins", id, "skin.json")), e = catalogue.skins.find((s) => s.id === id);
-    // contract 3 (core 0.9.0), or contract 4 (core 0.30.0) for a skin that ships an animation recipe (animation.json: data drawn by the core's engine)
-    const [contract, core] = m.animation ? [4, "0.30.0"] : [3, "0.9.0"];
+    // contract 3 (core 0.9.0), or contract 4 (core 0.30.0) for a skin that ships an animation recipe (animation.json: data drawn by the core's engine),
+    // or contract 6 (core 0.47.0) for a skin that embeds woff2 fonts (the only asset an overlay skin may carry here)
+    const fonts = m.assets ?? [];
+    const [contract, core] = fonts.length ? [6, "0.47.0"] : m.animation ? [4, "0.30.0"] : [3, "0.9.0"];
     assert.deepEqual([m.kind, m.skinContract, m.minCore, m.license], ["overlay", contract, core, "MIT"]);
     assert.match(m.version, /^1\.\d+\.\d+$/);
-    assert.equal(m.assets, undefined, "overlay skins ship no font or image");
+    // fonts (contract 6): woff2 only, declared one by one, at most 4 of 150 KB and 400 KB together, with the licence text shipped next to them
+    assert.ok(fonts.length <= 4, "4 fonts at most");
+    let total = 0;
+    for (const a of fonts) {
+      assert.equal(a.kind, "font", "overlay skins ship fonts only (no image)");
+      assert.match(a.file, /^fonts\/[a-z0-9._-]+\.woff2$/);
+      assert.match(a.family, /^[A-Za-z0-9 _-]{1,41}$/); assert.ok(["normal", "italic"].includes(a.style)); assert.match(a.weight, /^[1-9]00( [1-9]00)?$/);
+      assert.ok(a.license && a.author && a.source && a.licenseFile, "licence, author, source and licence file are credited");
+      const bytes = readFileSync(path.join(root, "skins", id, a.file)); total += bytes.length;
+      assert.equal(bytes.subarray(0, 4).toString("latin1"), "wOF2", `${a.file} is a real woff2`);
+      assert.ok(bytes.length <= 150 * 1024, `${a.file} is over 150 KB`);
+      assert.match(read("skins", id, a.licenseFile), /SIL OPEN FONT LICENSE Version 1\.1/, `${a.licenseFile} is the OFL text`);
+    }
+    assert.ok(total <= 400 * 1024, "400 KB of fonts at most");
     assert.ok(m.name.fr && m.name.en && m.description.fr && m.description.en);
     assert.deepEqual([e.version, e.ref, e.subdir, e.skinContract, e.requires.core], [m.version, `${id}/v${m.version}`, `skins/${id}`, contract, core]);
+    assert.equal(e.twinOf, m.twinOf, "the catalogue entry and skin.json name the same site skin (twinOf), or none");
     assert.equal(e.previewAnim, `skins/${id}/previews/overlay-anim.webp`); assert.deepEqual(m.previews.map((p) => p.file), ["previews/overlay-640.webp", "previews/overlay-anim.webp"]);
     assert.equal(e.preview, `skins/${id}/${m.previews[0].file}`);
     const png = readFileSync(path.join(root, "skins", id, m.previews[0].file));
@@ -39,7 +55,11 @@ for (const id of overlay) {
     assert.ok(anim.length <= 450 * 1024, "animated preview weight");
     assert.ok(m.previews.every((p) => p.alt.fr && p.alt.en));
     assert.ok(existsSync(path.join(root, "skins", id, "LICENSE")) && existsSync(path.join(root, "skins", id, "README.md")));
-    assert.deepEqual(readdirSync(path.join(root, "skins", id)).sort(), ["LICENSE", "README.md", ...(m.animation ? ["animation.json"] : []), "previews", "skin.css", "skin.json", "tokens.json"].sort(), "no other file");
+    assert.deepEqual(readdirSync(path.join(root, "skins", id)).sort(), ["LICENSE", "README.md", ...(m.animation ? ["animation.json"] : []), ...(fonts.length ? ["LICENSES", "fonts"] : []), "previews", "skin.css", "skin.json", "tokens.json"].sort(), "no other file");
+    if (fonts.length) {
+      assert.deepEqual(readdirSync(path.join(root, "skins", id, "fonts")).sort(), fonts.map((a) => path.basename(a.file)).sort(), "every font file is declared, every declared font exists");
+      assert.deepEqual(readdirSync(path.join(root, "skins", id, "LICENSES")).sort(), [...new Set(fonts.map((a) => path.basename(a.licenseFile)))].sort(), "one licence text per font project");
+    }
     if (m.animation) {
       assert.equal(m.animation, "animation.json");
       const a = JSON.parse(read("skins", id, "animation.json"));

@@ -29,6 +29,14 @@
    "fonts": {
     "--ov-font": "--v-font",
     "--ov-font-heading": "--sk-font-heading"
+   },
+   "fontDrop": {
+    "--ov-font": [
+     "\"Iowan Old Style\""
+    ],
+    "--ov-font-heading": [
+     "\"Iowan Old Style\""
+    ]
    }
   },
   {
@@ -47,6 +55,11 @@
    "fonts": {
     "--ov-font": "--v-font",
     "--ov-font-heading": "--sk-font-heading"
+   },
+   "fontDrop": {
+    "--ov-font": [
+     "\"Liberation Mono\""
+    ]
    }
   },
   {
@@ -68,7 +81,12 @@
    },
    "fontDrop": {
     "--ov-font": [
+     "\"Instrument Sans\"",
      "-apple-system"
+    ],
+    "--ov-font-heading": [
+     "Fraunces",
+     "\"Iowan Old Style\""
     ]
    }
   },
@@ -114,6 +132,15 @@
    "fonts": {
     "--ov-font": "--v-font",
     "--ov-font-heading": "--sk-font-heading"
+   },
+   "fontDrop": {
+    "--ov-font": [
+     "\"EB Garamond\"",
+     "\"Iowan Old Style\""
+    ],
+    "--ov-font-heading": [
+     "\"Trajan Pro\""
+    ]
    }
   },
   {
@@ -132,6 +159,11 @@
    "fonts": {
     "--ov-font": "--v-font",
     "--ov-font-heading": "--sk-font-heading"
+   },
+   "fontDrop": {
+    "--ov-font": [
+     "\"Iowan Old Style\""
+    ]
    }
   },
   {
@@ -150,6 +182,11 @@
    "fonts": {
     "--ov-font": "--v-font",
     "--ov-font-heading": "--sk-font-heading"
+   },
+   "fontDrop": {
+    "--ov-font": [
+     "\"Iowan Old Style\""
+    ]
    }
   },
   {
@@ -191,6 +228,11 @@
    "fonts": {
     "--ov-font": "--v-font",
     "--ov-font-heading": "--sk-font-heading"
+   },
+   "fontDrop": {
+    "--ov-font": [
+     "\"SF Pro Rounded\""
+    ]
    }
   },
   {

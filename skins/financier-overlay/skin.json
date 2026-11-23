@@ -10,7 +10,7 @@
     "fr": "Jumeau d'overlay du skin de site Financier : page blanche, titres à empattements fins, surligneur citron et noir profond.",
     "en": "Overlay twin of the Trading desk site skin: white page, fine serif headings, a lime highlighter and deep black."
   },
-  "version": "1.0.0",
+  "version": "1.1.0",
   "minCore": "0.9.0",
   "author": {
     "name": "Équipe Curiosa"
@@ -41,5 +41,6 @@
         "en": "Animated preview of the Trading desk overlay skin: alert, counter, list, featured card and banner"
       }
     }
-  ]
+  ],
+  "twinOf": "financier"
 }
