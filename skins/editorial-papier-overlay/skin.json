@@ -1,0 +1,45 @@
+{
+  "skinContract": 3,
+  "kind": "overlay",
+  "id": "editorial-papier-overlay",
+  "name": {
+    "fr": "Éditorial papier (overlay)",
+    "en": "Editorial paper overlay"
+  },
+  "description": {
+    "fr": "Jumeau d'overlay du skin de site Éditorial papier : papier crème, encre, filet double et serif élégant, façon page de magazine.",
+    "en": "Overlay twin of the Editorial paper site skin: cream paper, ink, a double rule and elegant serif type, like a magazine page."
+  },
+  "version": "1.0.0",
+  "minCore": "0.9.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "serif",
+    "editorial",
+    "minimal"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Éditorial papier (overlay) sur des éléments d'exemple",
+        "en": "Preview of the Editorial paper overlay skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Éditorial papier (overlay) : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Editorial paper overlay skin: alert, counter, list, featured card and banner"
+      }
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+ "version": 1,
+ "note": "Which overlay skin is the twin of which public site skin (same palette, fonts and mood). Read by tests/overlay-twins.test.mjs only: the core does not read this file. status 'adopted' = an existing overlay skin already is the twin; 'new' = a twin made for this purpose. 'planned' = site skins whose twin comes in a later change.",
+ "twins": [
+  {
+   "site": "retro-neon",
+   "overlay": "night-neon",
+   "status": "adopted",
+   "siteMode": "dark",
+   "match": {
+    "--ov-fg": "--v-fg",
+    "--ov-border": "--v-accent",
+    "--ov-accent": "--v-accent2"
+   }
+  },
+  {
+   "site": "editorial-papier",
+   "overlay": "editorial-papier-overlay",
+   "status": "new",
+   "siteMode": "light",
+   "match": {
+    "--ov-fg": "--v-fg",
+    "--ov-surface": "--v-surface",
+    "--ov-border": "--v-line",
+    "--ov-accent": "--v-accent",
+    "--ov-accent-fg": "--v-accent-fg",
+    "--ov-muted": "--v-muted"
+   },
+   "fonts": {
+    "--ov-font": "--v-font",
+    "--ov-font-heading": "--sk-font-heading"
+   }
+  },
+  {
+   "site": "brutaliste-clair",
+   "overlay": "brutaliste-clair-overlay",
+   "status": "new",
+   "siteMode": "light",
+   "match": {
+    "--ov-fg": "--v-fg",
+    "--ov-surface": "--v-surface",
+    "--ov-border": "--v-line",
+    "--ov-accent": "--v-accent",
+    "--ov-accent-fg": "--v-accent-fg",
+    "--ov-muted": "--v-muted"
+   },
+   "fonts": {
+    "--ov-font": "--v-font",
+    "--ov-font-heading": "--sk-font-heading"
+   }
+  },
+  {
+   "site": "curiosa",
+   "overlay": "curiosa-overlay",
+   "status": "new",
+   "siteMode": "light",
+   "match": {
+    "--ov-fg": "--v-fg",
+    "--ov-surface": "--v-surface",
+    "--ov-border": "--v-line",
+    "--ov-accent": "--v-accent",
+    "--ov-accent-fg": "--v-accent-fg",
+    "--ov-muted": "--v-muted"
+   },
+   "fonts": {
+    "--ov-font": "--v-font",
+    "--ov-font-heading": "--sk-font-heading"
+   },
+   "fontDrop": {
+    "--ov-font": [
+     "-apple-system"
+    ]
+   }
+  },
+  {
+   "site": "financier",
+   "overlay": "financier-overlay",
+   "status": "new",
+   "siteMode": "light",
+   "match": {
+    "--ov-fg": "--v-fg",
+    "--ov-surface": "--v-surface",
+    "--ov-border": "--v-line",
+    "--ov-accent": "--v-accent",
+    "--ov-muted": "--v-muted"
+   },
+   "fonts": {
+    "--ov-font": "--v-font",
+    "--ov-font-heading": "--sk-font-heading"
+   },
+   "fontDrop": {
+    "--ov-font": [
+     "-apple-system"
+    ],
+    "--ov-font-heading": [
+     "\"Playfair Display\"",
+     "\"Times New Roman\""
+    ]
+   }
+  }
+ ],
+ "planned": [
+  "feodal",
+  "nef-de-braise",
+  "pirates",
+  "steampunk-victorien",
+  "tissu",
+  "verre-doux",
+  "globe-trotter"
+ ]
+}

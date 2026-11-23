@@ -1,0 +1,45 @@
+{
+  "skinContract": 3,
+  "kind": "overlay",
+  "id": "financier-overlay",
+  "name": {
+    "fr": "Financier (overlay)",
+    "en": "Trading desk overlay"
+  },
+  "description": {
+    "fr": "Jumeau d'overlay du skin de site Financier : page blanche, titres à empattements fins, surligneur citron et noir profond.",
+    "en": "Overlay twin of the Trading desk site skin: white page, fine serif headings, a lime highlighter and deep black."
+  },
+  "version": "1.0.0",
+  "minCore": "0.9.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "serif",
+    "editorial",
+    "minimal"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Financier (overlay) sur des éléments d'exemple",
+        "en": "Preview of the Trading desk overlay skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Financier (overlay) : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Trading desk overlay skin: alert, counter, list, featured card and banner"
+      }
+    }
+  ]
+}

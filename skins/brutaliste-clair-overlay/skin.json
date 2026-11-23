@@ -1,0 +1,45 @@
+{
+  "skinContract": 3,
+  "kind": "overlay",
+  "id": "brutaliste-clair-overlay",
+  "name": {
+    "fr": "Brutaliste clair (overlay)",
+    "en": "Light brutalist overlay"
+  },
+  "description": {
+    "fr": "Jumeau d'overlay du skin de site Brutaliste clair : blocs blancs, gros filets noirs, ombre dure, jaune, orange et bleu vifs.",
+    "en": "Overlay twin of the Light brutalist site skin: white blocks, thick black borders, hard shadows, bright yellow, orange and blue."
+  },
+  "version": "1.0.0",
+  "minCore": "0.9.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "bold",
+    "mono",
+    "high-contrast"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Brutaliste clair (overlay) sur des éléments d'exemple",
+        "en": "Preview of the Light brutalist overlay skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Brutaliste clair (overlay) : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Light brutalist overlay skin: alert, counter, list, featured card and banner"
+      }
+    }
+  ]
+}

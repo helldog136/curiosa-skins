@@ -1,0 +1,7 @@
+[data-ov-part="panel"],[data-ov-part="card"],[data-ov-part="bubble"]{border-top:4px double var(--ov-fg, #1d1a15)}
+[data-ov-part="card"]{text-align:center}
+[data-ov-part="title"]{font-style:italic;text-transform:none;font-size:112%}
+[data-ov-part="kind"],[data-ov-part="label"],[data-ov-part="badge"],[data-ov-part="tag"]{text-transform:uppercase;letter-spacing:2px;font-weight:600}
+[data-ov-part="badge"]{border-radius:0}
+[data-ov-part="avatar"]{border-radius:0;border:1px solid var(--ov-fg, #1d1a15)}
+[data-ov-part="track"]{background-color:var(--ov-border, #c4b79f)}
