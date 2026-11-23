@@ -1,0 +1,45 @@
+{
+  "skinContract": 3,
+  "kind": "overlay",
+  "id": "tissu-overlay",
+  "name": {
+    "fr": "Tissu (overlay)",
+    "en": "Fabric overlay"
+  },
+  "description": {
+    "fr": "Jumeau d'overlay du skin de site Tissu : lin et feutre, point de croix en pointillés, terracotta et bleu, lettres rondes et douces.",
+    "en": "Overlay twin of the Fabric site skin: linen and felt, dashed cross-stitch, terracotta and blue, soft round lettering."
+  },
+  "version": "1.0.0",
+  "minCore": "0.9.0",
+  "author": {
+    "name": "Équipe Curiosa"
+  },
+  "license": "MIT",
+  "tags": [
+    "light",
+    "sans",
+    "playful",
+    "cozy"
+  ],
+  "tokens": "tokens.json",
+  "stylesheet": "skin.css",
+  "previews": [
+    {
+      "file": "previews/overlay-640.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu du skin Tissu (overlay) sur des éléments d'exemple",
+        "en": "Preview of the Fabric overlay skin on sample elements"
+      }
+    },
+    {
+      "file": "previews/overlay-anim.webp",
+      "width": 640,
+      "alt": {
+        "fr": "Aperçu animé du skin Tissu (overlay) : alerte, compteur, liste, carte à l'honneur et bandeau",
+        "en": "Animated preview of the Fabric overlay skin: alert, counter, list, featured card and banner"
+      }
+    }
+  ]
+}

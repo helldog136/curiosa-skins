@@ -67,6 +67,9 @@ Les skins d'overlay habillent les **pages d'overlay pour OBS** (jamais le site p
 | Pirates (overlay) / Pirates overlay | 1.0.0 | `skins/pirates-overlay` |
 | Steampunk victorien (overlay) / Victorian steampunk overlay | 1.0.0 | `skins/steampunk-victorien-overlay` |
 | Nef de braise (overlay) / Ember nave overlay | 1.0.0 | `skins/nef-de-braise-overlay` |
+| Verre et dégradés doux (overlay) / Soft glass and gradients overlay | 1.0.0 | `skins/verre-doux-overlay` |
+| Tissu (overlay) / Fabric overlay | 1.0.0 | `skins/tissu-overlay` |
+| Globe-trotter (overlay) / Globe-trotter overlay | 1.0.0 | `skins/globe-trotter-overlay` |
 
 **Jauges, niveaux et compteurs animés (cœur 0.30.0, contrat 4).** Un skin d'overlay peut ajouter `animation.json` : une recette de données (primitives procédurales, paramètres, graines) que le cœur dessine lui-même. *Néon nocturne* 1.2.0 (tubes et pistes de circuit) en a une. Les autres skins donnent une jauge simple qui suit leurs couleurs. Contrat : `docs/OVERLAY-ANIMATIONS.md` du cœur.
 *Animated gauges, levels and counters (core 0.30.0, contract 4). An overlay skin may add `animation.json`: a data recipe (procedural primitives, parameters, seeds) that the core draws itself. Night neon 1.2.0 (tubes and circuit traces) has one. Other skins give a plain gauge that follows their colours. Contract: the core's `docs/OVERLAY-ANIMATIONS.md`.*
@@ -79,7 +82,7 @@ Corrections mécaniques (sans changement de style) : Salle d'arcade 1.1.2 et Aff
 
 ## Jumeaux d'overlay / Overlay twins
 
-Chaque skin de site du catalogue a un **jumeau d'overlay** : un skin d'overlay de même identité (couleurs, ambiance, formes de base, pile de polices du site sans les polices que le site embarque), pour que vos overlays OBS ressemblent à votre site. Le lien est écrit dans la description du jumeau (« Jumeau d'overlay du skin de site … »), dans son README et dans ce tableau ; `catalogue/twins.json` le dit aux outils et `tests/overlay-twins.test.mjs` vérifie qu'un jumeau ne s'écarte pas de son skin de site. L'audit et les choix sont dans `docs/OVERLAY-TWINS.md`.
+Chaque skin de site du catalogue a un **jumeau d'overlay** (un test le garantit : un nouveau skin de site arrive avec son jumeau) : un skin d'overlay de même identité (couleurs, ambiance, formes de base, pile de polices du site sans les polices que le site embarque), pour que vos overlays OBS ressemblent à votre site. Le lien est écrit dans la description du jumeau (« Jumeau d'overlay du skin de site … »), dans son README et dans ce tableau ; `catalogue/twins.json` le dit aux outils et `tests/overlay-twins.test.mjs` vérifie qu'un jumeau ne s'écarte pas de son skin de site. L'audit et les choix sont dans `docs/OVERLAY-TWINS.md`.
 *Every site skin of the catalogue has an **overlay twin**: an overlay skin of the same identity (colours, mood, basic shapes, the site's font stack without the fonts the site ships), so your OBS overlays look like your site. The pairing is written in the twin's description ("Overlay twin of the … site skin"), in its README and in this table; `catalogue/twins.json` tells the tools and `tests/overlay-twins.test.mjs` checks that a twin does not drift from its site skin. The audit and the decisions are in `docs/OVERLAY-TWINS.md`.*
 
 | Skin de site / Site skin | Jumeau d'overlay / Overlay twin | Origine / Origin |
@@ -93,6 +96,9 @@ Chaque skin de site du catalogue a un **jumeau d'overlay** : un skin d'overlay d
 | Pirates / Pirates (`skins/pirates`) | Pirates (overlay) / Pirates overlay (`skins/pirates-overlay`) | nouveau / new |
 | Steampunk victorien / Victorian steampunk (`skins/steampunk-victorien`) | Steampunk victorien (overlay) / Victorian steampunk overlay (`skins/steampunk-victorien-overlay`) | nouveau / new |
 | Nef de braise / Ember nave (`skins/nef-de-braise`) | Nef de braise (overlay) / Ember nave overlay (`skins/nef-de-braise-overlay`) | nouveau / new |
+| Verre et dégradés doux / Soft glass (`skins/verre-doux`) | Verre et dégradés doux (overlay) / Soft glass and gradients overlay (`skins/verre-doux-overlay`) | nouveau / new |
+| Tissu / Fabric (`skins/tissu`) | Tissu (overlay) / Fabric overlay (`skins/tissu-overlay`) | nouveau / new |
+| Globe-trotter / Globe-trotter (`skins/globe-trotter`) | Globe-trotter (overlay) / Globe-trotter overlay (`skins/globe-trotter-overlay`) | nouveau / new |
 
 ## Installer un skin / Installing a skin
 

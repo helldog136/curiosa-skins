@@ -1,0 +1,7 @@
+[data-ov-part="panel"],[data-ov-part="card"],[data-ov-part="bubble"]{backdrop-filter:blur(14px)}
+[data-ov-part="card"]{text-align:center}
+[data-ov-part="bubble"]{ov-shape:pill}
+[data-ov-part="badge"]{ov-shape:pill;background:linear-gradient(120deg, #5b4bdb, #c2307a);color:#ffffff}
+[data-ov-part="bar-fill"]{background:linear-gradient(120deg, #5b4bdb, #c2307a)}
+[data-ov-part="track"]{background-color:#d3d7f0}
+[data-ov-part="avatar"]{background:linear-gradient(120deg, #5b4bdb, #c2307a)}

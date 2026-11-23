@@ -1,0 +1,6 @@
+[data-ov-part="card"]{ov-deco:rings #7f8d64;text-align:center}
+[data-ov-part="bubble"]{background-color:#c3cca4;color:#1c2a1a}
+[data-ov-part="kind"],[data-ov-part="label"],[data-ov-part="tag"]{font-family:ui-monospace, "Cascadia Mono", Menlo, Consolas, monospace;text-transform:uppercase;letter-spacing:1px}
+[data-ov-part="badge"]{background-color:#d79a3c;color:#1c2a1a}
+[data-ov-part="avatar"]{border:2px solid #2d5822}
+[data-ov-part="track"]{background-color:#c3cca4}
